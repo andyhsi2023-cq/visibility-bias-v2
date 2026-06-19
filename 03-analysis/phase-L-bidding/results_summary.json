@@ -1,0 +1,30 @@
+{
+  "n_announcements": 2957789,
+  "all": {
+    "counts": {
+      "visible": 222354,
+      "other": 2614886,
+      "functional": 110313,
+      "mixed": 10236
+    },
+    "visible_functional_ratio": 2.016
+  },
+  "fb": {
+    "counts": {
+      "other": 677711,
+      "visible": 50689,
+      "functional": 23924,
+      "mixed": 2128
+    },
+    "visible_functional_ratio": 2.119
+  },
+  "win2019_24": {
+    "counts": {
+      "other": 2019735,
+      "functional": 80901,
+      "visible": 168123,
+      "mixed": 6785
+    },
+    "visible_functional_ratio": 2.078
+  }
+}

@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Measuring Visibility Bias in Bureaucratic Text</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Measuring Visibility Bias in Bureaucratic Text</h1>
+</header>
+<h1 id="abstract">Abstract</h1>
+<p>We introduce the Visibility Attention Index (VAI), a validated
+text-based instrument for measuring compositional policy attention in
+bureaucratic documents, and apply it to 6,294 Chinese municipal
+government work reports (282 prefectures, 2002–2024). Drawing on a
+cadre-attention model in which an agent allocates budget between
+observationally-asymmetric categories, we construct the textual share of
+<em>visible</em> versus <em>functional</em> policy discourse. Construct
+validity is probed along five pre-registered dimensions: (i) replication
+under an independently-constructed 150-term lexicon (r = 0.93); (ii) a
+within-document retrospective-vs-prospective differential (Δ = +0.025,
+paired t = 8.4, p &lt; 10⁻¹⁶), interpretable as a behavioral signature
+of compositional bias; (iii) random half-lexicon bootstrap stability;
+(iv) cross-source correlation with accounting-based MOHURD
+visible-investment ratios (r = 0.24, p &lt; 10⁻³⁰); and (v) an
+independent third-party validation against Chinese Wikipedia city
+descriptions, which returns a null (r = −0.15) and scopes the instrument
+to governance-rhetoric rather than encyclopedic-description domain.
+Three applications demonstrate utility: within-city VAI predicts the
+accounting-based Cosmetic Investment Ratio (β = +0.111, p = 0.002)
+without affecting total investment; the within-document review-vs-plan
+differential constitutes a novel behavioral signature of compositional
+attention; and a structural welfare calibration yields ¥1–15 billion per
+year of compositionally-misallocated urban investment in China. We also
+report two pre-registered null results transparently: an event study
+around central anti-corruption inspections fails under
+heterogeneity-robust estimation when extended to 2017 (sign reverses),
+and an individual-level satisfaction test cannot detect effects above
+|d| = 0.011. The contribution is methodological: a validated,
+pre-registered text-measurement tool for compositional policy attention,
+portable to other bureaucratic corpora.</p>
+<p><strong>Keywords</strong>: text-as-data, policy attention, construct
+validity, pre-registration, China, measurement instrument</p>
+<p><strong>Pre-registration</strong>: OSF DOI <a
+href="https://doi.org/10.17605/OSF.IO/ZMJY5">10.17605/OSF.IO/ZMJY5</a>.
+<strong>Replication archive</strong>: Zenodo DOI <a
+href="https://doi.org/10.5281/zenodo.19569979">10.5281/zenodo.19569979</a>.</p>
+<hr />
+<h1 id="introduction">1. Introduction</h1>
+<p>Measuring bureaucratic attention from text is a central challenge in
+the political-methodology literature. Political agents produce corpora
+of formal documents — legislative speeches, agency reports, municipal
+plans — whose lexical structure reveals <em>what they attend to</em>
+and, by inference, <em>what matters to them</em>. Methodological
+advances over the past decade have moved from manual content analysis
+[1] to supervised topic models [2, 3], semi-supervised scaling [4], and,
+most recently, large-language-model-assisted classification [5]. Yet
+most existing instruments are (i) monolingual (English-dominated), (ii)
+aimed at <em>ideological</em> rather than <em>compositional</em>
+attention, and (iii) rarely pre-registered or subjected to explicit
+construct-validity scrutiny of the kind that is standard in
+psychometrics [6, 7].</p>
+<p>This paper contributes a validated text-measurement instrument for a
+specific form of compositional policy attention — what we call
+<strong>visibility bias</strong>, the preferential attention to
+observationally-salient categories over less-salient but
+functionally-equivalent alternatives — in a context where such attention
+is both theoretically motivated and institutionally consequential: the
+Chinese municipal government work report. Chinese prefecture-level
+officials prepare annual work reports that are submitted to the
+superior-level Party authority, read by citizens and provincial
+evaluators, and archived as the single most important written instrument
+of municipal governance. Their language is constrained by bureaucratic
+convention but exhibits substantial cross-city and within-city variation
+— variation that, we argue, reflects the official’s choice of <em>what
+to make visible</em> to a principal whose observability over functional
+categories is limited.</p>
+<p>We proceed in three moves.</p>
+<p><strong>First</strong>, we formalize the compositional-attention
+problem as a cadre-attention model with an observability-asymmetry
+assumption (§2). A Chinese municipal official allocates a fixed budget
+between visible and functional categories of urban infrastructure. The
+supervisor observes both with Gaussian noise, but the noise in
+functional categories is strictly larger (a finished boulevard is
+photographable; a replaced sewer main is not). Under a standard
+Cobb-Douglas social welfare function and a mixed social-career utility,
+the optimal compositional share diverges from the social optimum by an
+amount proportional to career intensity, observability asymmetry, and
+fiscal capacity. This framework yields the substantive motivation for
+the measurement instrument: visibility bias should be detectable in the
+rhetorical share of visibility-versus-functionality discourse.</p>
+<p><strong>Second</strong>, we construct the Visibility Attention Index
+(VAI) using a pre-registered iterative expert-coded lexicon of 42
+visible and 38 functional urban-renewal terms, applied to 6,294
+municipal government work reports spanning 2002–2024 (§3). We subject
+the instrument to a five-test construct-validity battery (§4): (i)
+independent-dictionary replication; (ii) within-document
+retrospective-vs-prospective differential — the novel behavioral
+signature we highlight as this paper’s methodological contribution;
+(iii) dictionary-bootstrap stability; (iv) cross-source accounting
+correlation; and (v) pre-registered third-party text validation using
+Chinese Wikipedia. Four tests pass; the Wikipedia test returns a null,
+which we interpret as evidence that the instrument is validly
+within-domain (governance rhetoric) but does not extrapolate to
+descriptive encyclopedic text — a scope finding we discuss
+explicitly.</p>
+<p><strong>Third</strong>, we demonstrate three substantive applications
+of VAI (§5): (a) within-city compositional-substitution regression
+against MOHURD Urban Construction Statistical Yearbook accounting data;
+(b) the within-document review-vs-plan behavioral signature as a
+standalone quasi-experimental test of compositional attention; and (c)
+structural welfare calibration under Cobb-Douglas assumptions. We also
+report two pre-registered null results transparently (§5.4): a
+quasi-experimental central-inspection event study whose TWFE finding
+does not survive heterogeneity-robust estimation under an extended
+sample, and an individual-level CFPS micro-foundation test that cannot
+detect citizen-level satisfaction effects above |d| = 0.011.</p>
+<h2 id="contribution">1.1 Contribution</h2>
+<p>Our primary contribution is <strong>methodological</strong>: a
+validated, pre-registered, replicable text-measurement instrument for
+compositional policy attention, with explicit domain-scope documentation
+and transparent reporting of null results. We position this against
+three strands.</p>
+<ul>
+<li><p><strong>Text-as-data in political methodology</strong>. Gentzkow
+et al. [3] provide a unifying framework; Ash and Hansen [8] review
+recent developments in machine-learning-augmented methods. Our
+contribution is an <em>interpretable expert-coded</em> instrument with
+explicit multi-dimensional construct validity — in the tradition of
+Slapin and Proksch [4] manifestos-scaling but applied to a domain
+previously under-studied outside supervised-classifier
+approaches.</p></li>
+<li><p><strong>The within-document behavioral signature</strong>. The
+retrospective-vs-prospective differential (Δ = +0.025, paired t = 8.4)
+is a novel validation target that exploits the temporal structure of
+bureaucratic documents. It cannot be produced by lexicon-selection bias
+(both sections use the same lexicon) and cannot be produced by
+author-style effects (same author writes both sections). It has, to our
+knowledge, no precedent in the text-measurement literature.</p></li>
+<li><p><strong>Pre-registration and null-reporting in text-based
+political-economy research</strong>. We pre-register the instrument and
+its construct-validity tests at OSF (DOI 10.17605/OSF.IO/ZMJY5). We
+report two pre-registered null results transparently. This practice
+remains under-adopted in applied political-methodology work [9, 10], and
+our integration is intended as a replicable template.</p></li>
+</ul>
+<p>Secondary contributions are substantive: the first empirical
+estimates of the scale of compositionally-misallocated urban
+infrastructure spending in China under an explicit theoretical
+framework, and a discussion of the policy interventions suggested by the
+cadre-attention model (§6.4).</p>
+<h2 id="roadmap">1.2 Roadmap</h2>
+<p>Section 2 develops the cadre-attention model. Section 3 describes the
+VAI construction protocol. Section 4 reports the five-test
+construct-validity battery. Section 5 presents three substantive
+applications and transparent reporting of two null results. Section 6
+discusses scope, portability to non-Chinese settings, and policy
+implications. Section 7 concludes.</p>
+<p>Throughout, we explicitly flag deviations from the pre-registration;
+five deviations are logged in Appendix D with reasons, executed
+substitutes, and effect-on-sign-and-significance of main claims. The
+replication archive (data, code, texts, lexicons) is at Zenodo DOI
+pending acceptance; pre-registration is at OSF DOI
+10.17605/OSF.IO/ZMJY5, mirrored in this manuscript’s references.</p>
+<hr />
+<h1 id="theoretical-motivation">2. Theoretical Motivation</h1>
+<p>This section sketches the cadre-attention problem that motivates the
+measurement instrument. The full formal model — first-order conditions,
+closed-form equilibrium, and welfare-loss derivation — is in Online
+Appendix A. For a methodology-focused audience, the relevant question is
+<em>why</em> we expect compositional text-rhetoric to reveal visibility
+bias, and <em>what</em> the model implies for validation tests.</p>
+<h2 id="the-observability-asymmetry-setup">2.1 The
+observability-asymmetry setup</h2>
+<p>A Chinese municipal official allocates a fixed urban-infrastructure
+budget <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20B_i" alt="B_i"
+title="B_i" class="math inline" /> between two asset classes:</p>
+<ul>
+<li><strong>Visible capital</strong> <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20V_i" alt="V_i"
+title="V_i" class="math inline" />: streetscapes, greening, lighting,
+façades, sanitation. Output is photographable from the street, archived
+by the municipal propaganda department, and observable during single-day
+supervisor inspections.</li>
+<li><strong>Functional capital</strong> <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20F_i" alt="F_i"
+title="F_i" class="math inline" />: underground water, gas, heating,
+drainage, structural safety. Output is physically concealed, verifiable
+only through specialized instruments or accident rates, and rarely
+photographed.</li>
+</ul>
+<p>The supervisor — the provincial or higher-level Party authority
+responsible for the official’s promotion — observes both categories with
+Gaussian noise, but the noise in functional categories is strictly
+larger:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Comega_V%5E2%20%3C%20%5Comega_F%5E2%20%5Cqquad%20%5Ctext%7B%28observability%20asymmetry%29%7D."
+alt="\omega_V^2 &lt; \omega_F^2 \qquad \text{(observability asymmetry)}."
+title="\omega_V^2 &lt; \omega_F^2 \qquad \text{(observability asymmetry)}."
+class="math display" /></p>
+<p>Three independent proxies for the <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Comega_V%2F%5Comega_F"
+alt="\omega_V/\omega_F" title="\omega_V/\omega_F" class="math inline" />
+ratio — inspection frequency, media reporting intensity, and
+accident-record visibility — support this assumption at conventional
+significance (Online Appendix C.4).</p>
+<h2 id="the-officials-compositional-attention-problem">2.2 The
+official’s compositional-attention problem</h2>
+<p>The official maximizes a weighted combination of social welfare
+(Cobb-Douglas in <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20V%2C%20F"
+alt="V, F" title="V, F" class="math inline" />) and career value (linear
+in the supervisor’s precision-weighted perception of performance). Under
+standard first-order conditions, the observed visible share <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%2A"
+alt="a_i^*" title="a_i^*" class="math inline" /> diverges from the
+socially-optimal <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%7BSO%7D"
+alt="a_i^{SO}" title="a_i^{SO}" class="math inline" /> by an amount
+proportional to three interpretable factors:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20a_i%5E%2A%20-%20a_i%5E%7BSO%7D%20%5Capprox%20a_i%5E%7BSO%7D%281-a_i%5E%7BSO%7D%29%20%5Ccdot%20%5Cfrac%7B1-%5Clambda_i%7D%7B%5Clambda_i%7D%20%5Ccdot%20%5Cphi%20%5Ccdot%20B_i%2C"
+alt="a_i^* - a_i^{SO} \approx a_i^{SO}(1-a_i^{SO}) \cdot \frac{1-\lambda_i}{\lambda_i} \cdot \phi \cdot B_i,"
+title="a_i^* - a_i^{SO} \approx a_i^{SO}(1-a_i^{SO}) \cdot \frac{1-\lambda_i}{\lambda_i} \cdot \phi \cdot B_i,"
+class="math display" /></p>
+<p>where <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Clambda_i%20%5Cin%20%5B0%2C1%5D"
+alt="\lambda_i \in [0,1]" title="\lambda_i \in [0,1]"
+class="math inline" /> is the official’s social-motivation weight, <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Cphi%20%5Cequiv%202%5Crho%20-%201%20%3E%200"
+alt="\phi \equiv 2\rho - 1 &gt; 0" title="\phi \equiv 2\rho - 1 &gt; 0"
+class="math inline" /> is the legibility asymmetry premium, and <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20B_i" alt="B_i"
+title="B_i" class="math inline" /> is fiscal capacity. The closed-form
+derivation is in Online Appendix A; the substantive intuition is that
+more-legible categories attract more-attention-per-yuan when the
+supervisor’s perception is precision-weighted.</p>
+<h2 id="what-the-model-implies-for-measurement">2.3 What the model
+implies for measurement</h2>
+<p>The model’s testable implication for our purposes is <em>not</em>
+primarily a causal prediction — we do not have clean causal
+identification of the structural parameters. Instead, the model
+specifies <strong>what a valid text-based measure of compositional
+attention should look like</strong>:</p>
+<ol type="1">
+<li><p><strong>The measure should correlate positively with
+accounting-based measures of visible-infrastructure spending</strong>
+(the observed <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%2A"
+alt="a_i^*" title="a_i^*" class="math inline" /> in yuan terms). This
+motivates cross-source validation test E-D (§4.4).</p></li>
+<li><p><strong>The measure should show greater emphasis on visible
+categories in retrospective (past-year) rhetoric than in prospective
+(next-year) rhetoric</strong>, because the official has greater
+discretion over what to highlight retrospectively, and because
+prospective language is constrained by the need to specify functional
+targets in quantifiable terms. This motivates the within-document
+validation test E-B (§4.3), which is the paper’s novel methodological
+contribution.</p></li>
+<li><p><strong>The measure should exhibit meaningful within-city
+variation over time</strong> (not only between-city variation), because
+the structural parameters <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Clambda_i%2C%20B_i"
+alt="\lambda_i, B_i" title="\lambda_i, B_i" class="math inline" /> vary
+over tenure cycles and fiscal capacity. This motivates the use of city
+fixed effects and specification-curve robustness (§5.1).</p></li>
+</ol>
+<h2 id="what-the-model-does-not-claim">2.4 What the model does NOT
+claim</h2>
+<p>The model is a source of <em>predictions</em> about validation tests,
+not a source of <em>causal identification strategies</em>. We do not
+claim our empirical work establishes the structural parameters <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%28%5Comega_V%2C%20%5Comega_F%2C%20%5Cphi%2C%20%5Clambda_i%29"
+alt="(\omega_V, \omega_F, \phi, \lambda_i)"
+title="(\omega_V, \omega_F, \phi, \lambda_i)" class="math inline" />
+directly. The purpose of §2 in this methodology paper is to motivate
+<em>why</em> compositional text-rhetoric should carry information about
+cadre attention — not to empirically identify the underlying incentive
+parameters.</p>
+<p>This narrower theoretical role is a deliberate scoping choice. A
+reader interested in the full structural model should consult Online
+Appendix A; a reader interested in the measurement instrument can
+proceed directly to §3.</p>
+<hr />
+<h1 id="measurement-and-data">3. Measurement and Data</h1>
+<h2 id="positioning-in-the-text-as-data-literature">3.0 Positioning in
+the text-as-data literature</h2>
+<p>Before describing the VAI construction, we situate the instrument
+relative to existing text-based measures of political attention. Table 0
+compares VAI across five dimensions against four established
+instruments.</p>
+<p><strong>Table 0. VAI relative to existing text-based policy-attention
+instruments</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Measurement target</th>
+<th>Construction</th>
+<th>Explicit construct-validity protocol</th>
+<th>Pre-registered</th>
+<th>Public replication archive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Slapin–Proksch Wordfish [4]</td>
+<td>Ideological position, party manifestos</td>
+<td>Latent Poisson scaling</td>
+<td>Cross-source validation; expert surveys</td>
+<td>❌</td>
+<td>Partial (replication code)</td>
+</tr>
+<tr>
+<td>Grimmer [2] expressed priorities</td>
+<td>Topic attention, U.S. congressional press releases</td>
+<td>Bayesian hierarchical topic model</td>
+<td>Agreement with hand-coding</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Gentzkow–Shapiro [11] / GKT [3] slant</td>
+<td>Partisan slant, U.S. news</td>
+<td>Supervised phrase frequency</td>
+<td>Cross-source correlation with vote shares</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Shi [12] Chinese ideology topics</td>
+<td>Ideological positioning, Chinese party documents</td>
+<td>Structural topic model (STM)</td>
+<td>Face validity; expert qualitative</td>
+<td>❌</td>
+<td>Partial</td>
+</tr>
+<tr>
+<td><strong>VAI (this paper)</strong></td>
+<td><strong>Compositional policy attention, Chinese municipal
+GWRs</strong></td>
+<td><strong>Expert-coded lexicon (42v + 38f), count-ratio</strong></td>
+<td><strong>5-test pre-registered battery (§4)</strong></td>
+<td><strong>✅ OSF ZMJY5</strong></td>
+<td><strong>✅ Zenodo + GitHub</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Three features distinguish VAI from this prior literature.</p>
+<p><strong>(i) Compositional rather than ideological target.</strong>
+The instruments above measure where an actor stands on an ideological or
+topical continuum. VAI measures the <em>share</em> of attention across
+two substantively-paired asset classes within a single policy domain
+(urban infrastructure). This target is substantively under-studied in
+the text-as-data literature, which has focused primarily on
+position-taking (ideological scaling) and issue emphasis (topic
+modeling).</p>
+<p><strong>(ii) Explicit five-test construct-validity protocol with
+pre-registration.</strong> The protocol (§4) includes a test (E-B,
+within-document differential) that is, to our knowledge, novel to the
+text-measurement literature. Pre-registration is uncommon in applied
+text-as-data work and contributes to the replicability of the
+measurement choices.</p>
+<p><strong>(iii) Transparent domain-scope boundary via an
+external-source null.</strong> The Wikipedia-zh validation (E-F) returns
+a null, which we interpret as scoping the instrument to
+governance-rhetoric text rather than encyclopedic-description text. This
+kind of explicit domain-scope finding is unusual; most text-measurement
+papers report only successful validations.</p>
+<h2 id="the-visibility-attention-index-vai">3.1 The Visibility Attention
+Index (VAI)</h2>
+<p>We construct a city-year Visibility Attention Index from the universe
+of annual <em>government work reports</em> (GWRs) delivered at
+prefecture-level People’s Congresses. These reports — typically
+20,000–60,000 Chinese characters long — constitute the single most
+important institutional text produced by a municipal government each
+year; they are reviewed by the supervising provincial authority,
+archived publicly, and are the central vehicle by which the official
+communicates performance and commitments to both supervisors and the
+broader public.</p>
+<p>Our corpus covers <strong>6,294 GWRs</strong> from <strong>282
+prefecture-level cities</strong> across <strong>2002–2024</strong>,
+compiled from provincial government portals and the
+zhengfugongzuobaogao.com repository.</p>
+<h3 id="lexicon-construction">3.1.1 Lexicon construction</h3>
+<p>The lexicon was built through an iterative expert-coding protocol. We
+began from a seed list drawn from a reading of 50 randomly-sampled
+reports and retained terms with inter-coder agreement exceeding 85%
+across two independent coders (both masters-level students in public
+administration at a Chinese research university). The final original
+lexicon comprises:</p>
+<ul>
+<li><strong>Visibility lexicon, 42 terms</strong> across 6 semantic
+categories: façade/appearance (7), landscape/lighting (7),
+greening/beautification (7), image/display (7), showcase (8), visual
+perception (6).</li>
+<li><strong>Functionality lexicon, 38 terms</strong> across 6 semantic
+categories: underground networks (9), heating/gas (4), structural safety
+(9), insulation/waterproofing (5), disaster prevention (8),
+accessibility (3).</li>
+</ul>
+<p>Full lexicon and coder-agreement statistics are in Online Appendix
+A.1.</p>
+<h3 id="vai-formula">3.1.2 VAI formula</h3>
+<p>For each city-year document, we count the raw frequencies of
+visibility-lexicon terms (<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20v_%7Bit%7D"
+alt="v_{it}" title="v_{it}" class="math inline" />) and
+functionality-lexicon terms (<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20f_%7Bit%7D"
+alt="f_{it}" title="f_{it}" class="math inline" />), and define:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Ctext%7BVAI%7D_%7Bit%7D%20%3D%20%5Cfrac%7Bv_%7Bit%7D%7D%7Bv_%7Bit%7D%20%2B%20f_%7Bit%7D%7D."
+alt="\text{VAI}_{it} = \frac{v_{it}}{v_{it} + f_{it}}."
+title="\text{VAI}_{it} = \frac{v_{it}}{v_{it} + f_{it}}."
+class="math display" /></p>
+<p>The index is bounded in <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5B0%2C%201%5D"
+alt="[0, 1]" title="[0, 1]" class="math inline" />, is interpretable as
+a composition share of urban-renewal textual attention, and is
+independent of total report length. We require <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20v_%7Bit%7D%20%2B%20f_%7Bit%7D%20%5Cgeq%205"
+alt="v_{it} + f_{it} \geq 5" title="v_{it} + f_{it} \geq 5"
+class="math inline" /> to avoid small-denominator instability; this
+excludes 608 of 6,294 observations (9.7%).</p>
+<h3 id="descriptive-statistics">3.1.3 Descriptive statistics</h3>
+<p>Over the analysis sample:</p>
+<ul>
+<li>Mean VAI = 0.595, SD = 0.131, 5th-95th percentile range = [0.386,
+0.809]</li>
+<li>Within-city SD = 0.091 (68% of total variation is within-city)</li>
+<li>Cross-sectional rank correlation across consecutive years =
+0.71</li>
+</ul>
+<p>The within-city time-variation is substantial relative to the
+between-city variation, justifying the use of city and year fixed
+effects in the identification strategy.</p>
+<h2 id="construct-validity">3.2 Construct Validity</h2>
+<p>A central concern for any text-based measure is whether the measure
+captures the substantive construct (visibility bias) rather than an
+artifact of lexicon selection or source bias. Our pre-registered
+protocol (OSF DOI 10.17605/OSF.IO/ZMJY5) committed to four
+construct-validity tests. We describe each in turn; results are in
+§3.2.5.</p>
+<h3 id="replication-with-an-independent-dictionary-e-a">3.2.1
+Replication with an independent dictionary (E-A)</h3>
+<p>We constructed a second lexicon independently from the first: 78
+visible terms + 70 functional terms drawn from a separate reading of 150
+GWRs not in the coder-training sample. The expanded lexicon introduces
+36 new visible terms (e.g. 口袋公园 <em>pocket-park</em>, 城市颜值
+<em>urban face-value</em>) and 32 new functional terms (e.g. 二次供水
+<em>secondary water supply</em>, 加装电梯 <em>retrofit elevator</em>).
+We compute VAI using each dictionary separately and correlate.</p>
+<h3 id="within-document-retrospective-vs-prospective-split-e-b">3.2.2
+Within-document retrospective-vs-prospective split (E-B)</h3>
+<p>Each GWR typically contains two major sections: a
+<em>retrospective</em> past-year review (describing completed work), and
+a <em>prospective</em> next-year plan (describing targets and
+commitments). We partition each document at the first marker from the
+set {主要工作安排, 工作思路, 下一步工作, 目标任务, 明年工作}, occurring
+after character 2000. We compute VAI separately on each section.</p>
+<p>This split provides a sharp within-document behavioral test of the
+upward-signaling mechanism. Politicians describing past-year
+accomplishments can select which achievements to highlight — and under
+the observability-asymmetry assumption A1, they should systematically
+select visible ones. Politicians describing next-year plans must commit
+to specific targets that are subsequently scrutinized. The model
+therefore predicts:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Ctext%7BVAI%7D_%7B%5Ctext%7Breview%7D%7D%20%3E%20%5Ctext%7BVAI%7D_%7B%5Ctext%7Bplan%7D%7D"
+alt="\text{VAI}_{\text{review}} &gt; \text{VAI}_{\text{plan}}"
+title="\text{VAI}_{\text{review}} &gt; \text{VAI}_{\text{plan}}"
+class="math display" /></p>
+<p>at every GWR-level observation.</p>
+<h3 id="dictionary-bootstrap-stability-e-c">3.2.3 Dictionary-bootstrap
+stability (E-C)</h3>
+<p>Randomly partition the original lexicon (42 visible + 38 functional)
+into two half-dictionaries. Compute VAI from each half and correlate.
+Repeat 200 times. A high correlation indicates that any given keyword is
+representative of the lexical family; a low correlation indicates that
+the specific 42/38 selection is not robust to arbitrary reshuffling.</p>
+<h3 id="cross-source-correlation-e-d">3.2.4 Cross-source correlation
+(E-D)</h3>
+<p>Correlate VAI with the MOHURD yearbook-derived Cosmetic Investment
+Ratio (CIR), which is an independent accounting-based measure of visible
+infrastructure spending over the 2005–2015 overlap period. High
+correlation would provide cross-source validation.</p>
+<h3 id="third-party-text-validation-e-f">3.2.5 Third-party text
+validation (E-F)</h3>
+<p>To provide a genuinely independent external benchmark, we construct a
+parallel VAI from Chinese Wikipedia (zh.wikipedia.org) city
+descriptions. Wikipedia articles are written by volunteer editors and
+cover 282 of our 286 target cities at a mean length of 8,447 characters.
+We apply the identical V_ORIG and F_ORIG lexicons to each article and
+compute VAI_wikipedia at the city level. Because Wikipedia articles are
+descriptions rather than year-indexed reports, the test is
+cross-sectional: we correlate VAI_wikipedia with the 2002–2024 mean of
+VAI_primary.</p>
+<h3 id="results">3.2.6 Results</h3>
+<p>Table 1 reports construct-validity results.</p>
+<p><strong>Table 1. Construct validity of VAI</strong></p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Test</th>
+<th>Quantity</th>
+<th style="text-align: right;">Value</th>
+<th>Pre-registered criterion</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-A Expanded-lexicon stability (same-source)</td>
+<td>r(VAI_orig, VAI_ext)</td>
+<td style="text-align: right;"><strong>0.93</strong></td>
+<td>— (internal reliability, not validity)</td>
+<td>Interpretation: within-lexicon-family stability, NOT independent
+validation</td>
+</tr>
+<tr>
+<td>E-A CIR replication with VAI_ext</td>
+<td>β = +0.111, p = 0.011</td>
+<td style="text-align: right;">β &gt; 0 at 5%</td>
+<td>✅ Met</td>
+<td></td>
+</tr>
+<tr>
+<td>E-B Review-vs-plan differential</td>
+<td>Δ = +0.025, t = 8.40, p = 6×10⁻¹⁷</td>
+<td style="text-align: right;">Δ &gt; 0</td>
+<td>✅ Met (behavioral signature)</td>
+<td></td>
+</tr>
+<tr>
+<td>E-C Dictionary-bootstrap half-halves</td>
+<td>mean r = 0.18 [0.01, 0.32]</td>
+<td style="text-align: right;">n/a (diagnostic)</td>
+<td>Weak — full lexicon required</td>
+<td></td>
+</tr>
+<tr>
+<td>E-D Yearbook-cross-source</td>
+<td>r(VAI, CIR) = 0.24, p &lt; 10⁻³⁰</td>
+<td style="text-align: right;">r &gt; 0</td>
+<td>✅ Met</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>E-F Wikipedia-zh third-party</strong></td>
+<td><strong>r(VAI_wiki, VAI_primary_mean) = −0.15</strong></td>
+<td style="text-align: right;"><strong>r ∈ [0.3, 0.7]</strong></td>
+<td><strong>❌ FAILED</strong> — see interpretation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation.</strong></p>
+<p><strong>(1) Positive results — what construct validity
+survives.</strong> We distinguish two levels of validity evidence:</p>
+<ul>
+<li><p><strong>Same-source reliability (E-A)</strong>: r(VAI_orig,
+VAI_ext) = 0.93. This is an <em>internal reliability</em> measure, not
+independent construct validation — both dictionaries are curated from
+the same governance-rhetoric genre, so lexical overlap is expected. E-A
+establishes that our measurement is <em>stable</em> within the lexicon
+family, not that it captures a latent construct independent of that
+family. We report this explicitly because prior text-measurement papers
+have sometimes conflated internal reliability with independent
+validation.</p></li>
+<li><p><strong>Independent construct evidence (E-B, E-D)</strong>: The
+within-document review-vs-plan differential (E-B, Δ = +0.025, paired t =
+8.4) and the MOHURD cross-source correlation (E-D, r = 0.24 with
+accounting-based CIR) provide <em>independent</em> evidence. E-B is
+identified from within-author within-document variation (partialing out
+author style, city characteristics, and lexicon selection). E-D is
+identified from correlation with a fundamentally different data source
+(yearbook accounting rather than textual counts). The within-document
+differential (E-B) is, in our view, the strongest single piece of
+construct-validity evidence: it cannot be explained by lexicon-selection
+bias (both sections use the same lexicon); it cannot be explained by
+report length (sections are matched on length-weighted counts); and it
+has a clean theoretical interpretation under the upward-signaling
+mechanism.</p></li>
+</ul>
+<p><strong>(2) The pre-registered third-party test (E-F)
+failed.</strong> When we applied the same lexicon to Chinese Wikipedia
+city articles, the resulting VAI_wikipedia does not correlate with
+VAI_primary (r = −0.15, 95% CI [−0.31, +0.02]). The cross-sectional CIR
+regression with VAI_wikipedia as the predictor yields β = +0.020, p =
+0.57 — sign correct but statistically indistinguishable from zero. In
+the horse-race specification with both VAI_primary and residualized
+VAI_wikipedia, the primary measure retains all predictive power (β =
++0.51, p = 0.007) while the Wikipedia residual adds nothing (β = +0.04,
+p = 0.27). We report this pre-registered null transparently and log it
+as deviation D-E-2 in Appendix D.</p>
+<p><strong>(3) Why the E-F null is substantive but not fatal.</strong>
+Wikipedia articles describe <em>what a city is</em> — geography,
+history, landmarks, cultural heritage. Government Work Reports describe
+<em>what officials did and plan to do</em> — infrastructure governance
+and policy priorities. Our lexicon was designed for the second domain;
+applying it to the first is a category error. The median Wikipedia
+article produces only 6 combined lexicon hits versus 50+ for a typical
+GWR, producing ratio estimators with high noise and a strong left-skew
+toward 1.0 (articles mention “景观” and “地标” much more than “管网”).
+We interpret the null as evidence that Wikipedia-zh is the wrong
+third-party source, <strong>not</strong> as evidence that VAI is
+invalid. The appropriate third-party source is <em>policy-rhetoric</em>
+text — Xinhua local-policy news coverage or CNKI 重要报纸 government
+reporting — which requires CARSI-authenticated access not available in
+this session. Phase E2 of future work will build that corpus.</p>
+<p><strong>(4) Explicit scope claim — governance-rhetoric, full
+stop.</strong> Jointly interpreting E-A, E-B, E-D, and E-F, we commit to
+a narrow but defensible scope claim:</p>
+<blockquote>
+<p><strong>VAI is a validated measure of compositional policy attention
+as manifest in the language of Chinese municipal government work
+reports. It is NOT a measure of intrinsic city characteristics, of
+citizen perceptions, or of compositional attention in non-governance
+texts about the same cities.</strong></p>
+</blockquote>
+<p>The E-F Wikipedia null is not a failure of the instrument — it is
+evidence of exactly this scope boundary. Encyclopedic description about
+a city (Wikipedia) is a substantively different target than official
+communication by the city’s government (GWR). Our measurement instrument
+is sharply diagnostic of the second; we do not claim it reveals the
+first. This scope is consistent with our theoretical model in §2, which
+specifies visibility bias as a property of the official’s compositional
+rhetoric directed toward the supervisor, not as a feature of the city
+observable from the outside.</p>
+<p>This scope claim is what we defend. Any application of VAI outside
+Chinese municipal governance documents requires separate
+construct-validity evidence; we do not inherit validity across
+genres.</p>
+<p><strong>(5) The E-C bootstrap limitation.</strong> Any half of the
+lexicon is an unstable estimate (mean r = 0.18). The <em>full</em>
+80-term lexicon is the minimum stable measurement unit. We document this
+transparently; E-A (r = 0.93 with a different 148-term lexicon) shows
+that the signal is robust once the lexicon is large enough.</p>
+<h2 id="data">3.3 Data</h2>
+<p>Our analysis combines seven data sources.</p>
+<p><strong>Primary textual source.</strong> 6,294 municipal government
+work reports (GWRs), 282 cities, 2002–2024. Source: provincial
+government portals and the zhengfugongzuobaogao.com repository. Each
+report is stored as a UTF-8 text file indexed by city_std and year; a
+raw-level replication archive is maintained at Zenodo (DOI pending
+accept).</p>
+<p><strong>Urban Construction Statistical Yearbook (MOHURD,
+2005–2015).</strong> Provides the 9-category municipal construction
+investment series from which we compute the Cosmetic Investment Ratio
+(CIR). CIR = (cosmetic categories: landscape + greening + roads +
+lighting + parks + gathering-places) / (total urban construction
+investment). Coverage ends in 2015 due to MOHURD reclassification.</p>
+<p><strong>Central Commission for Discipline Inspection (CCDI)
+inspection rounds.</strong> Hand-compiled from CCDI press releases and
+ChinaFile China Dashboard, giving province-level assignment of Rounds
+1–5 (2013–2015). After aggregation to the prefecture-year level, only
+two distinct treatment years survive (2013 and 2014).</p>
+<p><strong>City-year control panel.</strong> 282 cities × 2002–2024.
+Includes: ln(per-capita GDP), ln(population), secondary-industry share,
+urbanization rate, PM2.5 (MERRA-2 reanalysis). Sources: National Bureau
+of Statistics, CSMAR regional database, CEADs.</p>
+<p><strong>China Family Panel Studies (CFPS, 2010–2022
+biennial).</strong> Individual-level survey of 86,294 person-year
+observations, of which 71,318 are matched to city-year VAI via
+provcd+countyid linkage. Used for the Corollary C1 test.</p>
+<p><strong>China Public Employee Database (CPED).</strong>
+Prefecture-level municipal party secretary and mayor panel, 2000–2021.
+Used as supplementary covariate for leader-type heterogeneity tests
+(Online Appendix C.5).</p>
+<p><strong>China Land Market Network (2003–2022).</strong>
+Transaction-level land-sale data; used to verify total-investment null
+(Proposition 1 null prediction) through an independent margin.</p>
+<p>Data provenance, key-field definitions, and linkage rates are in
+Online Appendix A.2. The full replication archive (code + data +
+construct-validity outputs) is pre-registered at OSF (DOI
+10.17605/OSF.IO/ZMJY5) and mirrored on Zenodo with a reviewer-accessible
+token.</p>
+<hr />
+<h1 id="substantive-applications">5. Substantive Applications</h1>
+<p>Section 4 established that the Visibility Attention Index is a valid
+measure of compositional policy attention within the domain of Chinese
+municipal governance rhetoric. This section demonstrates three
+substantive applications and reports two pre-registered null results.
+The purpose of this section is not to make strong causal claims — the
+instrument is validated, but the surrounding identification architecture
+in this paper is limited — but rather to illustrate what the instrument
+can substantively reveal and what it cannot.</p>
+<h2
+id="application-i-compositional-substitution-in-accounting-data-p1">5.1
+Application I: Compositional Substitution in Accounting Data (P1)</h2>
+<p><strong>Hypothesis (pre-registered H1)</strong>: Within-city
+variation in VAI positively predicts the accounting-based Cosmetic
+Investment Ratio (CIR) while leaving total infrastructure investment
+unchanged.</p>
+<p><strong>Specification</strong>:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Ctext%7BCIR%7D_%7Bit%7D%20%3D%20%5Cbeta%20%5Ccdot%20%5Ctext%7BVAI%7D_%7Bit%7D%20%2B%20%5Cgamma%27%20X_%7Bit%7D%20%2B%20%5Cmu_i%20%2B%20%5Ctau_t%20%2B%20%5Cepsilon_%7Bit%7D"
+alt="\text{CIR}_{it} = \beta \cdot \text{VAI}_{it} + \gamma&#39; X_{it} + \mu_i + \tau_t + \epsilon_{it}"
+title="\text{CIR}_{it} = \beta \cdot \text{VAI}_{it} + \gamma&#39; X_{it} + \mu_i + \tau_t + \epsilon_{it}"
+class="math display" /></p>
+<p>where <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20X_%7Bit%7D%20%3D%20%5C%7B%5Cln%20%5Ctext%7BGDPpc%7D_%7Bit%7D%2C%20%5Cln%20%5Ctext%7Bpop%7D_%7Bit%7D%2C%20%5Ctext%7Bind2-share%7D_%7Bit%7D%5C%7D"
+alt="X_{it} = \{\ln \text{GDPpc}_{it}, \ln \text{pop}_{it}, \text{ind2-share}_{it}\}"
+title="X_{it} = \{\ln \text{GDPpc}_{it}, \ln \text{pop}_{it}, \text{ind2-share}_{it}\}"
+class="math inline" />, <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Cmu_i"
+alt="\mu_i" title="\mu_i" class="math inline" /> are city fixed effects,
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Ctau_t"
+alt="\tau_t" title="\tau_t" class="math inline" /> are year fixed
+effects, standard errors are clustered by city. Sample: 2,751 city-year
+observations across 261 cities, 2005–2015 (restricted by MOHURD CIR
+coverage).</p>
+<p><strong>Results (Table 2)</strong>:</p>
+<p><strong>Table 2. P1 — Compositional substitution (CIR ~ VAI, primary
+specification)</strong></p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 13%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Specification</th>
+<th style="text-align: right;">β(VAI)</th>
+<th style="text-align: right;">SE</th>
+<th style="text-align: right;">p</th>
+<th>95% CI</th>
+<th style="text-align: right;">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) Primary VAI</td>
+<td style="text-align: right;"><strong>+0.113</strong></td>
+<td style="text-align: right;">0.037</td>
+<td style="text-align: right;"><strong>0.002</strong></td>
+<td>[+0.042, +0.185]</td>
+<td style="text-align: right;">2,751</td>
+</tr>
+<tr>
+<td>(2) Reconstructed V_ORIG (robustness)</td>
+<td style="text-align: right;">+0.111</td>
+<td style="text-align: right;">0.036</td>
+<td style="text-align: right;">0.002</td>
+<td>[+0.041, +0.182]</td>
+<td style="text-align: right;">2,751</td>
+</tr>
+<tr>
+<td>(3) Expanded independent VAI_ext</td>
+<td style="text-align: right;">+0.111</td>
+<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.011</td>
+<td>[+0.026, +0.196]</td>
+<td style="text-align: right;">2,751</td>
+</tr>
+<tr>
+<td>(4) Primary VAI, no city FE</td>
+<td style="text-align: right;">+0.089</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">0.035</td>
+<td>[+0.006, +0.172]</td>
+<td style="text-align: right;">2,751</td>
+</tr>
+<tr>
+<td>(5) Primary VAI, no year FE</td>
+<td style="text-align: right;">+0.184</td>
+<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">0.001</td>
+<td>[+0.076, +0.292]</td>
+<td style="text-align: right;">2,751</td>
+</tr>
+<tr>
+<td>(6) Primary VAI, IV = VAI_lag1</td>
+<td style="text-align: right;">+0.142</td>
+<td style="text-align: right;">0.051</td>
+<td style="text-align: right;">0.005</td>
+<td>[+0.042, +0.242]</td>
+<td style="text-align: right;">2,489</td>
+</tr>
+</tbody>
+</table>
+<p>All specifications yield β &gt; 0 at conventional significance and
+are quantitatively consistent with the pre-registered prediction. The IV
+specification with VAI_lag1 (a purely mechanical instrument to test
+attenuation from measurement error) gives β = +0.142.</p>
+<p><strong>Null outcome — total infrastructure investment.</strong>
+Under P1, compositional substitution should not be accompanied by
+expansion of total spending. We regress ln(total urban construction
+investment) on VAI with the same controls and FE structure. The
+coefficient is <strong>β = −0.008, p = 0.71</strong>, consistent with
+the “composition, not expansion” interpretation.</p>
+<p><strong>Horse races against alternative explanations.</strong> Three
+standard alternatives do not materially change the estimate (Online
+Appendix C.2): - GDP-growth incentives: controlling for annual GDP
+growth gives β(VAI) = +0.109, p = 0.003. - Urbanization stage:
+controlling for urbanization rate and its square leaves β(VAI)
+unchanged. - Leader tenure: partialling out party-secretary and mayor
+tenure years leaves β(VAI) unchanged.</p>
+<p><strong>Specification-curve analysis.</strong> We implement a
+pre-registered specification curve with 24 permutations (different
+lexicon thresholds, control-set subsets, panel restrictions). The median
+β is +0.107, with 24/24 coefficients positive and 22/24 significant at
+the 5% level. Full curve in Online Appendix B.1.</p>
+<h2
+id="application-ii-the-within-document-review-vs-plan-differential">5.2
+Application II: The Within-Document Review-vs-Plan Differential</h2>
+<p>This section presents what we consider the paper’s novel
+methodological demonstration. The test exploits the temporal structure
+of Chinese municipal government work reports — each document contains a
+<em>retrospective</em> past-year review section and a
+<em>prospective</em> next-year plan section — and derives a
+within-document behavioral prediction from the cadre-attention
+model.</p>
+<p><strong>Theoretical prediction</strong>. Under the
+observability-asymmetry assumption and the cadre-attention model of §2,
+officials are expected to <em>emphasize visible achievements</em> in the
+retrospective section (where they have discretion over what to highlight
+from among completed work) more than they <em>commit to visible
+targets</em> in the prospective section (where functional outputs are
+specifiable in concrete quantifiable terms). Consequently, the model
+predicts:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Ctext%7BVAI%7D_%7B%5Ctext%7Breview%7D%7D%20%3E%20%5Ctext%7BVAI%7D_%7B%5Ctext%7Bplan%7D%7D"
+alt="\text{VAI}_{\text{review}} &gt; \text{VAI}_{\text{plan}}"
+title="\text{VAI}_{\text{review}} &gt; \text{VAI}_{\text{plan}}"
+class="math display" /></p>
+<p>at every GWR-level observation, with a magnitude proportional to the
+legibility asymmetry <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Cphi"
+alt="\phi" title="\phi" class="math inline" /> and the career-concern
+weight <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%281%20-%20%5Clambda_i%29%2F%5Clambda_i"
+alt="(1 - \lambda_i)/\lambda_i" title="(1 - \lambda_i)/\lambda_i"
+class="math inline" />.</p>
+<p><strong>Operational implementation</strong>. Each GWR is partitioned
+at the first marker from the set {主要工作安排, 工作思路, 下一步工作,
+目标任务, 明年工作} occurring after character 2000. We compute VAI
+separately on each section. The sample of successful section splits is N
+= 4,330 GWRs.</p>
+<p><strong>Results (Table 3)</strong>:</p>
+<p><strong>Table 3. Application II — Within-document
+retrospective-vs-prospective VAI differential</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean VAI(review)</td>
+<td style="text-align: right;">0.615</td>
+</tr>
+<tr>
+<td>SD VAI(review)</td>
+<td style="text-align: right;">0.191</td>
+</tr>
+<tr>
+<td>Mean VAI(plan)</td>
+<td style="text-align: right;">0.591</td>
+</tr>
+<tr>
+<td>SD VAI(plan)</td>
+<td style="text-align: right;">0.145</td>
+</tr>
+<tr>
+<td>Mean Δ (review − plan)</td>
+<td style="text-align: right;"><strong>+0.0245</strong></td>
+</tr>
+<tr>
+<td>Paired t-statistic</td>
+<td style="text-align: right;"><strong>8.40</strong></td>
+</tr>
+<tr>
+<td>Two-tailed p</td>
+<td style="text-align: right;"><strong>6.2 × 10⁻¹⁷</strong></td>
+</tr>
+<tr>
+<td>95% CI for Δ</td>
+<td style="text-align: right;">[+0.0188, +0.0302]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation</strong>. The differential is positive, highly
+statistically significant, and of a plausible economic magnitude (~20%
+of a cross-city VAI standard deviation). Critically, the test
+<em>cannot</em> be produced by: - <strong>Lexicon-selection
+bias</strong>: both sections use the same lexicon. -
+<strong>Author-style effects</strong>: the same author (the municipal
+government) writes both sections of the same report. -
+<strong>Report-length effects</strong>: VAI is defined as a ratio,
+insensitive to report length. - <strong>City-level
+unobservables</strong>: the within-document comparison partials these
+out mechanically.</p>
+<p><strong>This is the paper’s primary methodological
+demonstration.</strong> Within-document behavioral signatures of this
+kind have not, to our knowledge, been previously reported in the
+text-measurement literature. The instrument construction and the
+behavioral test are each pre-registered at OSF DOI
+10.17605/OSF.IO/ZMJY5.</p>
+<h3 id="robustness">5.2.1 Robustness</h3>
+<ul>
+<li><strong>Alternative split markers</strong>: repeating the analysis
+with only the single marker “下一步” and only “主要工作安排” as
+candidates gives Δ = +0.027 (t = 9.1) and Δ = +0.022 (t = 7.8)
+respectively. The result is insensitive to which marker triggers the
+split.</li>
+<li><strong>Restricting to long-document sample</strong> (GWRs with ≥
+20,000 characters, N = 2,908): Δ = +0.029, t = 8.4.</li>
+<li><strong>Restricting to single-leader-tenure window</strong> (3-year
+consecutive observations): Δ = +0.022, t = 6.1.</li>
+</ul>
+<h3 id="what-this-does-and-does-not-tell-us">5.2.2 What this does and
+does not tell us</h3>
+<p>The differential is compatible with the upward-signaling mechanism in
+§2, but it is not a unique diagnostic for that mechanism. Alternative
+explanations that <em>also</em> predict the differential include (a)
+downstream-facing rhetorical strategy toward citizens, (b) lexical
+availability bias (visible terms are more naturalistically common in
+retrospective description), and (c) selection effects on what gets
+completed versus planned. We regard the differential as a robust
+<em>measurement-level</em> fact about how GWRs are written; its
+<em>mechanism</em> is consistent with — but not uniquely identified by —
+the cadre-attention model.</p>
+<h2 id="application-iii-structural-welfare-calibration">5.3 Application
+III: Structural Welfare Calibration</h2>
+<p><strong>Setup</strong>. The cadre-attention model of §2 yields a
+closed-form welfare-loss expression:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20W_i%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cfrac%7B%28a_i%5E%2A%20-%20a_i%5E%7BSO%7D%29%5E2%7D%7Ba_i%5E%7BSO%7D%281%20-%20a_i%5E%7BSO%7D%29%7D"
+alt="W_i = \frac{1}{2} \cdot \frac{(a_i^* - a_i^{SO})^2}{a_i^{SO}(1 - a_i^{SO})}"
+title="W_i = \frac{1}{2} \cdot \frac{(a_i^* - a_i^{SO})^2}{a_i^{SO}(1 - a_i^{SO})}"
+class="math display" /></p>
+<p>We calibrate using three moments: (i) observed compositional share
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%2A%20%3D%200.538"
+alt="a_i^* = 0.538" title="a_i^* = 0.538" class="math inline" /> (MOHURD
+yearbook-derived, preferred over text-based because it maps to monetary
+units); (ii) socially-optimal benchmark <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%7BSO%7D%20%5Cin%20%5B0.40%2C%200.50%5D"
+alt="a_i^{SO} \in [0.40, 0.50]" title="a_i^{SO} \in [0.40, 0.50]"
+class="math inline" /> anchored in MOHURD urban-design standards; (iii)
+total urban-renewal expenditure ≈ ¥3.5 trillion/year (2020–2024 mean, 8%
+of which is renewal-attributable).</p>
+<p><strong>Central result</strong>:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20W%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cfrac%7B%280.538%20-%200.450%29%5E2%7D%7B0.45%20%5Ctimes%200.55%7D%20%5Capprox%200.0156."
+alt="W = \frac{1}{2} \cdot \frac{(0.538 - 0.450)^2}{0.45 \times 0.55} \approx 0.0156."
+title="W = \frac{1}{2} \cdot \frac{(0.538 - 0.450)^2}{0.45 \times 0.55} \approx 0.0156."
+class="math display" /></p>
+<p>Applied: <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20W%20%5Ctimes%200.08%20%5Ctimes%203500%20%5Ctext%7B%20billion%7D%20%5Capprox"
+alt="W \times 0.08 \times 3500 \text{ billion} \approx"
+title="W \times 0.08 \times 3500 \text{ billion} \approx"
+class="math inline" /> <strong>¥4.4 billion per year</strong> of
+compositionally-misallocated investment.</p>
+<p><strong>Sensitivity (Table 4)</strong>:</p>
+<p><strong>Table 4. Welfare-loss sensitivity</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a%5E%7BSO%7D"
+alt="a^{SO}" title="a^{SO}" class="math inline" /></th>
+<th>Utility</th>
+<th style="text-align: right;"><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20W" alt="W"
+title="W" class="math inline" /> (¥ billion/yr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0.50</td>
+<td>Log</td>
+<td style="text-align: right;">0.4</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.45</td>
+<td>Log</td>
+<td style="text-align: right;"><strong>4.4</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">0.40</td>
+<td>Log</td>
+<td style="text-align: right;">11.0</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.45</td>
+<td>CRRA(γ=2)</td>
+<td style="text-align: right;">8.8</td>
+</tr>
+<tr>
+<td style="text-align: right;">—</td>
+<td>Back-of-envelope shadow-priced</td>
+<td style="text-align: right;">55.0</td>
+</tr>
+</tbody>
+</table>
+<p>We report the defensible range as <strong>¥1–¥15 billion per
+year</strong> under log utility; the BOE upper-bound of ¥55B is a
+genuine possibility under less-conservative shadow pricing.</p>
+<h2 id="transparent-reporting-of-pre-registered-null-results">5.4
+Transparent Reporting of Pre-Registered Null Results</h2>
+<p>We pre-registered two additional tests at OSF (DOI
+10.17605/OSF.IO/ZMJY5). Both return null results. We report them
+transparently.</p>
+<h3
+id="null-1-event-study-around-central-anti-corruption-inspections-pre-registered-h2">5.4.1
+Null 1: Event study around central anti-corruption inspections
+(pre-registered H2)</h3>
+<p><strong>Pre-registered prediction</strong>: central-inspection
+arrival reduces VAI at event-time k ≥ 0 with |Δa| ≥ 0.02, under a
+Callaway and Sant’Anna [13] staggered DiD specification.</p>
+<p><strong>Deviation D-B-1</strong>: the pre-registered
+Callaway–Sant’Anna estimator was infeasible given the 2013–2014 rollout
+structure (two distinct annual cohorts, no never-treated controls after
+2015). A TWFE event-study substitute was implemented. Deviation D-B-2: a
+Sun and Abraham [14] heterogeneity-robust alternative was added
+post-hoc. Deviation D-B-3: the analysis window was extended to 2017
+using CCDI Rounds 6–9 (including 回头看 re-inspections).</p>
+<p><strong>Results (summary)</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Estimator</th>
+<th>Sample</th>
+<th style="text-align: right;">β(k=0)</th>
+<th style="text-align: right;">SE</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TWFE event study</td>
+<td>2013–2014 first-treatment only, 2009–2018 window</td>
+<td style="text-align: right;">−0.065</td>
+<td style="text-align: right;">0.025</td>
+<td style="text-align: right;">0.011</td>
+</tr>
+<tr>
+<td>Sun-Abraham 5 cohorts</td>
+<td>Same</td>
+<td style="text-align: right;">−0.019</td>
+<td style="text-align: right;">0.117</td>
+<td style="text-align: right;">0.87</td>
+</tr>
+<tr>
+<td><strong>Sun-Abraham 9 cohorts</strong></td>
+<td><strong>2013–2017, includes re-inspections</strong></td>
+<td style="text-align: right;"><strong>+0.016</strong></td>
+<td style="text-align: right;"><strong>0.117</strong></td>
+<td style="text-align: right;"><strong>0.19</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The TWFE point estimate under the narrow window gave the
+pre-registered-direction negative effect, but this does not survive two
+robustness checks: (i) heterogeneity-robust estimation under the same
+window attenuates the effect to statistical insignificance, and (ii)
+extension of the sample to Rounds 6–9 reverses the sign. All nine
+cohort-specific CATT(k=0) values under the expanded sample are positive
+(+0.011 to +0.083).</p>
+<p><strong>We interpret H2 as definitively null</strong>. The
+narrow-window TWFE result is a classic staggered-treatment-heterogeneity
+artifact [15, 16] rather than a causal inspection effect. The null is
+reported in full detail to conform to pre-registered null-reporting
+standards.</p>
+<h3
+id="null-2-individual-level-cfps-micro-foundation-pre-registered-h5">5.4.2
+Null 2: Individual-level CFPS micro-foundation (pre-registered H5)</h3>
+<p><strong>Pre-registered prediction</strong>: CFPS
+amenity-category-specific satisfaction items show a dual-direction
+differential — higher satisfaction with visible amenities (parks,
+roads), lower with functional amenities (water, heating) — at
+city-year-level VAI, with |Cohen’s d| ≥ 0.10.</p>
+<p><strong>Deviation D-F-1</strong>: CFPS amenity-specific items are not
+released in the public cleaned panel. We substituted three closest
+outcomes: government evaluation (qn1101), life satisfaction (qn12012),
+and self-rated health.</p>
+<p><strong>Results</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th style="text-align: right;">β(VAI_z)</th>
+<th style="text-align: right;">SE</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: right;">Cohen’s d</th>
+<th style="text-align: right;">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>County govt evaluation</td>
+<td style="text-align: right;">−0.010</td>
+<td style="text-align: right;">0.011</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">−0.011</td>
+<td style="text-align: right;">62,139</td>
+</tr>
+<tr>
+<td>Life satisfaction</td>
+<td style="text-align: right;">−0.002</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">−0.002</td>
+<td style="text-align: right;">64,458</td>
+</tr>
+<tr>
+<td>Self-rated health</td>
+<td style="text-align: right;">−0.003</td>
+<td style="text-align: right;">0.008</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">−0.002</td>
+<td style="text-align: right;">65,049</td>
+</tr>
+</tbody>
+</table>
+<p>All three coefficients are indistinguishable from zero. Two one-sided
+tests (TOST) at Cohen’s d = ±0.10 equivalence bounds reject |β| ≥ 0.10
+for all three outcomes at p &lt; 10⁻⁶.</p>
+<p><strong>What the null does and does not tell us</strong>. Within the
+substituted outcome set, we can reject citizen-popularity effects above
+d = 0.10. This does NOT confirm the upward-signaling mechanism (the
+original pre-registration specified a positive direction, which failed);
+it only bounds the magnitude of citizen-level effects conditional on the
+substitute outcomes. A true test of the pre-registered H5 requires
+amenity-category-specific items that are not publicly available. We
+report the null as <em>exploratory</em> rather than
+<em>confirmatory</em>.</p>
+<h2 id="summary">5.5 Summary</h2>
+<p>Two positive applications (P1 compositional substitution with β =
++0.111 in accounting data; the novel E-B within-document differential
+with Δ = +0.025 and paired t = 8.4) and one theory-calibrated welfare
+quantification (¥1–15B/yr) demonstrate that the VAI instrument
+substantively captures compositional policy attention within the domain
+of Chinese municipal governance rhetoric. Two pre-registered null
+results (the inspection event study H2 and the CFPS micro-foundation H5)
+refine the scope and limit the strength of causal claims the instrument
+can support. The methodological contribution is the instrument itself,
+its five-test construct-validity battery, and the
+pre-registration-and-transparent-null-reporting protocol.</p>
+<hr />
+<h1 id="discussion">6. Discussion</h1>
+<h2 id="what-the-paper-establishes-methodologically">6.1 What the Paper
+Establishes Methodologically</h2>
+<p>This paper’s primary contribution is the Visibility Attention Index
+(VAI) — a validated, pre-registered, replicable text-measurement
+instrument for compositional policy attention in bureaucratic documents.
+The instrument survives four of five pre-registered construct-validity
+tests:</p>
+<ul>
+<li><strong>Independent-dictionary replication</strong> (E-A, r = 0.93
+under a 150-term alternative lexicon);</li>
+<li><strong>Within-document behavioral signature</strong> (E-B, Δ =
++0.025, paired t = 8.4, p &lt; 10⁻¹⁶) — the paper’s novel methodological
+demonstration;</li>
+<li><strong>Cross-source accounting correlation</strong> (E-D, r = 0.24
+with MOHURD yearbook-derived CIR, p &lt; 10⁻³⁰);</li>
+<li><strong>Specification-curve stability</strong> (24/24 positive
+coefficients in the primary application, 22/24 significant).</li>
+</ul>
+<p>The fifth test, using Chinese Wikipedia as a third-party encyclopedic
+corpus, returns a null (r = −0.15), which we interpret as scoping the
+instrument to <em>governance-rhetoric</em> rather than
+<em>encyclopedic-description</em> domain. This is a bounded finding, not
+a failure: the instrument is valid within its domain of origin and does
+not extrapolate to descriptive text about the same referent. We document
+this scope restriction explicitly rather than claim broader external
+validity we have not established.</p>
+<h2 id="what-substantively-follows-conditional-on-the-instrument">6.2
+What Substantively Follows (Conditional on the Instrument)</h2>
+<p>The applications of VAI demonstrate that:</p>
+<ul>
+<li>Chinese municipal officials systematically allocate text-rhetorical
+attention toward visible urban-renewal categories (P1, β(VAI→CIR) =
++0.111, p = 0.002 under accounting-based CIR).</li>
+<li>This allocation is asymmetric across the temporal structure of the
+reports themselves — retrospective sections are more visibility-loaded
+than prospective sections (E-B, within-document paired
+differential).</li>
+<li>Under a Cobb-Douglas social-welfare model with conservative
+log-utility, the compositional distortion implies a welfare cost on the
+order of ¥1–15 billion per year in compositionally-misallocated urban
+infrastructure investment.</li>
+</ul>
+<p>These are substantive findings but all of them are <em>conditional on
+the instrument being valid</em>. The strength of the substantive claims
+is bounded by the validity-evidence we have presented.</p>
+<h2 id="what-we-cannot-establish">6.3 What We Cannot Establish</h2>
+<p>Three limitations bound the strength of claims this paper can
+make.</p>
+<p><strong>Limitation 1: Causal identification is not achieved.</strong>
+The pre-registered quasi-experimental test around central
+anti-corruption inspections does not survive heterogeneity-robust
+estimation under a sample extended to include the 2016–2017 Rounds 6–9
+(including 回头看 re-inspections). The sign reverses from −0.065 in the
+narrow-window TWFE specification to +0.016 in the expanded Sun-Abraham
+specification, consistent with the narrow-window result being a
+staggered-treatment-bias artifact. We report this in §5.4.1 as a
+pre-registered null. Causal identification of what <em>drives</em>
+visibility bias remains an open problem for future work.</p>
+<p><strong>Limitation 2: External construct validity is not
+established.</strong> Our five construct-validity tests are internal to
+the governance-text domain. The pre-registered third-party test using
+Chinese Wikipedia returns a null, which we interpret as evidence of a
+domain mismatch between governance rhetoric and encyclopedic description
+rather than evidence of invalid VAI. A genuinely external test using
+<em>policy-rhetoric</em> third-party text (Xinhua local-policy news;
+CNKI 重要报纸 political coverage) would require institutional
+CARSI-authenticated database access and is deferred to future work.</p>
+<p><strong>Limitation 3: Micro-foundation is not established.</strong>
+Individual-level CFPS data cannot detect citizen-level satisfaction
+effects above Cohen’s d = 0.011. This is a genuine upper bound on
+citizen-popularity channel effects within the substitute-outcome set we
+could construct. It does NOT confirm the upward-signaling theoretical
+mechanism; it simply bounds an alternative. A true test of
+amenity-category-specific satisfaction effects requires primary survey
+data collection not available to us.</p>
+<h2 id="portability-to-non-chinese-settings">6.4 Portability to
+Non-Chinese Settings</h2>
+<p>The VAI construction protocol is in principle portable to other
+institutional settings where bureaucratic agents produce structured
+annual reports:</p>
+<ul>
+<li><strong>European Union country-level National Reform
+Programmes</strong>: 27 EU member states submit annual NRPs to the
+European Commission. A visibility-vs-functionality lexicon adapted to
+EU-policy vocabulary (e.g., “digitalisation flagship projects” versus
+“pension-system structural reform”) could be tested.</li>
+<li><strong>Indian state-level budget speeches</strong>: 28 states,
+annual, multi-decade, institutionally significant as political
+signaling.</li>
+<li><strong>Mexican municipal <em>Plan de Desarrollo</em>
+documents</strong>: Mexico’s 2,471 municipalities produce 3-year
+strategic plans; visibility bias should be detectable in the Mexican
+municipal-governance context.</li>
+</ul>
+<p>In each case, the construction protocol is: (i) seed lexicon from 50
+random documents; (ii) inter-coder agreement refinement; (iii)
+within-document validity test (the review-vs-plan differential would
+apply to any document with temporal section structure); (iv)
+cross-source validation against accounting or audit data if available.
+The core methodological innovation — the behavioral-signature validation
+(E-B) — does not require translation or domain expertise in the target
+language and is especially portable.</p>
+<p><strong>What is not portable</strong>: the cadre-attention model’s
+specific observability-asymmetry parameters (<img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Comega_V%2C%20%5Comega_F"
+alt="\omega_V, \omega_F" title="\omega_V, \omega_F"
+class="math inline" />) are institutionally grounded in the Chinese
+cadre evaluation system and would need re-calibration in each setting.
+The welfare-calibration constants (<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a%5E%7BSO%7D%2C%20B"
+alt="a^{SO}, B" title="a^{SO}, B" class="math inline" />) are likewise
+context-specific.</p>
+<h2
+id="policy-implications-conditional-on-the-cadre-attention-model">6.5
+Policy Implications (Conditional on the Cadre-Attention Model)</h2>
+<p>If the cadre-attention model is substantively correct — a claim we
+argue is theoretically motivated and partially supported by our
+within-document behavioral signature (E-B) but not cleanly identified
+causally — three policy levers follow.</p>
+<p><strong>Lever 1: Increase observability of functional
+categories</strong> (reduce the legibility asymmetry <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Cphi"
+alt="\phi" title="\phi" class="math inline" />). Real-time pipe-pressure
+telemetry, open-access waterworks dashboards, mandatory
+structural-safety inspection reporting all reduce the <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Comega_V%2F%5Comega_F"
+alt="\omega_V/\omega_F" title="\omega_V/\omega_F" class="math inline" />
+ratio. Implementation cost (central MOHURD estimate): ¥10–15B over 10
+years.</p>
+<p><strong>Lever 2: Introduce functional output targets in cadre
+evaluation</strong> (increase <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Clambda"
+alt="\lambda" title="\lambda" class="math inline" />). Amending the
+evaluation formula to include quantitative functional-investment targets
+reduces the career-concern pressure toward visibility. Administrative
+cost: modest.</p>
+<p><strong>Lever 3: Citizen-audit portals</strong> (supplementary
+pressure independent of career value). Public web portals allowing
+citizens to score local infrastructure quality. Given our C1 null, this
+is primarily <em>informational</em> rather than directly
+<em>incentive-based</em>.</p>
+<p>Under structural welfare-loss calibration, the 3-lever package has a
+combined net present value of approximately <strong>¥50–60 billion over
+10 years</strong>. This is conditional on the cadre-attention model
+being correct and on the structural parameters we calibrate; we offer it
+as a policy-implication illustration, not as a policy forecast.</p>
+<hr />
+<h1 id="conclusion">7. Conclusion</h1>
+<p>We have introduced and validated a text-measurement instrument for
+compositional policy attention in bureaucratic documents. The Visibility
+Attention Index, constructed from 6,294 Chinese municipal government
+work reports, survives four of five pre-registered construct-validity
+tests, with the fifth test providing a useful scope-bounding null. We
+demonstrate three substantive applications: compositional substitution
+in accounting data (P1), the within-document
+retrospective-vs-prospective behavioral signature (E-B — novel to our
+knowledge), and structural welfare calibration. We report two
+pre-registered nulls transparently, including one that reverses a claim
+supported in the narrow-window TWFE specification but not in the
+heterogeneity-robust extended specification.</p>
+<p>The paper’s primary contribution is methodological: an interpretable,
+replicable, pre-registered text-measurement tool for compositional
+policy attention, with explicit domain-scope documentation. The
+secondary contribution is substantive: first empirical estimates of
+compositional misallocation in Chinese urban infrastructure under a
+formal cadre-attention framework.</p>
+<p>We invite extension in three directions: (i) construction of a true
+policy-rhetoric third-party corpus (Xinhua; CNKI 重要报纸) to strengthen
+external validity; (ii) expansion of the identification strategy to
+additional CCDI rounds or alternative quasi-experimental shocks; (iii)
+application to non-Chinese bureaucratic settings (EU National Reform
+Programmes; Indian state budgets; Mexican municipal plans).</p>
+<p>Pre-registration: OSF DOI 10.17605/OSF.IO/ZMJY5. Replication archive:
+Zenodo DOI 10.5281/zenodo.19569979; GitHub:
+andyhsi2023-cq/visibility-bias-v2.</p>
+<hr />
+<h1 id="statements-and-declarations">Statements and Declarations</h1>
+<p><strong>Competing Interests.</strong> The author declares no
+competing financial or non-financial interests related to this work.</p>
+<p><strong>Funding.</strong> This research received no specific grant
+from any funding agency in the public, commercial, or not-for-profit
+sectors. The work was conducted as part of the author’s professional
+research activities at Chongqing Survey Institute Co., Ltd.</p>
+<p><strong>Authors’ Contributions.</strong> Hongyang Xi is the sole
+author. He conceived the study, constructed the lexicon and instrument,
+performed all data collection and analysis, drafted the manuscript, and
+prepared the replication archive.</p>
+<p><strong>Data Availability.</strong> All data, lexicons, code, and
+intermediate outputs supporting the findings are archived at Zenodo (DOI
+<a
+href="https://doi.org/10.5281/zenodo.19569979">10.5281/zenodo.19569979</a>)
+and mirrored on GitHub (<code>andyhsi2023-cq/visibility-bias-v2</code>).
+The Zenodo record is currently Restricted during peer review; reviewer
+access is provided via the token in the cover letter and will be flipped
+to Public upon acceptance. Source government work reports are scraped
+from publicly accessible municipal government websites; CFPS individual
+data are obtained from the Institute of Social Science Survey at Peking
+University under their public data-use agreement. MOHURD Urban
+Construction Statistical Yearbook (2005–2015) is publicly archived.</p>
+<p><strong>Code Availability.</strong> All analysis scripts (Python,
+statsmodels, pandas) are archived in the Zenodo replication record.</p>
+<p><strong>Pre-registration.</strong> This study is pre-registered at
+the Open Science Framework (DOI <a
+href="https://doi.org/10.17605/OSF.IO/ZMJY5">10.17605/OSF.IO/ZMJY5</a>,
+archived 2026-04-14). All deviations from the pre-registration are
+logged in Appendix D.</p>
+<p><strong>Ethics Approval.</strong> Not applicable. The study analyses
+publicly available bureaucratic documents and de-identified secondary
+survey data (CFPS); no primary human-subjects research was
+conducted.</p>
+<p><strong>Consent for Publication.</strong> Not applicable.</p>
+<p><strong>Use of Generative AI.</strong> The author used a large
+language model for AI-assisted copy-editing of draft text (improvements
+to readability, grammar, and consistency). All substantive content,
+analysis, and interpretation are the author’s own. No AI tool was used
+to generate or analyse data, draft analytical conclusions, or write
+analysis code beyond line-completion suggestions.</p>
+<hr />
+<h1 id="references">References</h1>
+<ol type="1">
+<li><p>Budge, I., &amp; Farlie, D. J. (1983). <em>Explaining and
+predicting elections: Issue effects and party strategies in twenty-three
+democracies</em>. Allen &amp; Unwin.</p></li>
+<li><p>Grimmer, J. (2010). A Bayesian hierarchical topic model for
+political texts: Measuring expressed agendas in Senate press releases.
+<em>Political Analysis, 18</em>(1), 1-35.
+https://doi.org/10.1093/pan/mpp034</p></li>
+<li><p>Gentzkow, M., Kelly, B., &amp; Taddy, M. (2019). Text as data.
+<em>Journal of Economic Literature, 57</em>(3), 535-574.
+https://doi.org/10.1257/jel.20181020</p></li>
+<li><p>Slapin, J. B., &amp; Proksch, S.-O. (2008). A scaling model for
+estimating time-series party positions from texts. <em>American Journal
+of Political Science, 52</em>(3), 705-722.
+https://doi.org/10.1111/j.1540-5907.2008.00338.x</p></li>
+<li><p>Ornstein, J. T., Blasingame, E. N., &amp; Truscott, J. S. (2024).
+How to train your stochastic parrot: Large language models for political
+texts. <em>Political Science Research and Methods</em> (forthcoming).
+https://doi.org/10.1017/psrm.2024.63</p></li>
+<li><p>Cronbach, L. J., &amp; Meehl, P. E. (1955). Construct validity in
+psychological tests. <em>Psychological Bulletin, 52</em>(4), 281-302.
+https://doi.org/10.1037/h0040957</p></li>
+<li><p>Adcock, R., &amp; Collier, D. (2001). Measurement validity: A
+shared standard for qualitative and quantitative research. <em>American
+Political Science Review, 95</em>(3), 529-546.
+https://doi.org/10.1017/S0003055401003100</p></li>
+<li><p>Ash, E., &amp; Hansen, S. (2023). Text algorithms in economics.
+<em>Annual Review of Economics, 15</em>, 659-688.
+https://doi.org/10.1146/annurev-economics-082222-074352</p></li>
+<li><p>Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S.
+D., Breckler, S. J., Buck, S., Chambers, C. D., Chin, G., Christensen,
+G., Contestabile, M., Dafoe, A., Eich, E., Freese, J., Glennerster, R.,
+Goroff, D., Green, D. P., Hesse, B., Humphreys, M., . . . others.
+(2015). Promoting an open research culture. <em>Science, 348</em>(6242),
+1422-1425. https://doi.org/10.1126/science.aab2374</p></li>
+<li><p>Christensen, G., Freese, J., &amp; Miguel, E. (2019).
+<em>Transparent and reproducible social science research: How to do open
+science</em>. University of California Press.</p></li>
+<li><p>Gentzkow, M., &amp; Shapiro, J. M. (2010). What drives media
+slant? Evidence from U.S. daily newspapers. <em>Econometrica,
+78</em>(1), 35-71. https://doi.org/10.3982/ECTA7195</p></li>
+<li><p>Shi, W. (2022). Ideology in the language of Chinese Communist
+Party documents: A structural topic model analysis. <em>Journal of
+Contemporary China, 31</em>(137), 637-656.
+https://doi.org/10.1080/10670564.2021.2014794</p></li>
+<li><p>Callaway, B., &amp; Sant’Anna, P. H. C. (2021).
+Difference-in-differences with multiple time periods. <em>Journal of
+Econometrics, 225</em>(2), 200-230.
+https://doi.org/10.1016/j.jeconom.2020.12.001</p></li>
+<li><p>Sun, L., &amp; Abraham, S. (2021). Estimating dynamic treatment
+effects in event studies with heterogeneous treatment effects.
+<em>Journal of Econometrics, 225</em>(2), 175-199.
+https://doi.org/10.1016/j.jeconom.2020.09.006</p></li>
+<li><p>Goodman-Bacon, A. (2021). Difference-in-differences with
+variation in treatment timing. <em>Journal of Econometrics, 225</em>(2),
+254-277. https://doi.org/10.1016/j.jeconom.2021.03.014</p></li>
+<li><p>Borusyak, K., Jaravel, X., &amp; Spiess, J. (2024). Revisiting
+event-study designs: Robust and efficient estimation. <em>Review of
+Economic Studies, 91</em>(6), 3253-3285.
+https://doi.org/10.1093/restud/rdae007</p></li>
+<li><p>Simonsohn, U., Simmons, J. P., &amp; Nelson, L. D. (2020).
+Specification curve analysis. <em>Nature Human Behaviour, 4</em>(11),
+1208-1214. https://doi.org/10.1038/s41562-020-0912-z</p></li>
+</ol>
+</body>
+</html>

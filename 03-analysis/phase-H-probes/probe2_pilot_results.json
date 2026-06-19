@@ -1,0 +1,27 @@
+{
+  "n_class_cities_ge30": 85,
+  "n_merge_with_panel_2020": 81,
+  "corr_vai_vs_satbias": {
+    "n": 81,
+    "pearson_r": 0.14472304668277747,
+    "pearson_p": 0.1973768324304551,
+    "spearman_rho": 0.081044762718748,
+    "spearman_p": 0.47198671836679107
+  },
+  "corr_vai_composite_vs_satbias": {
+    "n": 81,
+    "pearson_r": 0.07602767415842182,
+    "pearson_p": 0.4999354970814028,
+    "spearman_rho": 0.031074977416440826,
+    "spearman_p": 0.7830132714599621
+  },
+  "corr_CIR_vs_satbias": {
+    "skipped": true,
+    "n": 0
+  },
+  "corr_yearbookbias_vs_satbias_2020": {
+    "n": 77,
+    "pearson_r": 0.0005600649456775492,
+    "pearson_p": 0.9961429095661422
+  }
+}

@@ -1,0 +1,3 @@
+test,value,pre_reg_target,met
+H4 cross-sectional correlation,-0.15069411565463256,"[0.3, 0.7]",False
+H4 CIR~VAI_wiki cross-section,0.02037810435045008,">0, p<0.05",False

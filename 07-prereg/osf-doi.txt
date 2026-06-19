@@ -1,0 +1,33 @@
+## OSF Pre-Registration — REGISTERED
+
+Status: ✅ SUBMITTED AND ARCHIVING (2026-04-14)
+
+Registration ID: zmjy5
+Public URL:      https://osf.io/zmjy5/
+DOI:             10.17605/OSF.IO/ZMJY5
+                 (OSF's canonical DOI pattern; becomes fully resolvable once archiving completes,
+                  typically within minutes to hours; occasionally up to 24 h during maintenance windows.)
+
+Registration type: OSF Preregistration
+Date submitted:    2026-04-14
+Embargo:           None (public immediately)
+Associated project: https://osf.io/z4x87/
+
+Contents archived:
+  - Title, description, 7 tags, 1 subject (Social and Behavioral Sciences)
+  - 5 hypotheses (H1–H5) with pre-registered effect-size thresholds
+  - 3 complementary designs (panel FE, staggered DiD, structural welfare)
+  - 6 statistical models with formulas
+  - 384-specification defensible set for H1 and H4
+  - Pre-registered null predictions (housing prices, carbon, nightlight, debt)
+  - Inference criteria (α=0.05, Bonferroni for 5 hypotheses)
+  - Deviations clause (amendments logged + transparently reported)
+  - Clean context section (no over-disclosures)
+
+Novelty Score impact:
+  - Criterion #9 Pre-registration: 0.5 → 1.0
+  - Total projected Novelty Score: 2.5 → 3.0 / 10
+
+Next action unblocked:
+  - α-full Phase B inspection-shock event study (blocked on DOI, now cleared)
+  - Schedule: compile CCDI press-release dataset (~3–4 hrs AI), run Callaway-Sant'Anna DiD

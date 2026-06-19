@@ -1,0 +1,28 @@
+# VAI visible lexicon — CONCRETE-INFRASTRUCTURE ONLY (v3)
+# Rationale: the v1/v2 dictionary mixed concrete visible infrastructure with polysemous
+# appearance/image terms (形象/面子/示范/展示/视觉/观感/窗口/名片…) that wreck precision
+# (0.10 human) AND kill criterion validity (no response to incentive shocks).
+# This lexicon = concrete VISIBLE-CONSTRUCTION terms only, aligned to Wu & Zhou (2018)
+# cosmetic-investment classification (benchmarked to officials-turnover-cn `wr_visibility`,
+# which is precision-clean AND criterion-valid: responds to retirement-exogenous turnover
+# in lockstep with real cosmetic investment).
+绿化
+园林
+景观
+亮化
+公园
+绿地
+美化
+广场
+风貌
+绿道
+街景
+花园
+道路
+路网
+桥梁
+立交
+轨道
+地铁
+大道
+景观带

@@ -1,0 +1,43 @@
+# VAI visible lexicon v4 — SALIENCE / OBSERVABILITY principle (recommended)
+# Principle: "visible" = observable/salient to the evaluating audience (superiors / inspectors
+# / media / citizens), NOT literally "above-ground". Metro/rail transit is the key boundary
+# case: tunnels are underground, yet it is a daily-used, media-celebrated prestige achievement
+# → maximally salient → VISIBLE. Concealed utility (pipes/drainage/sewage/heating) is noticed
+# only on failure → functional.
+# Changes vs concrete v3: keep 地铁; replace bare 轨道 (orbit/industry polysemy) with 轨道交通/
+# 轻轨/城市轨道; drop 园林 (园林城市 = award title); add above-ground landmarks.
+# Human-gold visible precision ≈ 0.60, recall ≈ 0.79 — the dictionary POLYSEMY CEILING
+# (道路 in "新型工业化道路"; 轨道交通 in "轨道交通产业" remain irreducible). For higher
+# precision use LLM-ensemble classification (0.84 accuracy). Validity anchored behaviorally.
+绿化
+景观
+亮化
+公园
+绿地
+美化
+广场
+风貌
+绿道
+街景
+花园
+道路
+路网
+桥梁
+立交
+大道
+景观带
+地铁
+轨道交通
+轻轨
+城市轨道
+有轨电车
+地标
+场馆
+体育馆
+博物馆
+展览馆
+雕塑
+立面
+市容
+文化中心
+大厦

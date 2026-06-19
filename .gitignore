@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.bak*
+venv*/
+.corpus-index/
+.playwright-mcp/
+06-submission/visibility-bias-v2-replication.zip
+03-analysis/phase-E/vai_orig_vs_ext.csv
+03-analysis/phase-L-bidding/structured_projects.csv
+05-manuscript/submission/em-pdf/
+# --- secrets: Zenodo reviewer token — must NOT be in public repo ---
+05-manuscript/submission/JCSS_compliance_audit.md
+05-manuscript/submission/cover_letter_jcss.html
+07-prereg/zenodo-dois.md

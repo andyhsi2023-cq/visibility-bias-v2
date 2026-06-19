@@ -1,0 +1,59 @@
+# VAI primary lexicon v2 (V_REFINED)
+# Refined 2026-06-19 based on per-term FP audit (per_term_fp_audit.csv) over
+# Phase-G 500-sentence ensemble sample + 120-row human anchor.
+#
+# Changes from v1 (lexicon_visible.txt, 42 terms): DROP 6 high-FP terms.
+# Remaining: 36 terms.  Do NOT delete the v1 file — kept for reference / SI.
+#
+# DROP rationale (see phase-I-rebuild/rationale.md):
+#   示范        v1 FP=0.72/87  human FP=0.43/30   政治套话(示范区/示范项目/示范带)
+#   文明城市     v1 FP=0.64/11  human FP=0.75/4    精神文明创建活动, 非可见基建
+#   展示        v1 FP=0.86/7   human FP=1.00/1    多为隐喻"展示牡丹江/平台"
+#   美丽        v1 FP=0.36/11  human FP=0.14/7    "美丽乡村/美丽中国"政治套话
+#   形象        v1 FP=0.30/10  human FP=0.00/3    "树形象/政府形象"行政隐喻
+#   样板        v1 FP=0.50/4   human FP=0.00/2    多为"晋中样板/智慧城市样板"模式标杆,非视觉
+# 形象工程 保留(已入v1, 单独条目, 实际为反讽visible指代)
+#
+# REVIEWED & KEPT (FP < 0.30 or insufficient evidence):
+#   面貌(.14) 风貌(.13) 绿化(.04) 景观(.00) 亮化(.00) 美化(.00) — clean
+#   整洁(.50/n=2) 门户(.50/n=2) 装饰(1.0/n=1) — too few hits to drop responsibly; left for v3
+#
+# NO-HITS in 500-row sample (KEPT, decision deferred to a larger sample):
+#   外观 外墙 立面改造 粉刷 刷新 街景 灯光 景观带 花坛 花园城市
+#   门面 窗口 城市名片 靓丽 漂亮 焕然一新 穿衣戴帽 观感 视觉 面子
+立面
+外观
+外墙
+立面改造
+粉刷
+刷新
+装饰
+景观
+街景
+夜景
+灯光
+亮化
+彩化
+景观带
+绿化
+美化
+花坛
+雕塑
+花园城市
+园林城市
+风貌
+面貌
+门面
+窗口
+城市名片
+靓丽
+整洁
+漂亮
+焕然一新
+穿衣戴帽
+观感
+视觉
+形象工程
+面子
+天际线
+门户

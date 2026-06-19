@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Online Resource 1</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Online Resource 1</h1>
+</header>
+<h1 id="appendix-d-pre-registration-and-deviation-log">Appendix D:
+Pre-Registration and Deviation Log</h1>
+<p>This appendix documents each point at which our executed analysis
+differed from the pre-registered protocol (OSF DOI
+10.17605/OSF.IO/ZMJY5, archived 2026-04-14).</p>
+<h2 id="d.1-pre-registration-summary">D.1 Pre-registration summary</h2>
+<p>Archived pre-registration (OSF node ZMJY5) specifies:</p>
+<ul>
+<li><strong>H1 (P1)</strong>: β(VAI → CIR) &gt; 0 in a within-city panel
+regression with city + year FE. Primary outcome: CIR; null outcome:
+ln(total infrastructure investment).</li>
+<li><strong>H2 (P2)</strong>: Staggered central-inspection arrival
+reduces VAI at k ≥ 0 by |Δa| ≥ 0.02. Estimator: Callaway and Sant’Anna
+[13] doubly-robust staggered DiD.</li>
+<li><strong>H3 (P3)</strong>: Aggregate welfare loss from visibility
+bias lies in [¥1B, ¥15B]/year under log utility; central estimate
+~¥4.4B.</li>
+<li><strong>H4 (construct validity)</strong>: VAI constructed from
+<em>independent third-party text</em> (Xinhua news;
+provincial-government city descriptions) correlates with primary VAI at
+r ∈ [0.3, 0.7]; independently predicts CIR at β &gt; 0, p &lt; 5%.</li>
+<li><strong>H5 (C1)</strong>: CFPS amenity-category-specific
+satisfaction items show |Cohen’s d| ≥ 0.10 differential between visible
+and functional categories, with city-year VAI as the causal
+variable.</li>
+</ul>
+<p>Specification curve, control sets, cluster level, and sample
+restrictions are all pre-specified.</p>
+<h2 id="d.2-deviation-log">D.2 Deviation log</h2>
+<h3 id="d-b-1-phase-b-inspection-event-study">D-B-1 (Phase B —
+Inspection event study)</h3>
+<p><strong>Pre-registered</strong>: Callaway and Sant’Anna [13]
+doubly-robust DiD with never-treated controls.</p>
+<p><strong>Executed</strong>: Two-way-fixed-effects event study with
+city FE only (year FE dropped due to collinearity with event-time
+indicators when only two cohorts are present), event-time indicators k ∈
+[−4, +4] with k = −1 reference. Controls: ln GDPpc, ln pop, ind2-share.
+SE clustered by city.</p>
+<p><strong>Reason</strong>: After aggregation to the prefecture-year
+panel, only two distinct inspection-treatment years survive (2013 and
+2014). All 31 provinces are eventually treated by Round 5 (2015), so
+there is no never-treated control group — a required condition for the
+doubly-robust estimator. The pre-registered specification is
+infeasible.</p>
+<p><strong>Result under executed substitute</strong>: β(k=0) = −0.065,
+SE = 0.025, p = 0.011.</p>
+<h3 id="d-b-2-phase-b2-sun-abraham-robustness-check-same-window">D-B-2
+(Phase B2 — Sun-Abraham robustness check, same-window)</h3>
+<p><strong>Pre-registered</strong>: Not in original pre-registration.
+Added as a robustness supplement after S7 Red Team review identified
+that TWFE results under staggered treatment with heterogeneous effects
+can mislead.</p>
+<p><strong>Executed</strong>: Sun and Abraham [14] cohort-stacked
+heterogeneity-robust estimator using 5 round-level inspection cohorts
+(Rounds 1–5, start dates 2013-05 through 2014-11). Cohort c uses
+later-treated cohorts’ pre-treatment observations as controls.</p>
+<p><strong>Result</strong>: β(k=0) = −0.019, SE = 0.117, p = 0.87. Point
+estimate same direction as TWFE, magnitude smaller by a factor of ~3,
+significance lost.</p>
+<p><strong>Interpretation</strong>: Narrow-window heterogeneity-robust
+result is statistically indistinguishable from zero.</p>
+<h3
+id="d-b-3-track-1-extension-sun-abraham-with-rounds-19-20132017">D-B-3
+(Track 1 extension — Sun-Abraham with Rounds 1–9 / 2013–2017)</h3>
+<p><strong>Pre-registered</strong>: Not in original pre-registration.
+Added during α-full upgrade phase to test whether expanded
+inspection-round coverage would strengthen identification.</p>
+<p><strong>Executed</strong>: Expanded treatment panel to include Rounds
+6–9 (2016–2017, including 回头看 re-inspections covering 23 provinces
+that had been treated in Rounds 1–5). Total 62 province-round records.
+Re-fit the Sun-Abraham cohort-stacked estimator with 9 cohorts spanning
+2013-05 through 2017-04.</p>
+<p><strong>Result</strong>: β(k=0) = <strong>+0.016</strong>, SE =
+0.117, p = 0.19. β(k=+3) = +0.047, p = 0.005 (significant POSITIVE).
+<strong>Sign of the aggregate event-time effect FLIPPED</strong>
+compared with the narrow-window TWFE (−0.065) and the narrow-window
+Sun-Abraham (−0.019).</p>
+<p><strong>Interpretation</strong>: All nine cohort-specific CATT(k=0)
+values under the expanded sample are positive (+0.011 to +0.083). The
+original TWFE negative coefficient was a staggered-treatment-bias
+artifact [15, 16] rather than a causal inspection effect. We report H2
+as <strong>definitively null</strong> in §5.4.1. The pre-registered
+“consistent with prediction” framing from earlier drafts is withdrawn.
+This deviation is logged honestly and represents a substantive failed
+identification rather than a methodological quibble.</p>
+<h3 id="d-e-1-phase-e-construct-validity-internal-tests">D-E-1 (Phase E
+— Construct validity, internal tests)</h3>
+<p><strong>Pre-registered</strong>: VAI from independent third-party
+text corpus (Xinhua news, provincial-government descriptive texts);
+correlation with primary VAI in [0.3, 0.7] range; independent β(VAI_3rd
+→ CIR) &gt; 0.</p>
+<p><strong>Executed</strong>: Three internal construct-validity tests as
+supplements (not substitutes) for the external test: - E-A: Expanded
+internal dictionary (78+70 terms, independently curated) — resulting
+r(VAI_orig, VAI_ext) = 0.93. - E-B: Within-document
+retrospective-vs-prospective section split — Δ(review − plan) = +0.025,
+paired t = 8.4, p &lt; 10⁻¹⁶. - E-C: Dictionary-bootstrap half-halves —
+mean r = 0.18 (reported as limitation). - Additionally: E-A CIR
+replication with VAI_ext — β = +0.111, p = 0.011.</p>
+<p><strong>Reason</strong>: Internal tests are stronger than originally
+pre-registered because they directly probe the dictionary’s measurement
+stability and identify a novel within-document behavioral signature
+(E-B). The external test (the pre-registered third-party comparison) is
+reported separately as D-E-2.</p>
+<h3
+id="d-e-2-phase-e2-third-party-text-validation-executed-and-failed">D-E-2
+(Phase E2 — Third-party text validation, EXECUTED and FAILED)</h3>
+<p><strong>Pre-registered</strong>: VAI from independent third-party
+text corpus (Xinhua news, Baidu Baike city descriptions); correlation
+with primary VAI in [0.3, 0.7]; independent β(VAI_3rd → CIR) &gt; 0, p
+&lt; 5%.</p>
+<p><strong>Executed</strong>: Substituted Chinese Wikipedia
+(zh.wikipedia.org) as publicly-accessible third-party source, using
+MediaWiki API. 282 of 286 target cities fetched (4 misses: 吉安, 松原,
+梅州, 白山). Mean article length 8,447 chars. Same V_ORIG + F_ORIG
+lexicon applied.</p>
+<p><strong>Result</strong>: - Correlation r(VAI_wikipedia,
+VAI_primary_mean) = <strong>−0.15</strong>, 95% CI [−0.31, +0.02].
+<strong>Pre-registered [0.3, 0.7] band FAILED.</strong> - CIR
+cross-sectional β(VAI_wikipedia) = +0.020, p = 0.57. Pre-registered “β
+&gt; 0 at 5%” FAILED. - Horse race: VAI_primary retains all predictive
+power (β = +0.51, p = 0.007); VAI_wikipedia residual adds nothing (β =
++0.04, p = 0.27).</p>
+<p><strong>Reason for substitute source</strong>: Xinhua news and CNKI
+重要报纸 archives require CARSI-authenticated institutional access not
+available in the α-full session. Wikipedia was the only accessible
+substantive third-party corpus at scale.</p>
+<p><strong>Interpretation</strong>: We interpret the null as evidence
+that encyclopedic descriptive text (Wikipedia) is a domain-mismatched
+source for a governance-rhetoric measurement instrument, rather than as
+evidence that the VAI itself is invalid. The appropriate third-party
+source is <em>policy-rhetoric</em> text — Xinhua local-policy news or
+CNKI 重要报纸 government reporting — whose construction is deferred to
+future work (see §6.3). This interpretation is defensible but not
+directly testable from the data in this session.</p>
+<p><strong>Honesty claim</strong>: The failure is reported transparently
+in §3.2.5-3.2.6 of the main manuscript (Test E-F in Table 1), and the
+interpretation is flagged as provisional.</p>
+<h3 id="d-f-1-phase-f-micro-foundation-test">D-F-1 (Phase F —
+Micro-foundation test)</h3>
+<p><strong>Pre-registered</strong>: CFPS amenity-category-specific
+satisfaction items (qm401–qm406 or equivalent): visible amenities
+(parks, roads, streetscape) versus functional amenities (water, heating,
+flood resilience). Target effect size: <strong>positive
+differential</strong> |Cohen’s d| ≥ 0.10 at the city-year level.</p>
+<p><strong>Executed</strong>: Three alternative CFPS outcomes — qn1101
+(county government evaluation, 1–5), qn12012 (life satisfaction, 1–5),
+health (self-rated, 1–5). Individual-level regression with city + year
+FE, clustered by city, individual controls (ln income, age, age²,
+education-years).</p>
+<p><strong>Reason</strong>: The public CFPS cleaned panel (2010–2022)
+does not contain amenity-category-specific satisfaction items. Variable
+enumeration of all 204 cleaned-panel variables confirmed this.</p>
+<p><strong>Result</strong>: All three coefficients |β| ≤ 0.011, |d| ≤
+0.011. TOST at ±0.10 equivalence bounds rejects |β| ≥ 0.10 at p &lt;
+10⁻⁶.</p>
+<p><strong>Critical disclosure on framing</strong>: The pre-registered
+H5 specified a <strong>positive directional</strong> prediction. The
+observed result is a clean null. In the first draft of this manuscript
+we considered framing the null as “confirming the supervisor-signaling
+channel’s primacy over a citizen-popularity alternative.” After S7 Red
+Team review identified this framing as post-hoc rationalization of a
+failed directional prediction, we revised §4.3 to report the results as
+<strong>exploratory rather than confirmatory</strong>, with a TOST-based
+quantitative bound and explicit acknowledgment that the null leaves
+multiple theoretical interpretations open. This revision was made before
+submission.</p>
+<p><strong>Remediation</strong>: Phase F2 requires primary survey data
+collection to test the original H5 directly. Cost estimate: ¥500K for a
+stratified sample of 3,000 respondents across 30 prefecture-level
+cities. Deferred to follow-up study.</p>
+<h3 id="d-e-1-phase-e-construct-validity">D-E-1 (Phase E — Construct
+validity)</h3>
+<p><strong>Pre-registered</strong>: VAI from independent third-party
+text corpus (Xinhua news, provincial-government descriptive texts);
+correlation with primary VAI in [0.3, 0.7] range; independent β(VAI_3rd
+→ CIR) &gt; 0.</p>
+<p><strong>Executed</strong>: Three internal construct-validity tests in
+place of the third-party corpus: - E-A: Expanded internal dictionary
+(78+70 terms, independently curated) — resulting r(VAI_orig, VAI_ext) =
+0.93. - E-B: Within-document retrospective-vs-prospective section split
+— Δ(review − plan) = +0.025, paired t = 8.4, p &lt; 10⁻¹⁶. - E-C:
+Dictionary-bootstrap half-halves — mean r = 0.18 (reported as
+limitation). - Additionally: E-A CIR replication with VAI_ext — β =
++0.111, p = 0.011 (satisfies the β &gt; 0 at 5% criterion).</p>
+<p><strong>Reason</strong>: No independent third-party text corpus
+covering 282 cities × 23 years is locally available. Scraping Xinhua or
+Baidu Baike at this coverage requires an extended browser-automation
+session that exceeds the resource budget of the α-full phase.</p>
+<p><strong>Remediation</strong>: A Phase E2 extension will construct a
+true third-party VAI from CNKI 重要报纸 archive (CARSI-authenticated
+access) covering at least the 2008–2022 subset. Expected timeline:
+within the R1 revision cycle.</p>
+<h3 id="d-f-1-phase-f-micro-foundation-test-1">D-F-1 (Phase F —
+Micro-foundation test)</h3>
+<p><strong>Pre-registered</strong>: CFPS amenity-category-specific
+satisfaction items (qm401-qm406 or equivalent): visible amenities
+(parks, roads, streetscape) versus functional amenities (water, heating,
+flood resilience). Target effect size: |Cohen’s d| ≥ 0.10 at the
+city-year level.</p>
+<p><strong>Executed</strong>: Three alternative CFPS outcomes — qn1101
+(county government evaluation, 1–5), qn12012 (life satisfaction, 1–5),
+health (self-rated, 1–5). Individual-level regression with city + year
+FE, clustered by city, individual controls (ln income, age, age²,
+education-years).</p>
+<p><strong>Reason</strong>: The public CFPS cleaned panel (2010–2022)
+does not contain amenity-category-specific satisfaction items. Variable
+enumeration of all 204 cleaned-panel variables confirmed this. Private
+CFPS waves with property/neighborhood satisfaction items are not
+accessible in our institutional agreement.</p>
+<p><strong>Remediation</strong>: Phase F2 requires primary survey data
+collection to test the original H5 directly. Cost estimate: ¥500K for a
+stratified sample of 3,000 respondents across 30 prefecture-level
+cities. Deferred to follow-up study.</p>
+<h2 id="d.3-non-deviations-pre-registered-and-executed-as-specified">D.3
+Non-deviations (pre-registered and executed as specified)</h2>
+<p>The following pre-registered commitments were executed exactly as
+specified: - Outcome: CIR for P1; VAI for P2; CFPS outcomes for C1 (with
+substitution D-F-1). - Specification curve: 24 permutations; 22/24
+significant at 5%. - Cluster level: city. - Control set: ln GDPpc, ln
+pop, ind2-share, with horse-race against GDP growth + urbanization +
+leader tenure. - Placebo battery: close pre-era, far-era,
+random-assignment. - Pre-trend joint F-test. - Welfare sensitivity: log
+utility central, CRRA alternative, lower/upper bounds.</p>
+<h2 id="d.4-summary">D.4 Summary</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Deviation</th>
+<th>Scope</th>
+<th>Pre-registered</th>
+<th>Executed</th>
+<th>Effect on main claim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D-B-1</td>
+<td>P2 estimator</td>
+<td>Callaway-Sant’Anna DiD</td>
+<td>TWFE event study</td>
+<td>Narrow window TWFE direction preserved; <strong>D-B-2 / D-B-3 below
+reverse it</strong></td>
+</tr>
+<tr>
+<td>D-B-2</td>
+<td>P2 robustness, same window</td>
+<td>(not in pre-reg; added post-S7)</td>
+<td>Sun-Abraham 5 cohorts</td>
+<td>β attenuates to −0.019 (p=0.87)</td>
+</tr>
+<tr>
+<td>D-B-3</td>
+<td>P2 robustness, expanded window</td>
+<td>(not in pre-reg; added Track 1)</td>
+<td>Sun-Abraham 9 cohorts with Rounds 6-9</td>
+<td><strong>β flips to +0.016; H2 definitively null</strong></td>
+</tr>
+<tr>
+<td>D-E-1</td>
+<td>Construct validity scope</td>
+<td>Third-party text was primary test</td>
+<td>Internal tests reported as primary; third-party test D-E-2
+separate</td>
+<td>Internal tests supportive</td>
+</tr>
+<tr>
+<td>D-E-2</td>
+<td>H4 third-party text source</td>
+<td>Xinhua / provincial gov descriptions</td>
+<td>Wikipedia-zh substitute</td>
+<td><strong>H4 FAILED</strong> (r = −0.15); domain-scope interpretation
+advanced</td>
+</tr>
+<tr>
+<td>D-F-1</td>
+<td>H5 CFPS amenity items</td>
+<td>Amenity-category-specific</td>
+<td>Three general outcomes</td>
+<td>Test not executable as pre-registered; substitute returned null;
+reframed as exploratory</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Two deviations (D-B-2, D-E-2) weaken the main claims relative
+to the pre-registration.</strong> We report both transparently in §4.2
+and §3.2 respectively. The paper’s residual defensible claims — P1
+compositional substitution with independent-dictionary replication (β =
++0.111, p = 0.002), the within-document E-B behavioral signature (Δ =
++0.025, paired t = 8.4), and the structural welfare calibration — are
+unaffected by these deviations. The weaker P2 and failed H4/H5 results
+are reported honestly; they do not invalidate the positive findings but
+do narrow the defensible scope of the overall contribution.</p>
+<p>The pre-registered archive (OSF ZMJY5) is unmodified. This deviation
+log is the canonical record of what was done relative to what was
+promised. All decisions to deviate were made before examining the
+post-deviation outcomes (with the one exception of §4.3’s re-framing of
+the CFPS null from confirmatory to exploratory, which was a post-hoc
+interpretation-level revision disclosed explicitly in D-F-1 and in
+§4.3’s opening paragraph). # Online Appendix</p>
+<p><strong>Manuscript</strong>: <em>Measuring Visibility Bias in
+Bureaucratic Text: A Validated Instrument with Evidence from Chinese
+Municipal Government Work Reports</em></p>
+<p><strong>Author</strong>: Hongyang Xi (Chongqing Survey Institute)
+<strong>Pre-registration</strong>: OSF DOI 10.17605/OSF.IO/ZMJY5
+<strong>Replication</strong>: Zenodo DOI 10.5281/zenodo.19569979</p>
+<hr />
+<h2 id="appendix-a-the-full-cadre-attention-model">Appendix A: The Full
+Cadre-Attention Model</h2>
+<p>The main text (§2) gives an intuitive summary of the cadre-attention
+model. This appendix provides the full derivation.</p>
+<h3 id="a.1-setup">A.1 Setup</h3>
+<p>A local official in city <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20i" alt="i"
+title="i" class="math inline" /> allocates a municipal capital budget
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20B_i" alt="B_i"
+title="B_i" class="math inline" /> between visible capital <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20V_i" alt="V_i"
+title="V_i" class="math inline" /> and functional capital <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20F_i" alt="F_i"
+title="F_i" class="math inline" /> subject to <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20V_i%20%2B%20F_i%20%3D%20B_i"
+alt="V_i + F_i = B_i" title="V_i + F_i = B_i" class="math inline" />.
+Social welfare is Cobb-Douglas:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20U%5ES%28V_i%2C%20F_i%29%20%3D%20%5Calpha%20%5Cln%20V_i%20%2B%20%5Cbeta%20%5Cln%20F_i%2C%20%5Cquad%20%5Calpha%20%2B%20%5Cbeta%20%3D%201."
+alt="U^S(V_i, F_i) = \alpha \ln V_i + \beta \ln F_i, \quad \alpha + \beta = 1."
+title="U^S(V_i, F_i) = \alpha \ln V_i + \beta \ln F_i, \quad \alpha + \beta = 1."
+class="math display" /></p>
+<p>The supervisor observes both categories with Gaussian noise with
+variances <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Comega_V%5E2%20%3C%20%5Comega_F%5E2"
+alt="\omega_V^2 &lt; \omega_F^2" title="\omega_V^2 &lt; \omega_F^2"
+class="math inline" /> (assumption A1, observability asymmetry). The
+Bayesian posterior on the official’s performance is the
+precision-weighted sum:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Cpi_i%20%3D%20%5Crho%20V_i%20%2B%20%281-%5Crho%29%20F_i%2C%20%5Cquad%20%5Crho%20%3D%20%5Cfrac%7B%5Comega_V%5E%7B-2%7D%7D%7B%5Comega_V%5E%7B-2%7D%20%2B%20%5Comega_F%5E%7B-2%7D%7D%20%5Cin%20%281%2F2%2C%201%29."
+alt="\pi_i = \rho V_i + (1-\rho) F_i, \quad \rho = \frac{\omega_V^{-2}}{\omega_V^{-2} + \omega_F^{-2}} \in (1/2, 1)."
+title="\pi_i = \rho V_i + (1-\rho) F_i, \quad \rho = \frac{\omega_V^{-2}}{\omega_V^{-2} + \omega_F^{-2}} \in (1/2, 1)."
+class="math display" /></p>
+<h3 id="a.2-officials-objective-and-foc">A.2 Official’s objective and
+FOC</h3>
+<p>The official maximizes a convex combination of social welfare and
+career value:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20U%5EO%20%3D%20%5Clambda_i%20%5Cleft%5B%5Calpha%20%5Cln%28a_i%20B_i%29%20%2B%20%5Cbeta%20%5Cln%28%281-a_i%29%20B_i%29%5Cright%5D%20%2B%20%281-%5Clambda_i%29%20B_i%20%5Cleft%5B%5Crho%20a_i%20%2B%20%281-%5Crho%29%281-a_i%29%5Cright%5D"
+alt="U^O = \lambda_i \left[\alpha \ln(a_i B_i) + \beta \ln((1-a_i) B_i)\right] + (1-\lambda_i) B_i \left[\rho a_i + (1-\rho)(1-a_i)\right]"
+title="U^O = \lambda_i \left[\alpha \ln(a_i B_i) + \beta \ln((1-a_i) B_i)\right] + (1-\lambda_i) B_i \left[\rho a_i + (1-\rho)(1-a_i)\right]"
+class="math display" /></p>
+<p>where <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%20%3D%20V_i%2FB_i%20%5Cin%20%280%2C%201%29"
+alt="a_i = V_i/B_i \in (0, 1)" title="a_i = V_i/B_i \in (0, 1)"
+class="math inline" /> and <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Clambda_i%20%5Cin%20%5B0%2C%201%5D"
+alt="\lambda_i \in [0, 1]" title="\lambda_i \in [0, 1]"
+class="math inline" /> is the social-motivation weight. The first-order
+condition yields the cadre-attention equation:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Cfrac%7B%5Calpha%7D%7Ba_i%5E%2A%7D%20-%20%5Cfrac%7B%5Cbeta%7D%7B1-a_i%5E%2A%7D%20%3D%20-%5Cfrac%7B1-%5Clambda_i%7D%7B%5Clambda_i%7D%20%5Cphi%20B_i%2C%20%5Cquad%20%5Cphi%20%5Cequiv%202%5Crho%20-%201%20%3E%200."
+alt="\frac{\alpha}{a_i^*} - \frac{\beta}{1-a_i^*} = -\frac{1-\lambda_i}{\lambda_i} \phi B_i, \quad \phi \equiv 2\rho - 1 &gt; 0."
+title="\frac{\alpha}{a_i^*} - \frac{\beta}{1-a_i^*} = -\frac{1-\lambda_i}{\lambda_i} \phi B_i, \quad \phi \equiv 2\rho - 1 &gt; 0."
+class="math display" /></p>
+<h3 id="a.3-closed-form-and-welfare-loss">A.3 Closed-form and welfare
+loss</h3>
+<p>A Taylor expansion around <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Cdelta_i%20%5Cequiv%20%281-%5Clambda_i%29%2F%5Clambda_i%20%5Ccdot%20%5Cphi%20B_i%20%3D%200"
+alt="\delta_i \equiv (1-\lambda_i)/\lambda_i \cdot \phi B_i = 0"
+title="\delta_i \equiv (1-\lambda_i)/\lambda_i \cdot \phi B_i = 0"
+class="math inline" /> gives:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20a_i%5E%2A%20%5Capprox%20a_i%5E%7BSO%7D%20%2B%20a_i%5E%7BSO%7D%281-a_i%5E%7BSO%7D%29%20%5Cdelta_i."
+alt="a_i^* \approx a_i^{SO} + a_i^{SO}(1-a_i^{SO}) \delta_i."
+title="a_i^* \approx a_i^{SO} + a_i^{SO}(1-a_i^{SO}) \delta_i."
+class="math display" /></p>
+<p>The welfare loss expressed as a fraction of first-best utility
+is:</p>
+<p><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20W_i%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccdot%20%5Cfrac%7B%28a_i%5E%2A%20-%20a_i%5E%7BSO%7D%29%5E2%7D%7Ba_i%5E%7BSO%7D%281-a_i%5E%7BSO%7D%29%7D."
+alt="W_i = \frac{1}{2} \cdot \frac{(a_i^* - a_i^{SO})^2}{a_i^{SO}(1-a_i^{SO})}."
+title="W_i = \frac{1}{2} \cdot \frac{(a_i^* - a_i^{SO})^2}{a_i^{SO}(1-a_i^{SO})}."
+class="math display" /></p>
+<p>This quadratic form permits calibration from observed <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%2A"
+alt="a_i^*" title="a_i^*" class="math inline" /> and a standard
+social-optimum benchmark <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a_i%5E%7BSO%7D"
+alt="a_i^{SO}" title="a_i^{SO}" class="math inline" />.</p>
+<h2 id="appendix-b-specification-curve-p1-robustness">Appendix B:
+Specification Curve (P1 Robustness)</h2>
+<h3 id="b.1-24-permutation-specification-curve">B.1 24-permutation
+specification curve</h3>
+<p>Following Simonsohn et al. [17], we ran a pre-registered
+specification curve combining: - Lexicon thresholds: denominator
+requirement {≥3, ≥5, ≥10 total hits} - Control-set subsets: {all
+controls, drop ln_pop, drop ind2_share, no controls} - Panel windows:
+{2005-2015 full, 2008-2015 post-GFC, 2012-2015 post-Xi} - FE structure:
+{city + year FE, city FE only}</p>
+<p>Total: 3 × 4 × 3 × 2 / redundant = 24 non-redundant permutations.</p>
+<p><strong>Results</strong>: Median β = +0.107. All 24 coefficients
+positive. 22/24 significant at the 5% level; 2 marginally significant (p
+= 0.06–0.10). Full specification curve table in
+<code>03-analysis/phase-A/specification_curve_v2.py</code>.</p>
+<h2 id="appendix-c-further-robustness-and-sensitivity">Appendix C:
+Further Robustness and Sensitivity</h2>
+<h3 id="c.1-dictionary-details">C.1 Dictionary details</h3>
+<p>Full lists of V_ORIG (42 terms), F_ORIG (38 terms), V_EXT (+36 new
+terms, 78 total), F_EXT (+32 new terms, 70 total) are in
+<code>03-analysis/phase-E/construct_validity.py</code>. Coder-agreement
+statistics from the inter-coder validation protocol (Cohen’s κ): -
+Visible-term marking: κ = 0.87 - Functional-term marking: κ = 0.84 -
+Overall orientation (1–5 Likert): ICC = 0.79</p>
+<h3
+id="c.2-horse-races-against-alternative-explanations-main-text-5.1">C.2
+Horse races against alternative explanations (main text §5.1)</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Specification</th>
+<th style="text-align: right;">β(VAI)</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline P1</td>
+<td>City FE + year FE + 3 controls</td>
+<td style="text-align: right;">+0.113</td>
+<td style="text-align: right;">0.002</td>
+</tr>
+<tr>
+<td>+ GDP growth control</td>
+<td>Added annual GDP growth</td>
+<td style="text-align: right;">+0.109</td>
+<td style="text-align: right;">0.003</td>
+</tr>
+<tr>
+<td>+ urbanization² control</td>
+<td>Added urbanization rate and its square</td>
+<td style="text-align: right;">+0.111</td>
+<td style="text-align: right;">0.002</td>
+</tr>
+<tr>
+<td>+ leader-tenure control</td>
+<td>Added party-secretary + mayor tenure</td>
+<td style="text-align: right;">+0.110</td>
+<td style="text-align: right;">0.003</td>
+</tr>
+<tr>
+<td>All four jointly</td>
+<td>All three above</td>
+<td style="text-align: right;">+0.108</td>
+<td style="text-align: right;">0.004</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c.3-p2-placebo-battery-main-text-5.4.1">C.3 P2 placebo battery
+(main text §5.4.1)</h3>
+<p><strong>Table C.3.</strong> Placebo tests for the inspection event
+study.</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Placebo</th>
+<th style="text-align: right;">β(k=0)</th>
+<th style="text-align: right;">p</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Close pre-era shift (fake 2011/2012)</td>
+<td style="text-align: right;">+0.001</td>
+<td style="text-align: right;">0.98</td>
+<td>Clean null — supports narrow-window TWFE</td>
+</tr>
+<tr>
+<td>Far-era shift +4 yr (fake 2017/2018)</td>
+<td style="text-align: right;">+0.023</td>
+<td style="text-align: right;">0.0003</td>
+<td>Significant — flags secular-trend contamination</td>
+</tr>
+<tr>
+<td>Far-era shift +6 yr (fake 2019/2020)</td>
+<td style="text-align: right;">−0.025</td>
+<td style="text-align: right;">0.001</td>
+<td>Significant — flags secular-trend contamination</td>
+</tr>
+<tr>
+<td>Random-assignment (500 iters)</td>
+<td style="text-align: right;">Observed −0.065 vs placebo [−0.043,
++0.076]</td>
+<td style="text-align: right;">1.00</td>
+<td>Underpowered (only 2 cohorts)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c.4-evidence-for-observability-asymmetry-a1">C.4 Evidence for
+observability asymmetry (A1)</h3>
+<p>Three independent proxies for <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%5Comega_V%2F%5Comega_F"
+alt="\omega_V/\omega_F" title="\omega_V/\omega_F"
+class="math inline" />:</p>
+<ol type="1">
+<li><strong>Inspection frequency</strong>: Municipal Transparency Report
+audits per year of visible vs functional categories. Ratio 3.2:1 in
+favor of visible.</li>
+<li><strong>Media reporting intensity</strong>: Xinhua local news
+mentions per month. Ratio 2.8:1 in favor of visible.</li>
+<li><strong>Accident-record visibility</strong>: Ministry of Emergency
+Management major-accident reports by category. Only visible-category
+accidents (street collapse, façade fall) receive consistent national
+news coverage; functional failures (pipe rupture, flooding) are usually
+reported only as aggregate statistics.</li>
+</ol>
+<p>All three support A1 at <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20p%20%3C%200.05"
+alt="p &lt; 0.05" title="p &lt; 0.05" class="math inline" /> (separately
+and jointly).</p>
+<h3 id="c.5-tenure-cycle-dynamics-supplementary-evidence">C.5
+Tenure-cycle dynamics (supplementary evidence)</h3>
+<p>Event-study around scheduled leadership transition (mayor +
+party-secretary tenure-end year):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Event time</th>
+<th style="text-align: right;">β(VAI)</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">k = −2 (pre-transition −2 years)</td>
+<td style="text-align: right;">+0.008</td>
+<td style="text-align: right;">0.52</td>
+</tr>
+<tr>
+<td style="text-align: right;">k = −1 (year before transition)</td>
+<td style="text-align: right;"><strong>+0.031</strong></td>
+<td style="text-align: right;"><strong>0.021</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">k = 0 (transition year)</td>
+<td style="text-align: right;">−0.009</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr>
+<td style="text-align: right;">k = +1</td>
+<td style="text-align: right;">+0.004</td>
+<td style="text-align: right;">0.78</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation</strong>: VAI spikes in the year before a
+scheduled leadership transition, when career-concern intensity <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%281-%5Clambda%29%2F%5Clambda"
+alt="(1-\lambda)/\lambda" title="(1-\lambda)/\lambda"
+class="math inline" /> is theoretically highest. This is consistent with
+P2’s exogenous-attenuation logic in reverse (career-concern spikes → VAI
+spikes). We treat this as <em>supplementary</em> evidence because the
+identification relies on transitions being partially exogenous, which is
+weaker than our pre-registered design. Results replicate under city +
+year FE and are insensitive to controls.</p>
+<h3 id="c.6-heterogeneity-by-fiscal-capacity">C.6 Heterogeneity by
+fiscal capacity</h3>
+<p>Equation <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20%28%5Cstar%29"
+alt="(\star)" title="(\star)" class="math inline" /> from §2.4 predicts
+that the visibility-bias distortion increases in <img
+style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20B_i" alt="B_i"
+title="B_i" class="math inline" />. We split the sample by
+above/below-median per-capita fiscal revenue:</p>
+<table>
+<thead>
+<tr>
+<th>Subsample</th>
+<th style="text-align: right;">β(VAI) on CIR</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: right;">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Above-median fiscal revenue</td>
+<td style="text-align: right;">+0.184</td>
+<td style="text-align: right;">0.001</td>
+<td style="text-align: right;">1,378</td>
+</tr>
+<tr>
+<td>Below-median fiscal revenue</td>
+<td style="text-align: right;">+0.068</td>
+<td style="text-align: right;">0.071</td>
+<td style="text-align: right;">1,373</td>
+</tr>
+<tr>
+<td>Interaction (above × VAI)</td>
+<td style="text-align: right;">+0.116</td>
+<td style="text-align: right;"><strong>0.024</strong></td>
+<td style="text-align: right;">2,751</td>
+</tr>
+</tbody>
+</table>
+<p>The high-revenue subsample’s coefficient is substantially larger and
+more significant. The interaction is statistically distinguishable (p =
+0.024).</p>
+<h3 id="c.7-welfare-sensitivity-main-text-5.3">C.7 Welfare sensitivity
+(main text §5.3)</h3>
+<p>Full sensitivity across <img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a%5E%7BSO%7D%20%5Cin%20%5B0.40%2C%200.50%5D"
+alt="a^{SO} \in [0.40, 0.50]" title="a^{SO} \in [0.40, 0.50]"
+class="math inline" />, utility forms, and shadow-pricing
+assumptions:</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 20%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;"><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a%5E%7BSO%7D"
+alt="a^{SO}" title="a^{SO}" class="math inline" /></th>
+<th>Utility</th>
+<th style="text-align: right;"><img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20W" alt="W"
+title="W" class="math inline" /> per ¥1000B renewal</th>
+<th style="text-align: right;">Scaled to ¥3.5T/yr × 8% renewal
+share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0.50</td>
+<td>Log</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">¥0.2B/yr</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.45</td>
+<td>Log (central)</td>
+<td style="text-align: right;">1.56%</td>
+<td style="text-align: right;"><strong>¥4.4B/yr</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">0.40</td>
+<td>Log</td>
+<td style="text-align: right;">3.94%</td>
+<td style="text-align: right;">¥11.0B/yr</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.45</td>
+<td>CRRA(γ=2)</td>
+<td style="text-align: right;">3.12%</td>
+<td style="text-align: right;">¥8.8B/yr</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.45</td>
+<td>BOE (replacement cost)</td>
+<td style="text-align: right;">~20%</td>
+<td style="text-align: right;">¥55B/yr</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Defensible range</strong>: ¥1–15B/yr under log utility and
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Ctextstyle%20a%5E%7BSO%7D%20%5Cin%20%5B0.40%2C%200.50%5D"
+alt="a^{SO} \in [0.40, 0.50]" title="a^{SO} \in [0.40, 0.50]"
+class="math inline" />. The ¥55B BOE is a ceiling.</p>
+<h2 id="appendix-d-pre-registration-and-deviation-log-1">Appendix D:
+Pre-Registration and Deviation Log</h2>
+<p>(In main text as §7 Appendix D. See Deviations D-B-1 through
+D-F-1.)</p>
+<h2 id="appendix-e-replication-architecture">Appendix E: Replication
+Architecture</h2>
+<p>Full directory layout (Zenodo record 19569979):</p>
+<pre><code>visibility-bias-v2/
+├── 00-admin/           Research plan, upgrade roadmap, outreach drafts
+├── 03-analysis/        Python analysis by phase (B, B2, E, E2, F)
+├── 04-figures/         PDF and PNG figures for all main-text exhibits
+├── 05-manuscript/      Manuscript drafts (v1, v2, v3), sections, submission package
+├── 06-review/          S7 audit reports + phase memos
+├── 07-prereg/          OSF pre-registration archive + Zenodo DOI record
+├── 01-literature/      references.bib
+└── 02-data/processed/  VAI panels, CCDI inspection rounds</code></pre>
+<p>Running instructions in <code>README.md</code> at the Zenodo record
+root.</p>
+</body>
+</html>

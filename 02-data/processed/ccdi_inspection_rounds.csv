@@ -1,0 +1,32 @@
+province_cn,province_en,province_code,round,first_treatment_year,start_month,notes
+湖北,Hubei,42,1,2013,5,Round 1 (May-Sep 2013)
+内蒙古,Inner Mongolia,15,1,2013,5,Round 1 (May-Sep 2013)
+重庆,Chongqing,50,1,2013,5,Round 1 (May-Sep 2013) - municipality
+贵州,Guizhou,52,1,2013,5,Round 1 (May-Sep 2013)
+江西,Jiangxi,36,1,2013,5,Round 1 (May-Sep 2013)
+吉林,Jilin,22,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+云南,Yunnan,53,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+安徽,Anhui,34,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+湖南,Hunan,43,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+广东,Guangdong,44,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+山西,Shanxi,14,2,2013,10,Round 2 (Oct 2013-Feb 2014)
+北京,Beijing,11,3,2014,3,Round 3 (Mar-Jul 2014) - municipality
+天津,Tianjin,12,3,2014,3,Round 3 (Mar-Jul 2014) - municipality
+辽宁,Liaoning,21,3,2014,3,Round 3 (Mar-Jul 2014)
+福建,Fujian,35,3,2014,3,Round 3 (Mar-Jul 2014)
+宁夏,Ningxia,64,3,2014,3,Round 3 (Mar-Jul 2014)
+海南,Hainan,46,3,2014,3,Round 3 (Mar-Jul 2014)
+甘肃,Gansu,62,3,2014,3,Round 3 (Mar-Jul 2014)
+河北,Hebei,13,4,2014,7,Round 4 (Jul-Oct 2014)
+陕西,Shaanxi,61,4,2014,7,Round 4 (Jul-Oct 2014)
+黑龙江,Heilongjiang,23,4,2014,7,Round 4 (Jul-Oct 2014)
+四川,Sichuan,51,4,2014,7,Round 4 (Jul-Oct 2014)
+江苏,Jiangsu,32,4,2014,7,Round 4 (Jul-Oct 2014)
+新疆,Xinjiang,65,4,2014,7,Round 4 (Jul-Oct 2014)
+河南,Henan,41,4,2014,7,Round 4 (Jul-Oct 2014)
+上海,Shanghai,31,5,2014,11,Round 5 (Nov 2014-Feb 2015) - municipality
+广西,Guangxi,45,5,2014,11,Round 5 (Nov 2014-Feb 2015)
+青海,Qinghai,63,5,2014,11,Round 5 (Nov 2014-Feb 2015)
+西藏,Xizang,54,5,2014,11,Round 5 (Nov 2014-Feb 2015)
+浙江,Zhejiang,33,5,2014,11,Round 5 (Nov 2014-Feb 2015)
+山东,Shandong,37,5,2014,11,Round 5 (Nov 2014-Feb 2015)
