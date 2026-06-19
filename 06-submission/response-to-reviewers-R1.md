@@ -45,7 +45,7 @@ A genre/template artifact would not co-move with money under an exogenous shock;
 
 ### Comment 2 — Institutional premise: are work reports consequential?
 
-**Accepted.** §3.1.0 is a new institutional-grounding subsection documenting that the GWR is **drafted** by the city government's research office, **revised** through leadership readings, and **adopted by vote** of the municipal People's Congress; that its commitments feed the **target-responsibility (目标责任制) cadre-evaluation** system; and that its audiences include the promotion-controlling superior, NPC delegates, and the public. We make **"visible to whom" explicit**: the salience criterion is defined relative to the *upward* principal, and the citizen channel is reported as a bounded null (§4.4) rather than asserted as the mechanism.
+**Accepted.** §3.1.0 is a new institutional-grounding subsection documenting that the GWR is **drafted** by the city government's research office, **revised** through leadership readings, and **adopted by vote** of the municipal People's Congress; that its commitments feed the **target-responsibility  cadre-evaluation** system; and that its audiences include the promotion-controlling superior, NPC delegates, and the public. We make **"visible to whom" explicit**: the salience criterion is defined relative to the *upward* principal, and the citizen channel is reported as a bounded null (§4.4) rather than asserted as the mechanism.
 
 ### Comment 3 — Validation weaker than advertised; provide passage-level validation (precision/recall/FP/FN/intercoder/ambiguous cases)
 
