@@ -1,53 +1,64 @@
-# 4. Behavioral Criterion Validity
+# 4. Substantive Applications
 
-Passage precision (§3) establishes that the concrete measure classifies the right *sentences*. It does not establish that the measure captures *strategic attention* rather than genre, template, or ritual language — the central concern of Reviewer #1, and the reason a precise text measure can still be substantively empty. This section supplies the decisive test: does the text measure co-move with **real, accounting-based** behavior under a plausibly exogenous shift in career incentives? It does, and only the valid measure does. We then add a supplementary procurement-frequency check (§4.3) and report transparently the exercises that do *not* support causal or welfare claims (§4.4).
+Section 3 established that the concrete VAI is a validated measure of the visible-versus-functional composition of Chinese municipal governance rhetoric — passage-validated against human coding (§3.2.0) and, decisively, behaviorally anchored to real cosmetic investment under an exogenous incentive shock (§3.2.7). This section presents what the validated instrument *descriptively* reveals: a compositional-substitution association in accounting data (§4.1), a suggestive within-document pattern (§4.2), and an independent large-scale corroboration in public-procurement data (§4.3). Three exercises that a previous draft foregrounded are demoted and reported transparently (§4.4–§4.5). We make no causal claim about *what drives* visibility bias; the criterion-validity evidence (§3.2.7) supports the measure, not a causal theory.
 
-## 4.1 Identification: retirement-driven secretary turnover as an incentive shock
+## 4.1 Application I: Compositional substitution in accounting data (P1)
 
-The arrival of a new municipal party secretary is an incentive shock: an incoming secretary with promotion ambitions has heightened reason to produce *observable* achievements within a short evaluation window. If the visibility construct is behaviorally real, a turnover should raise both real cosmetic investment and the (valid) text measure, and should do so *after* the turnover, not before.
+**Pre-registered H1:** within-city variation in VAI positively predicts the accounting-based Cosmetic Investment Ratio (CIR) while leaving total infrastructure investment unchanged. We estimate
 
-Plain turnover may be endogenous — under-performing cities may receive new leadership. We therefore isolate **retirement-driven turnover** (secretary departure at or above the mandatory-retirement age threshold), which is driven by the official's age rather than by local infrastructure conditions and is thus plausibly exogenous to a city's cosmetic-investment demand. For each outcome $y_{it}$ we estimate two-way fixed-effects regressions on the merged 2002–2024 city panel,
+$$\text{CIR}_{it} = \beta\,\text{VAI}_{it} + \gamma' X_{it} + \mu_i + \tau_t + \epsilon_{it},$$
 
-$$y_{it} = \beta\,\text{Turnover}_{i,t-1} + \mu_i + \tau_t + \varepsilon_{it},$$
+with city ($\mu_i$) and year ($\tau_t$) fixed effects, controls $X_{it}=\{\ln\text{GDPpc}, \ln\text{pop}, \text{ind2-share}\}$, and city-clustered SE; sample 2,751 city-years across 261 cities, 2005–2015 (MOHURD CIR coverage).
 
-with city ($\mu_i$) and year ($\tau_t$) fixed effects and standard errors clustered by city. We report the one-year-lag effect (turnover last year → outcome this year), a **future-turnover lead** as a pre-trend/placebo test (which should be ≈ 0 under clean identification), and the retirement-exogenous lag. The three outcomes are: real cosmetic investment (CIR, the MOHURD accounting series), the **concrete/valid** text measure (`wr_visibility`), and the **naive** text measure (`vai_composite`). This analysis is an independent re-estimation; code and outputs are in `03-analysis/phase-J-criterion-validity/` (`verify_comovement_master.py` → `verify_results_master.csv`).
+**Table 2. P1 — Compositional substitution (CIR ~ VAI)**
 
-## 4.2 The co-movement result
+| Specification | β(VAI) | SE | p | N |
+|---|---:|---:|---:|---:|
+| (1) Primary VAI | **+0.113** | 0.037 | **0.002** | 2,751 |
+| (2) Reconstructed lexicon (robustness) | +0.111 | 0.036 | 0.002 | 2,751 |
+| (3) Independent lexicon | +0.111 | 0.043 | 0.011 | 2,751 |
+| (4) No city FE | +0.089 | 0.042 | 0.035 | 2,751 |
+| (5) No year FE | +0.184 | 0.055 | 0.001 | 2,751 |
+| (6) IV = VAI(t−1) | +0.142 | 0.051 | 0.005 | 2,489 |
 
-**Table 2. Co-movement under secretary turnover (two-way FE, city-clustered SE)**
+All specifications give β > 0 at conventional significance. The **null on total investment** (ln total urban-construction investment on VAI: β = −0.008, p = 0.71) is consistent with *composition, not expansion*. Horse races against GDP-growth, urbanization stage, and leader tenure leave β(VAI) essentially unchanged (Online Appendix C.2), and a pre-registered 24-permutation specification curve gives median β = +0.107 with 24/24 positive and 22/24 significant (Online Appendix B.1). We read this as a **descriptive** compositional-substitution association, conditional on the instrument's validity — not a causal effect.
 
-| Outcome | Turnover (t−1) | Future turnover (lead) | Retirement-exogenous (t−1) |
-|---|---:|---:|---:|
-| Real cosmetic investment (CIR) | **+0.025** (p < 0.001) | −0.009 (p = 0.26) ✓ clean | +0.024 (p = 0.04) |
-| **Concrete / valid text** (`wr_visibility`) | **+0.010** (p = 0.01) | +0.001 (p = 0.84) ✓ clean | +0.016 (p = 0.01) |
-| **Naive text** (`vai_composite`) | +0.002 (p = 0.54) ✗ | +0.003 (p = 0.29) | +0.004 (p = 0.39) ✗ |
+## 4.2 Application II: The within-document review-vs-plan differential (suggestive)
 
-*n ≈ 3,082 (CIR), 5,005 (concrete), 5,011 (naive) city-years.*
+Exploiting the temporal structure of GWRs (a retrospective past-year review and a prospective next-year plan), we partition each report at the first plan marker after character 2000 and compute VAI on each section (N = 4,330 successful splits).
 
-The pattern (Figure 2) is exactly what behavioral validity requires and is the paper's central result:
+**Table 3. Within-document retrospective-vs-prospective VAI differential**
 
-1. **Real cosmetic investment rises** in the year after turnover (+0.025, p < 0.001), with a clean pre-trend (the future-turnover lead is negative and insignificant). The same holds under the retirement-exogenous shock (+0.024, p = 0.04). The construct is real in money, not only in words.
-2. **The valid text measure rises in lockstep** (+0.010, p = 0.01; retirement-exogenous +0.016, p = 0.01), again with a clean lead. The concrete measure tracks real behavior under an exogenous incentive shift.
-3. **The naive measure does not respond at all** (+0.002, p = 0.54; retirement-exogenous +0.004, p = 0.39). It is internally stable (§3.5, E-A r = 0.93) yet behaviorally inert.
+| Metric | Value |
+|---|---:|
+| Mean VAI(review) | 0.615 |
+| Mean VAI(plan) | 0.591 |
+| Mean Δ (review − plan) | **+0.0245** |
+| Paired t | **8.40** |
+| Two-tailed p | **6.2 × 10⁻¹⁷** |
 
-A genre or template artifact would not co-move with real expenditure under an exogenous shock; a strategic-attention measure does. The contrast between the valid and naive measures is the crux: passage validation tells us *which* measure to trust, and the behavioral test confirms that the trusted measure — and only it — captures attention that moves resources. This is the decisive answer to the rhetoric-versus-strategy question. It also reframes what validity means for measures of this kind: **behavioral co-movement, not internal reliability or aggregate cross-source correlation, is the test that separates a valid measure from a stable-but-empty one.** (The behavioral test uses the concrete dictionary at its 0.50-precision construction — a conservative choice; classical measurement error attenuates toward zero, so the true co-movement is, if anything, stronger.)
+The differential is positive and highly significant, and cannot arise from lexicon-selection (same lexicon), author-style (same author writes both sections), or report-length (VAI is a ratio). We nonetheless report it as **suggestive corroboration**, not a behavioral signature: as in R1, genre differences between retrospective and prospective sections could produce the same pattern (§4.2.1). With the criterion-validity test of §3.2.7 now carrying the behavioral argument, the within-document differential is a secondary, measurement-level fact about how reports are written.
 
-## 4.3 Supplementary check: procurement frequency
+### 4.2.1 What this does and does not tell us
 
-As an independent behavioral angle we classify the universe of Zhejiang public-procurement announcements (**2,957,789 records**, predominantly 2019–2026, from the national `ggzy.gov.cn` platform) by the same visible-versus-functional construction distinction. **Visible-type projects outnumber functional ones by roughly 2-to-1 overall** (2.1-to-1 among first-stage tender notices, the cleanest one-per-project proxy), and the tilt is pervasive rather than local: visible exceeds functional in **97 of 108** Zhejiang localities with sufficient volume (median city ratio 1.8; the few exceptions are small county-level units; Online Appendix Figure ESM-6). This corroborates the compositional tilt in an entirely separate, large-scale data source. Going beyond counts, we recover each project's **investment amount** from the tender briefs themselves (16,794 award-stage projects, 2023–2024). Visible and functional projects are of **broadly similar typical size** (median ¥5.8M vs ¥4.7M), but the visible category owns the high-value tail: its 99th percentile (¥0.90B vs ¥0.20B) and maximum (¥11.5B — the Hangzhou Metro Line 7 contract — vs ¥1.07B) are several times larger, because the biggest construction outlays (metro/rail, arterial roads, landmark parks) are visible-salient while concealed-utility works top out an order of magnitude lower. Visible construction therefore predominates on both **frequency** (≈2:1 by count) and the **high-value tail** — not merely because visible projects are small and numerous. The visible/functional keyword classification was refined by LLM-assisted adjudication with **domain-expert (urban- and rural-planning) sign-off** (Authors' Contributions); the lexicon, re-pull and analysis code, per-city table, and amount distribution are deposited (`03-analysis/phase-L-bidding/`). One caveat remains: a "project" is proxied by the deduplicated award record, so the *count* comparison (less so the amount comparison) is sensitive to how works are packaged; the accounting-based CIR (§4.2) supplies the independent expenditure-share corroboration.
+The differential is compatible with the upward-signaling mechanism but is not a unique diagnostic: downstream-facing rhetoric, lexical-availability bias, and selection on what gets completed-versus-planned would also predict it. Robustness to alternative split markers and to long-document/single-tenure subsamples is in Online Appendix C.3.
 
-## 4.4 Demoted exercises: transparent reporting of failed / assumption-dependent tests
+## 4.3 Application III: Independent corroboration in public-procurement data (new)
 
-Three exercises an earlier draft treated as contributions are demoted to supporting material and reported transparently; none is part of the main evidentiary structure.
+As an entirely separate, large-scale corroboration we classify the universe of Zhejiang public-procurement announcements (**≈2,957,789 records**, predominantly 2019–2026, national `ggzy.gov.cn` platform) by the same visible-versus-functional construction distinction. **Visible-type projects outnumber functional ones by roughly 2-to-1 overall** (2.1-to-1 among first-stage tender notices, the cleanest one-per-project proxy), and the tilt is pervasive rather than local: visible exceeds functional in **97 of 108** localities with sufficient volume (median city ratio 1.8; the exceptions are small county-level units; Online Appendix Figure ESM-6). Going beyond counts, we recover each project's **investment amount** from the tender briefs (16,794 award-stage projects, 2023–2024): visible and functional projects are of broadly similar typical size (median ¥5.8M vs ¥4.7M), but the visible category owns the **high-value tail** — its 99th percentile (¥0.90B vs ¥0.20B) and maximum (¥11.5B, the Hangzhou Metro Line 7 contract, vs ¥1.07B) are several times larger, because the biggest construction outlays (metro/rail, arterial roads, landmark parks) are visible-salient while concealed-utility works top out an order of magnitude lower. Visible construction thus predominates on both frequency and the high-value tail. The visible/functional classification was refined by LLM-assisted adjudication with **domain-expert (urban- and rural-planning) sign-off** (Authors' Contributions); the lexicon, re-pull and analysis code, per-city table, and amount distribution are deposited (`03-analysis/phase-L-bidding/`). One caveat: a "project" is proxied by the deduplicated award record, so the count comparison (less so the amount comparison) is sensitive to how works are packaged; the accounting CIR (§4.1, §3.2.7) supplies the independent expenditure-share corroboration.
 
-**Causal inspection event study — definitively null.** The pre-registered prediction that central anti-corruption inspections reduce visibility attention does not survive: a narrow-window TWFE estimate has the predicted sign (β = −0.065, p = 0.01) but a heterogeneity-robust Sun–Abraham estimator attenuates it to insignificance, and extending the sample to the 2016–2017 rounds **reverses the sign** (β = +0.016; all nine cohort effects positive). The narrow-window result is a staggered-treatment-heterogeneity artifact [14, 15, 16], not a causal effect (Appendix D, deviations D-B-1/2/3). Note that the retirement-turnover design of §4.2 serves a *different* purpose — measurement (criterion) validity, not a causal welfare magnitude — and is methodologically distinct from this failed design.
+## 4.4 Structural welfare calibration (illustrative; demoted)
 
-**Physical-stock external anchor — null.** We also tested whether the text measure tracks *physical* infrastructure stocks (greening rate, pipe-network density, and similar yearbook series) as an external anchor. These stocks carry essentially no within-city signal over the period (a flow-versus-stock mismatch: annual rhetoric and investment are flows, accumulated stocks are not), so the anchor fails at the within-city level and is not used; the accounting-based CIR (a flow) is the appropriate external series.
+The cadre-attention model yields a closed-form welfare-loss expression. Calibrated with the observed compositional share, an assumed social optimum $a^{SO} \in [0.40, 0.50]$, and an aggregate renewal-expenditure base, it produces figures on the order of single-digit ¥ billions per year. **We deliberately do not headline this number.** It depends on strong, not-independently-validated assumptions (the Cobb-Douglas welfare function, the social-optimum benchmark, the text-to-spending mapping); the derivation and sensitivity table are in Online Appendix A and C.7, and we attach no policy weight to the magnitude.
 
-**Individual-level micro-foundation — bounded null.** Amenity-category-specific satisfaction items are absent from the public CFPS panel; substituted general outcomes (government evaluation, life satisfaction, self-rated health) show no effect above |d| = 0.011 (TOST rejects |d| ≥ 0.10). This bounds a citizen-popularity channel but does not test the upward-signaling mechanism; we report it as exploratory (Appendix D, D-F-1).
+## 4.5 Demoted exercises: transparent reporting of failed/null tests
 
-**Structural welfare calibration — assumption-dependent, no headline.** The §2 model yields a closed-form welfare-loss expression; calibrating it with the observed compositional share and an assumed social optimum produces single-digit ¥-billion figures. **We deliberately attach no headline number.** The estimate depends on the Cobb–Douglas form, the social-optimum benchmark, and the text-to-spending mapping — assumptions stronger than the evidence warrants. Full derivation and sensitivity are in Online Appendix A and C.7; we treat it only as an illustration of what the model implies.
+Two pre-registered tests are demoted from the main evidentiary structure (full detail in Appendix C.3 and Appendix D):
 
-## 4.5 Summary
+**Null 1 — central-inspection event study (H2): definitively null.** A narrow-window TWFE specification gave the predicted sign (β(k=0) = −0.065, p = 0.011), but a heterogeneity-robust Sun–Abraham estimator attenuates it to insignificance and, extending to Rounds 6–9 (2016–2017), **reverses the sign** (β = +0.016). The narrow-window result is a staggered-treatment-heterogeneity artifact [14, 15, 16], not a causal inspection effect (deviations D-B-1/2/3).
 
-The paper's evidentiary spine is the behavioral co-movement of §4.2: under an exogenous, retirement-driven incentive shock, real cosmetic investment and the *valid* concrete text measure rise together with clean pre-trends, while the *naive* measure does not move. Procurement frequency corroborates the compositional tilt in an independent source. Causal identification of *what drives* visibility bias (the inspection design) fails and is reported as such; the citizen-channel and welfare exercises are bounded or assumption-dependent and demoted. What the paper establishes is a *validated measure* of compositional attention whose validity is anchored in real behavior — not a causal or welfare result.
+**Null 2 — individual-level CFPS micro-foundation (H5): bounded null.** Amenity-category-specific satisfaction items are absent from the public CFPS panel; substituted general outcomes show no effect above |d| = 0.011 (TOST rejects |d| ≥ 0.10 at p < 10⁻⁶). This bounds a citizen-popularity channel but does not test the pre-registered mechanism; reported as exploratory (deviation D-F-1).
+
+## 4.6 Summary
+
+The validated VAI tracks an external accounting measure of investment composition (P1, β = +0.111, with no effect on total investment); co-moves with real cosmetic investment under an exogenous turnover shock while the naive measure does not (§3.2.7); is corroborated, in an entirely independent procurement corpus, by a ≈2:1 visible-over-functional tilt across 97 of 108 localities and a visible-dominated spending tail (§4.3); and shows a suggestive within-document differential (§4.2). The inspection event study, the CFPS micro-foundation, and the welfare calibration are demoted and reported transparently — they limit, rather than support, the causal and welfare claims the instrument can carry.

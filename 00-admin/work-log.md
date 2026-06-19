@@ -252,3 +252,13 @@ Disclosed transparently to JCSS editor in cover letter.
 - **Zenodo**:v2 设 Open+CC-BY 后 publish;随后发现稿中 Wu&Zhou 已移除→再发 **v3(20762771)**,clean bundle,Open。**concept DOI 19569978 → v3**(doi.org 验证 200)。版本:v1 19569979 → v2 20762481 → v3 20762771。
 - **Wu & Zhou (2018) 移除**:溯源=`build_workreport_text.py` 注释「对齐吴周2018投资分类」被我误升格为正式引文。查无实据(CNKI/CrossRef/OpenAlex 皆无)→ 全部 live 文件清除,改锚定真实的 **MOHURD 城建投资"面子/里子"分类**;references 删占位、Gilardi/Heseltine 顺位 [20]/[21](共21条),正文引用编号同步;build 脚本注释也改 MOHURD。R2 重编 + DOCX 重生成 + GitHub 已 push。
 - **遗留**:Zenodo 有个旧 orphan 草稿 19755780(早先会话,unsubmitted,无害);**唯一待办=EM 上传**(DOCX 全就绪)。R-1(Wu&Zhou)由"补引文"变为"已移除",无需再查。
+
+## 2026-06-19 (续6) — 全文重排回 R1 框架(Andy 指示:成果纳入 R1 论文框架)
+Andy 比对后判定 R2 重构成了"另一篇文章",要求**保留 R1 骨架与 VAI 身份**、把成果嵌入。已照办:
+- **标题** 回 *Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation*(VAI 身份;副标题 Measurement + Behavioral Validation)。
+- **§1–§8 以 R1 骨架重排**:VAI 工具身份保留;§3.2.0 段级验证填实(0.10→0.60 天花板→LLM 0.84,κ0.70);**新增 §3.2.7 行为 criterion validity**(退休更替);§3.2.1–.5 E-A/B/C/D/F 诚实定性;§4.1 P1 + §4.2 文档内 + **§4.3 招标** + §4.4/4.5 降级;三作者。
+- **修正**:摘要压到 249 词(JCSS ≤250);MOHURD→"China Urban Construction Statistical Yearbook (Ministry of Construction / MOHURD, 2005–2015)"(2008 前为建设部;CIR 实际覆盖 2005–2015 核实无误)。
+- **cover/response 两封信同步回 R1 口径**(response 把 C1–C5 映射到 R1 章节号;links 改为已完成)。
+- 终检:引文 1–21 全用、无悬空;无旧标题/Wu-Zhou/§3.4–7/R2 重构措辞;CJK 闸过(title/cover 零中文,正文数据词带拼音)。全文 ~10,840 词,正文 §1–§6 ~6,200 词。DOCX 全部重生成。
+- **C1–C5 全面响应 + 超预期**(LLM 集成 / 行为同步 / 招标三源)。
+**待**:Andy 确认定稿 → 发 Zenodo v4(concept DOI 自动指向)。EM 上传四个 R2 DOCX。
