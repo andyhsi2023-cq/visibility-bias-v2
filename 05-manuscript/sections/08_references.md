@@ -38,8 +38,6 @@
 
 19. Osnabrügge, M., Ash, E., & Morelli, M. (2023). Cross-domain topic classification for political texts. *Political Analysis, 31*(1), 59-80. https://doi.org/10.1017/pan.2021.37  <!-- [verify vol/issue/pages/DOI before submission] -->
 
-20. Wu, [—], & Zhou, [—]. (2018). [**ANDY TO SUPPLY** — the cosmetic-vs-functional urban-construction investment classification to which the concrete lexicon is aligned ("吴周2018投资分类", per `build_workreport_text.py`); cited in the abstract and §3.2.2. Full author initials, title, venue, vol/issue/pages, DOI required before submission. Not found in CrossRef — likely a Chinese-language (CNKI) source.]
+20. Gilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. *Proceedings of the National Academy of Sciences, 120*(30), e2305016120. https://doi.org/10.1073/pnas.2305016120
 
-21. Gilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. *Proceedings of the National Academy of Sciences, 120*(30), e2305016120. https://doi.org/10.1073/pnas.2305016120
-
-22. Heseltine, M., & Clemm von Hohenberg, B. (2024). Large language models as a substitute for human experts in annotating political text. *Research & Politics, 11*(1). https://doi.org/10.1177/20531680241236239
+21. Heseltine, M., & Clemm von Hohenberg, B. (2024). Large language models as a substitute for human experts in annotating political text. *Research & Politics, 11*(1). https://doi.org/10.1177/20531680241236239

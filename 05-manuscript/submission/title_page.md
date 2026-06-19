@@ -36,7 +36,7 @@ This research received no specific grant from any funding agency in the public, 
 - **Word count**: ~10,900 (full master incl. statements + appendices; ~5,000 main text §1–§6 excluding online appendix)
 - **Figures**: [recount for R2 — several exhibits demoted to appendix]
 - **Tables**: [recount for R2 — main text: Table 0, Table 1 precision ladder, Table 2 co-movement]
-- **References**: 20 *(reference [20] Wu & Zhou 2018 pending full citation)*
+- **References**: 21
 - **Online resources**: 1 (Online Resource 1: Online Appendix; PDF)
 - **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5 (archived 2026-04-14)
 - **Replication archive**: Zenodo DOI 10.5281/zenodo.19569978

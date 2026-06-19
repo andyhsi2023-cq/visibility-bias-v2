@@ -27,7 +27,7 @@ Python 3.11+; `pip install pandas statsmodels matplotlib openai`. LLM steps (ens
 - **Zhejiang procurement DB** `ggzy.db` (~2.5 GB SQLite, 2,957,789 records): collected from the national `ggzy.gov.cn` aggregator + provincial `inteligentsearch` API (crawler + rate-limit notes in the dataset's own README); too large for Zenodo. The **derived** per-locality counts (`by_city.csv`) and project amounts (`amounts_final.csv`) are included; raw DB available on request or rebuildable via the crawler / a commercial feed (剑鱼/千里马/比地).
 - Public secondary sources: MOHURD Urban Construction Statistical Yearbook (2005–2015); CFPS (PKU ISSS); CCDI inspection rounds.
 
-## Known pending items (R2)
-- Reference [20] **Wu & Zhou (2018)** — the cosmetic-vs-functional investment classification the concrete lexicon aligns to — is a Chinese-language (CNKI) source not indexed in CrossRef/OpenAlex; full citation to be supplied by the authors.
-- **GitHub mirror** `andyhsi2023-cq/visibility-bias-v2` currently returns 404 — create/push the public repo (or drop the GitHub citation and rely on Zenodo).
-- **Zenodo** record is access-restricted during review — provide a reviewer token / make public on acceptance.
+## Archive status (R2, 2026-06-19)
+- **Zenodo**: v2 published, **Open access** (CC-BY-4.0). Concept DOI [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978) resolves to the latest version (v2 = 10.5281/zenodo.20762481).
+- **GitHub mirror**: live and public at [github.com/andyhsi2023-cq/visibility-bias-v2](https://github.com/andyhsi2023-cq/visibility-bias-v2).
+- The concrete visible/functional lexicon is the authors' own construction (validated by the passage coding, §3.3), mirroring the cosmetic-vs-functional split of the MOHURD construction-investment categories (§3.7).

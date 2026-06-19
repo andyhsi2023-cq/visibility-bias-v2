@@ -236,3 +236,14 @@ Disclosed transparently to JCSS editor in cover letter.
 - (可选)OSF Phase-G/J/L amendment。
 - **R-5 标题**:✅ Andy 选定 = *"When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence"*(已落到 R2 + online appendix;title_page.{md,docx,pdf} 投稿时需同步更新)。
 - **R-6 EM 上传**:R2 → DOCX,due 2026-07-30。
+
+## 2026-06-19 (续4) — R-3 复现归档执行(Playwright + API)
+
+**Andy 浏览器登录 Zenodo(原始账号)+ GitHub;我建 token 并执行。**
+- **Token**:Zenodo owner-acct PAT(owns 19569979)+ GitHub PAT(repo, exp 2026-09-17)已存 `本地信息.rtf` + `_meta/scripts/.env`,API 验证可用。
+- **GitHub ✅ 已上线**:`github.com/andyhsi2023-cq/visibility-bias-v2`(public),511+ 文件,REPLICATION.md/脚本/数据/稿/图全在;**机密已 gitignore**(含 reviewer-token 的 3 文件验证为 404);remote 无 token。审稿人 404 已修。
+- **Zenodo ⏳ v2 草稿就绪待发布**:`newversion` of 19569979 → draft **20762481**,传入 11MB 完整包(`visibility-bias-v2-replication.zip`),metadata 更新(新标题 + 3 作者 + version)。**access=restricted(继承),未发布**——发布(不可逆)+ 访问决定留 Andy。
+- **DOI 策略**:全稿 Zenodo DOI 由 v1 `19569979` 改为 **concept DOI `19569978`(永远指向最新版)**;R2 重编 + DOCX 重生成 + GitHub 同步。
+- **DOI 结构**:concept 19569978 → {v1 19569979, v2 20762481(草稿)}。发布 v2 后 concept 解析到 v2。
+
+**待 Andy**:① **发布 Zenodo 草稿** https://zenodo.org/uploads/20762481(建议 access 设 Open,否则审稿人仍打不开;或保 Restricted 但生成新 share token);② R-1 Wu&Zhou 引文;③ EM 上传(DOCX 就绪)。
