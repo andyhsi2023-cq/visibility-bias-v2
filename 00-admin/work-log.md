@@ -234,7 +234,7 @@ Disclosed transparently to JCSS editor in cover letter.
 - **R-3** OSF/Zenodo 重存并验证链接可达(含 `master_2002_2024.csv` + phase-J/K/L 脚本数据 + 招标 by_city/amount),发新 reviewer token。
 - **EM 上传**(due 2026-07-30):DOCX 已就绪;主图 Fig1/Fig2 PDF 就绪;ESM 重编号按 figure_captions 注。
 - (可选)OSF Phase-G/J/L amendment。
-- **R-5 标题**:✅ Andy 选定 = *"When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence"*(已落到 R2 + online appendix;title_page.{md,docx,pdf} 投稿时需同步更新)。
+- **R-5 标题**:✅ Andy 选定 = *"Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation"*(已落到 R2 + online appendix;title_page.{md,docx,pdf} 投稿时需同步更新)。
 - **R-6 EM 上传**:R2 → DOCX,due 2026-07-30。
 
 ## 2026-06-19 (续4) — R-3 复现归档执行(Playwright + API)
@@ -247,3 +247,8 @@ Disclosed transparently to JCSS editor in cover letter.
 - **DOI 结构**:concept 19569978 → {v1 19569979, v2 20762481(草稿)}。发布 v2 后 concept 解析到 v2。
 
 **待 Andy**:① **发布 Zenodo 草稿** https://zenodo.org/uploads/20762481(建议 access 设 Open,否则审稿人仍打不开;或保 Restricted 但生成新 share token);② R-1 Wu&Zhou 引文;③ EM 上传(DOCX 就绪)。
+
+## 2026-06-19 (续5) — Zenodo 发布 + Wu&Zhou 引文清除
+- **Zenodo**:v2 设 Open+CC-BY 后 publish;随后发现稿中 Wu&Zhou 已移除→再发 **v3(20762771)**,clean bundle,Open。**concept DOI 19569978 → v3**(doi.org 验证 200)。版本:v1 19569979 → v2 20762481 → v3 20762771。
+- **Wu & Zhou (2018) 移除**:溯源=`build_workreport_text.py` 注释「对齐吴周2018投资分类」被我误升格为正式引文。查无实据(CNKI/CrossRef/OpenAlex 皆无)→ 全部 live 文件清除,改锚定真实的 **MOHURD 城建投资"面子/里子"分类**;references 删占位、Gilardi/Heseltine 顺位 [20]/[21](共21条),正文引用编号同步;build 脚本注释也改 MOHURD。R2 重编 + DOCX 重生成 + GitHub 已 push。
+- **遗留**:Zenodo 有个旧 orphan 草稿 19755780(早先会话,unsubmitted,无害);**唯一待办=EM 上传**(DOCX 全就绪)。R-1(Wu&Zhou)由"补引文"变为"已移除",无需再查。

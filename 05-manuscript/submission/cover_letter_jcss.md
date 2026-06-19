@@ -8,7 +8,7 @@
 
 Dear Professor Kamihigashi,
 
-Please find enclosed our revised manuscript, **"When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence"** (formerly *Measuring Visibility Bias in Bureaucratic Text*), submitted for continued consideration as a Research Article. We are grateful to Reviewer #1 for a review that materially reshaped the paper; a point-by-point response accompanies this letter.
+Please find enclosed our revised manuscript, **"Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation"** (formerly *Measuring Visibility Bias in Bureaucratic Text*), submitted for continued consideration as a Research Article. We are grateful to Reviewer #1 for a review that materially reshaped the paper; a point-by-point response accompanies this letter.
 
 **What the paper now is.** The review correctly judged that our original draft measured visible-infrastructure *rhetoric* more convincingly than strategic *visibility bias*, and overclaimed. We have reconceived the work as a **study in validating dictionary text-as-data measures**, using visibility bias in Chinese municipal government work reports (6,294 reports, 282 prefectures, 2002–2024) as the case. The contribution is methodological and, we believe, of direct interest to JCSS's readership:
 

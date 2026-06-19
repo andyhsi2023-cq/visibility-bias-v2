@@ -2,7 +2,7 @@
 
 # Response to the Editor and Reviewer
 
-**Manuscript**: JCSO-D-26-00240 — *When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence* (revised title; was *Measuring Visibility Bias in Bureaucratic Text*)
+**Manuscript**: JCSO-D-26-00240 — *Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation* (revised title; was *Measuring Visibility Bias in Bureaucratic Text*)
 **Journal**: Journal of Computational Social Science · **Decision**: Major Revisions (Editor-in-Chief: Takashi Kamihigashi; Reviewer #1)
 
 Dear Professor Kamihigashi and Reviewer #1,

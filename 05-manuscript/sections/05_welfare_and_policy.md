@@ -6,7 +6,7 @@ Taking the rungs together, the paper delivers a *validated* measure of compositi
 
 ## 5.2 Methodological lessons
 
-The case yields three lessons that travel beyond Chinese government text.
+Within this single-country case (Chinese municipal GWRs), three lessons emerge that may transfer — offered to be tested elsewhere, not assumed.
 
 **Lesson 1 — Dictionary precision is bounded by polysemy, not by effort.** For compositional constructs carried by everyday words, a non-trivial share of keyword occurrences are metaphorical or categorical (道路 as "the *path* of industrialization"; 轨道交通 as the rail-transit *industry*). Because these words are genuinely on-construct in the majority of uses, pruning them to raise precision destroys recall, so a precision ceiling is reached that no amount of curation breaks. Reporting this ceiling — rather than tuning a lexicon until an aggregate correlation looks acceptable — should be standard practice. The diagnostic is cheap: a few hundred human-coded passages and a per-class confusion matrix reveal it immediately.
 
@@ -18,15 +18,15 @@ The case yields three lessons that travel beyond Chinese government text.
 
 We are explicit about what the paper does not establish.
 
-- **Human intercoder agreement is pending a second coder.** Our current agreement statistic is human↔ensemble (Cohen κ = 0.66); the pre-registered *human* intercoder κ requires a second independent coder, now being recruited, and the final precision/recall figures may shift modestly under full human double-coding.
-- **The procurement check is provincial and count-based.** It covers Zhejiang (2019–2024) and exposes project counts, not amounts; counts are confounded by project packaging. It corroborates frequency only; magnitude rests on the accounting CIR.
+- **Intercoder agreement is substantial but not perfect.** Two independent human coders reach Cohen κ = 0.70 on the 120-sentence gold set; residual disagreement concentrates on the visible-versus-mixed boundary — itself a manifestation of the polysemy the paper documents — so passage-level precision/recall carry a few points of coder-judgment uncertainty.
+- **The procurement check is provincial.** It covers Zhejiang only; project frequency *and* investment amount both corroborate the tilt, but a "project" is proxied by the deduplicated award record, so the count comparison remains sensitive to how works are packaged. National generalization is untested.
 - **Causal identification of drivers is not achieved.** The inspection event study fails under heterogeneity-robust estimation; the retirement-turnover design supports *measurement* validity, not a causal theory of what produces visibility bias.
 - **No welfare claim.** The structural welfare figure is assumption-dependent and demoted; we attach no policy magnitude to it.
-- **External (non-governance) validity is not established.** The Wikipedia null bounds the measure to governance rhetoric; an appropriate policy-rhetoric third-party validation (e.g., Xinhua local-policy news, CNKI 重要报纸 coverage) remains future work.
+- **External (non-governance) validity is not established.** The Wikipedia null bounds the measure to governance rhetoric; an appropriate policy-rhetoric third-party validation (e.g., Xinhua local-policy news, CNKI key-newspaper coverage) remains future work.
 
 ## 5.4 Portability
 
-The validation protocol — seed a dictionary, validate at the passage level, *report the ceiling*, escalate to LLM classification where needed, and anchor validity behaviorally against an accounting outcome under an exogenous shock — is portable to any setting where bureaucratic agents produce structured, consequential annual documents (EU National Reform Programmes; Indian state budget speeches; Mexican municipal *Plan de Desarrollo* documents). What is *not* portable is the specific lexicon and the institutional observability-asymmetry parameters, which require re-derivation in each context. The transferable contribution is the validation discipline, not the keyword list.
+The validation protocol — seed a dictionary, validate at the passage level, *report the ceiling*, escalate to LLM classification where needed, and anchor validity behaviorally against an accounting outcome under an exogenous shock — could plausibly transfer to other settings where bureaucratic agents produce structured, consequential annual documents (e.g., EU National Reform Programmes; Indian state budget speeches; Mexican municipal *Plan de Desarrollo* documents), though we have not tested it outside China. What is *not* portable is the specific lexicon and the institutional observability-asymmetry parameters, which require re-derivation in each context. The transferable contribution is the validation discipline, not the keyword list.
 
 ---
 
@@ -34,7 +34,7 @@ The validation protocol — seed a dictionary, validate at the passage level, *r
 
 We set out to measure visibility bias in Chinese municipal government work reports and, in doing so, to take seriously the question applied dictionary work usually skips: does the measure capture the construct? The answer is a ladder. A naive dictionary fails (visible precision 0.10) because abstract appearance words are polysemous; a concrete, salience-based lexicon improves greatly (0.50–0.60) but hits a polysemy ceiling near 0.60–0.64; an LLM ensemble clears it (0.84, Fleiss κ = 0.835); and the valid measure — unlike the naive one — co-moves with real cosmetic investment under an exogenous, retirement-driven incentive shock. The contribution is methodological: a rigorously validated, behaviorally anchored procedure for measuring compositional policy attention in bureaucratic text, with an honest map of its limits and a high-precision alternative where the dictionary stops.
 
-Two general points outlast the case. First, polysemy imposes a precision ceiling on dictionary measures of everyday-word constructs that curation cannot break, and that ceiling should be reported, not hidden. Second, for measures of strategic attention the decisive validity test is behavioral co-movement under an exogenous shock — not internal reliability, and not passage precision alone. We invite extension along three lines: a policy-rhetoric third-party corpus to strengthen external validity; additional exogenous incentive shocks to widen the criterion-validity base; and application of the validate-report-the-ceiling-then-escalate protocol to bureaucratic text in other institutional settings.
+Two points may outlast this one-country case and invite testing elsewhere. First, polysemy imposes a precision ceiling on dictionary measures of everyday-word constructs that curation cannot break, and that ceiling should be reported, not hidden. Second, for measures of strategic attention the decisive validity test is behavioral co-movement under an exogenous shock — not internal reliability, and not passage precision alone. We invite extension along three lines: a policy-rhetoric third-party corpus to strengthen external validity; additional exogenous incentive shocks to widen the criterion-validity base; and application of the validate-report-the-ceiling-then-escalate protocol to bureaucratic text in other institutional settings.
 
 Pre-registration: OSF DOI 10.17605/OSF.IO/ZMJY5. Replication archive: Zenodo DOI 10.5281/zenodo.19569978; GitHub: andyhsi2023-cq/visibility-bias-v2.
 

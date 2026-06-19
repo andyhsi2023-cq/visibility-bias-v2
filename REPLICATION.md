@@ -1,4 +1,4 @@
-# Replication guide — *When Dictionaries Hit a Polysemy Ceiling* (JCSO-D-26-00240, R2)
+# Replication guide — *Visibility Bias in Chinese Municipal Government Work Reports* (JCSO-D-26-00240, R2)
 
 This repository reproduces every headline number in the manuscript. It is **self-contained** except for two large/raw inputs noted under *Data access*. Pre-registration: OSF [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5). Archive: Zenodo [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978).
 

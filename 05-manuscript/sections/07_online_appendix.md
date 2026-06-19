@@ -1,6 +1,6 @@
 # Online Appendix
 
-**Manuscript**: *When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence*
+**Manuscript**: *Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation*
 
 **Authors**: Hongyang Xi (Chongqing Survey Institute)†, Liu Can (Guangzhou College of Applied Science and Technology)†, Zhihui Li (Chongqing Survey Institute) · †co-first authors
 **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5
@@ -158,11 +158,11 @@ Per class: visible P = 0.500, R = 0.789, F1 = 0.61; functional P = 0.600, R = 0.
 
 | term | false positives | typical non-infrastructure use |
 |---|---:|---|
-| 示范 (model/demonstration) | 60–61 | 示范区, 示范项目, 改革示范 |
-| 文明城市 (civilized city) | 7 | award/campaign title |
-| 展示 (display/showcase) | 6 | "display achievements" |
-| 美丽 (beautiful) | 5 | 美丽乡村 slogan |
-| 形象 (image) | 4 | "government image" |
+| 示范 *shìfàn* (model/demonstration) | 60–61 | 示范区, 示范项目, 改革示范 |
+| 文明城市 *wénmíng chéngshì* (civilized city) | 7 | award/campaign title |
+| 展示 *zhǎnshì* (display/showcase) | 6 | "display achievements" |
+| 美丽 *měilì* (beautiful) | 5 | 美丽乡村 slogan |
+| 形象 *xíngxiàng* (image) | 4 | "government image" |
 
 `示范` alone accounts for ~70% of visible false positives — the single-cause failure motivating the move to a concrete, salience-based lexicon (§3.2.2). Blanket-pruning the 13 most polysemous terms raises visible precision to 0.59 but collapses recall to 0.47, so the fix is surgical.
 

@@ -26,9 +26,9 @@ We measure visibility attention from the universe of annual prefecture-level **g
 
 The paper's premise is that GWRs are *consequential* texts whose composition reflects what officials choose to make salient to their evaluators. We document, rather than assert, the institutional basis.
 
-**Drafting and approval.** A municipal GWR is drafted by the city government's research office (政府研究室) under the mayor's direct supervision, revised through successive leadership readings, and formally delivered by the mayor to the annual session of the municipal People's Congress, which reviews and votes to adopt it. It is therefore the government's official, on-the-record statement of the year's work and the coming year's commitments — neither a personal essay nor a press release.
+**Drafting and approval.** A municipal GWR is drafted by the city government's research office under the mayor's direct supervision, revised through successive leadership readings, and formally delivered by the mayor to the annual session of the municipal People's Congress, which reviews and votes to adopt it. It is therefore the government's official, on-the-record statement of the year's work and the coming year's commitments — neither a personal essay nor a press release.
 
-**Link to cadre evaluation.** Under the target-responsibility system (目标责任制) and performance-assessment (绩效考核) regime, the commitments enumerated in the GWR feed the quantified targets against which the prefecture's leadership is subsequently assessed by the superior provincial Party authority. The report is an *input to* the promotion-relevant evaluation process, not merely a record of it.
+**Link to cadre evaluation.** Under the target-responsibility system and performance-assessment regime, the commitments enumerated in the GWR feed the quantified targets against which the prefecture's leadership is subsequently assessed by the superior provincial Party authority. The report is an *input to* the promotion-relevant evaluation process, not merely a record of it.
 
 **Audiences and "visible to whom."** The GWR's audiences include the superior authority that controls promotion, the NPC delegates who vote on it, and the public and media to whom it is released. The audience relevant to our construct is the *superior*: our salience criterion is defined relative to this upward principal, which is precisely the channel through which the observability asymmetry of §2.1 operates. Lateral citizen approval is a distinct channel, reported as a bounded null (§4.4), not the mechanism.
 
@@ -69,9 +69,9 @@ The concrete lexicon's overall four-class accuracy is 0.74 (functional precision
 
 **The polysemy ceiling.** Curation cannot push visible precision past roughly **0.60–0.64**. The residual errors are **irreducible by term selection** because the offending words are genuinely infrastructure in the *majority* of their uses, so deleting them destroys recall:
 
-- 道路 ("road") is also the metaphor 新型工业化道路 ("the *path* of new-type industrialization");
-- 轨道交通 ("rail transit") also names the 轨道交通产业 ("rail-transit *industry*");
-- 园林 ("garden/landscaping") is also the award 国家园林城市.
+- 道路 *dàolù* ("road") is also the metaphor 新型工业化道路 ("the *path* of new-type industrialization");
+- 轨道交通 *guǐdào jiāotōng* ("rail transit") also names the 轨道交通产业 ("rail-transit *industry*");
+- 园林 *yuánlín* ("garden/landscaping") is also the award 国家园林城市 *guójiā yuánlín chéngshì*.
 
 This is a general property of compositional constructs carried by everyday words: dictionary precision is bounded by the language, not by the analyst's effort. We report the ceiling as a *finding*, not a defect to be hidden.
 

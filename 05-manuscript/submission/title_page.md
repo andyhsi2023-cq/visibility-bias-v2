@@ -2,11 +2,11 @@
 
 ## Title
 
-**When Dictionaries Hit a Polysemy Ceiling: Validating a Measure of Visibility Bias with LLMs and Behavioral Evidence**
+**Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation**
 
 ## Authors
 
-**Hongyang Xi (奚红洋)**¹†\* · **Liu Can (刘灿)**²† · **Zhihui Li (李志辉)**¹
+**Hongyang Xi**¹†\* · **Liu Can**²† · **Zhihui Li**¹
 
 ¹ Chongqing Survey Institute Co., Ltd., Chongqing, China
 ² Urban and Rural Planning, Guangzhou College of Applied Science and Technology, Guangzhou, China
@@ -49,4 +49,4 @@ JCSS submission guidelines request a Google Scholar profile URL. The correspondi
 
 ---
 
-*[Pending for Andy: confirm author order/equal-contribution footnote; regenerate title_page.docx/.pdf from this file. All three authors' ORCIDs/affiliations now complete; recorded in `本地信息.rtf`.]*
+*[Pending for Andy: confirm author order/equal-contribution footnote; regenerate title_page.docx/.pdf from this file. All three authors' ORCIDs/affiliations now complete.]*
