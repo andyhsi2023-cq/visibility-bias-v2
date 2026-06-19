@@ -1,6 +1,6 @@
 # Replication guide — *When Dictionaries Hit a Polysemy Ceiling* (JCSO-D-26-00240, R2)
 
-This repository reproduces every headline number in the manuscript. It is **self-contained** except for two large/raw inputs noted under *Data access*. Pre-registration: OSF [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5). Archive: Zenodo [10.5281/zenodo.19569979](https://doi.org/10.5281/zenodo.19569979).
+This repository reproduces every headline number in the manuscript. It is **self-contained** except for two large/raw inputs noted under *Data access*. Pre-registration: OSF [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5). Archive: Zenodo [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978).
 
 ## Environment
 Python 3.11+; `pip install pandas statsmodels matplotlib openai`. LLM steps (ensemble classification, lexicon adjudication) require API keys in `_meta/scripts/.env` (`DEEPSEEK_API_KEY`, `GLOBALAI_API_KEY`, `VECTORENGINE_API_KEY`) — **not** distributed; their *outputs* are included so all downstream numbers reproduce without keys.

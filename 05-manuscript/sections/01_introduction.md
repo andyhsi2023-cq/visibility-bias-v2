@@ -18,7 +18,7 @@ Our contribution is **methodological**, and we position it as a domain-specific 
 
 - **Behavioral co-movement as the decisive validity test.** We argue, and demonstrate, that for measures of strategic attention the decisive test is *criterion* validity against real behavior under an exogenous shock — not internal reliability or aggregate cross-source correlation. The retirement-turnover co-movement separates a valid measure from a naive one that is internally stable yet behaviorally inert.
 
-- **Transparent demotion and reproducibility.** We relabel earlier exercises for what they are (an independent-lexicon correlation as *reliability*, not validity; a within-document differential as *suggestive*; an accounting correlation as a *modest external* check) and demote under-identified causal and welfare analyses to the appendix, reported as failed or assumption-dependent rather than as findings. Instrument, gold-standard codings, and analysis code are pre-registered (OSF DOI 10.17605/OSF.IO/ZMJY5) and archived (Zenodo DOI 10.5281/zenodo.19569979), following open-science reporting norms [9, 10].
+- **Transparent demotion and reproducibility.** We relabel earlier exercises for what they are (an independent-lexicon correlation as *reliability*, not validity; a within-document differential as *suggestive*; an accounting correlation as a *modest external* check) and demote under-identified causal and welfare analyses to the appendix, reported as failed or assumption-dependent rather than as findings. Instrument, gold-standard codings, and analysis code are pre-registered (OSF DOI 10.17605/OSF.IO/ZMJY5) and archived (Zenodo DOI 10.5281/zenodo.19569978), following open-science reporting norms [9, 10].
 
 ## 1.2 Roadmap
 

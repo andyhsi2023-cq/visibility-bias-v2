@@ -13,7 +13,7 @@ We study how to measure *visibility bias* — the rhetorical emphasis on observa
 
 **Keywords**: text-as-data, dictionary methods, LLM annotation, construct & criterion validity, polysemy, policy attention, China
 
-**Pre-registration**: OSF DOI [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5) (instrument + initial battery); passage-level human/LLM validation and behavioral-validity analyses are pre-specified extensions (Appendix D). **Replication archive**: Zenodo DOI [10.5281/zenodo.19569979](https://doi.org/10.5281/zenodo.19569979).
+**Pre-registration**: OSF DOI [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5) (instrument + initial battery); passage-level human/LLM validation and behavioral-validity analyses are pre-specified extensions (Appendix D). **Replication archive**: Zenodo DOI [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978).
 
 
 # 1. Introduction
@@ -36,7 +36,7 @@ Our contribution is **methodological**, and we position it as a domain-specific 
 
 - **Behavioral co-movement as the decisive validity test.** We argue, and demonstrate, that for measures of strategic attention the decisive test is *criterion* validity against real behavior under an exogenous shock — not internal reliability or aggregate cross-source correlation. The retirement-turnover co-movement separates a valid measure from a naive one that is internally stable yet behaviorally inert.
 
-- **Transparent demotion and reproducibility.** We relabel earlier exercises for what they are (an independent-lexicon correlation as *reliability*, not validity; a within-document differential as *suggestive*; an accounting correlation as a *modest external* check) and demote under-identified causal and welfare analyses to the appendix, reported as failed or assumption-dependent rather than as findings. Instrument, gold-standard codings, and analysis code are pre-registered (OSF DOI 10.17605/OSF.IO/ZMJY5) and archived (Zenodo DOI 10.5281/zenodo.19569979), following open-science reporting norms [9, 10].
+- **Transparent demotion and reproducibility.** We relabel earlier exercises for what they are (an independent-lexicon correlation as *reliability*, not validity; a within-document differential as *suggestive*; an accounting correlation as a *modest external* check) and demote under-identified causal and welfare analyses to the appendix, reported as failed or assumption-dependent rather than as findings. Instrument, gold-standard codings, and analysis code are pre-registered (OSF DOI 10.17605/OSF.IO/ZMJY5) and archived (Zenodo DOI 10.5281/zenodo.19569978), following open-science reporting norms [9, 10].
 
 ## 1.2 Roadmap
 
@@ -167,7 +167,7 @@ On the strength of the passage-level validation and — decisively — the behav
 
 ## 3.7 Data
 
-The text corpus (§3.1) is combined with: the **MOHURD Urban Construction Statistical Yearbook (2005–2015)**, source of the accounting-based CIR (cosmetic categories ÷ total urban-construction investment; coverage ends in 2015 at a MOHURD reclassification); a **city-year control panel** (282 cities × 2002–2024: ln GDP per capita, ln population, secondary-industry share, urbanization); a **municipal-leader panel** giving party-secretary turnover, tenure, and age (the basis for the retirement-driven turnover shock in §4); the **China Family Panel Studies** (CFPS, 2010–2022) for the individual-level bounded null (§4.4); and **Zhejiang public-procurement records (2019–2024)** for the supplementary frequency check (§4.3). Provenance, field definitions, and linkage rates are in the replication archive (Online Appendix E). The criterion-validity panel (`master_2002_2024.csv`, holding both the naive and concrete text series alongside CIR and the turnover variables) and all code are archived at Zenodo (DOI 10.5281/zenodo.19569979) and pre-registered at OSF (DOI 10.17605/OSF.IO/ZMJY5).
+The text corpus (§3.1) is combined with: the **MOHURD Urban Construction Statistical Yearbook (2005–2015)**, source of the accounting-based CIR (cosmetic categories ÷ total urban-construction investment; coverage ends in 2015 at a MOHURD reclassification); a **city-year control panel** (282 cities × 2002–2024: ln GDP per capita, ln population, secondary-industry share, urbanization); a **municipal-leader panel** giving party-secretary turnover, tenure, and age (the basis for the retirement-driven turnover shock in §4); the **China Family Panel Studies** (CFPS, 2010–2022) for the individual-level bounded null (§4.4); and **Zhejiang public-procurement records (2019–2024)** for the supplementary frequency check (§4.3). Provenance, field definitions, and linkage rates are in the replication archive (Online Appendix E). The criterion-validity panel (`master_2002_2024.csv`, holding both the naive and concrete text series alongside CIR and the turnover variables) and all code are archived at Zenodo (DOI 10.5281/zenodo.19569978) and pre-registered at OSF (DOI 10.17605/OSF.IO/ZMJY5).
 
 
 # 4. Behavioral Criterion Validity
@@ -263,7 +263,7 @@ We set out to measure visibility bias in Chinese municipal government work repor
 
 Two general points outlast the case. First, polysemy imposes a precision ceiling on dictionary measures of everyday-word constructs that curation cannot break, and that ceiling should be reported, not hidden. Second, for measures of strategic attention the decisive validity test is behavioral co-movement under an exogenous shock — not internal reliability, and not passage precision alone. We invite extension along three lines: a policy-rhetoric third-party corpus to strengthen external validity; additional exogenous incentive shocks to widen the criterion-validity base; and application of the validate-report-the-ceiling-then-escalate protocol to bureaucratic text in other institutional settings.
 
-Pre-registration: OSF DOI 10.17605/OSF.IO/ZMJY5. Replication archive: Zenodo DOI 10.5281/zenodo.19569979; GitHub: andyhsi2023-cq/visibility-bias-v2.
+Pre-registration: OSF DOI 10.17605/OSF.IO/ZMJY5. Replication archive: Zenodo DOI 10.5281/zenodo.19569978; GitHub: andyhsi2023-cq/visibility-bias-v2.
 
 ---
 
@@ -275,7 +275,7 @@ Pre-registration: OSF DOI 10.17605/OSF.IO/ZMJY5. Replication archive: Zenodo DOI
 
 **Authors' Contributions.** Hongyang Xi and Liu Can contributed equally and are co-first authors. Hongyang Xi (corresponding author) conceived the study, constructed the lexicons and the LLM-ensemble classification, performed the data collection and statistical analysis, drafted the manuscript, and prepared the replication archive. Liu Can constructed and verified the public-procurement (bidding) evidence (§4.3), contributing urban- and rural-planning domain expertise to the visible-versus-functional classification of construction projects. Zhihui Li independently performed the second passage-level coding of the validation sample for the intercoder-reliability assessment (§3.3). All authors contributed to the critical revision of the manuscript, reviewed and approved the final version, and are accountable for the integrity of the work.
 
-**Data Availability.** All data, lexicons, code, and intermediate outputs supporting the findings are archived at Zenodo (DOI [10.5281/zenodo.19569979](https://doi.org/10.5281/zenodo.19569979)) and mirrored on GitHub (`andyhsi2023-cq/visibility-bias-v2`). The Zenodo record is Restricted during peer review; reviewer access is provided via the token in the cover letter and will be flipped to Public upon acceptance. Source government work reports are scraped from publicly accessible municipal government websites; CFPS individual data are obtained from the Institute of Social Science Survey at Peking University under their public data-use agreement; the MOHURD Urban Construction Statistical Yearbook (2005–2015) and Zhejiang public-procurement records are publicly archived.
+**Data Availability.** All data, lexicons, code, and intermediate outputs supporting the findings are archived at Zenodo (DOI [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978)) and mirrored on GitHub (`andyhsi2023-cq/visibility-bias-v2`). The Zenodo record is Restricted during peer review; reviewer access is provided via the token in the cover letter and will be flipped to Public upon acceptance. Source government work reports are scraped from publicly accessible municipal government websites; CFPS individual data are obtained from the Institute of Social Science Survey at Peking University under their public data-use agreement; the MOHURD Urban Construction Statistical Yearbook (2005–2015) and Zhejiang public-procurement records are publicly archived.
 
 **Code Availability.** All analysis scripts (Python; pandas, statsmodels) and the passage-validation toolchain are archived in the Zenodo replication record.
 
@@ -423,7 +423,7 @@ The pre-registered archive (OSF ZMJY5) is unmodified. This deviation log is the 
 
 **Authors**: Hongyang Xi (Chongqing Survey Institute)†, Liu Can (Guangzhou College of Applied Science and Technology)†, Zhihui Li (Chongqing Survey Institute) · †co-first authors
 **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5
-**Replication**: Zenodo DOI 10.5281/zenodo.19569979
+**Replication**: Zenodo DOI 10.5281/zenodo.19569978
 
 ---
 
@@ -604,7 +604,7 @@ Per class: visible P = 0.500, R = 0.789, F1 = 0.61; functional P = 0.600, R = 0.
 
 ## Appendix E: Replication Architecture
 
-Full directory layout (Zenodo record 19569979):
+Full directory layout (Zenodo record 19569978):
 
 ```
 visibility-bias-v2/

@@ -19,12 +19,12 @@
 **Google Scholar profile**: *In creation. The corresponding author's Google Scholar profile is being established and will be provided to the editorial office post-acceptance. In the interim, verifiable academic identity is documented through:*
 - *ORCID (corresponding author)*: [0009-0007-6911-2309](https://orcid.org/0009-0007-6911-2309)
 - *OSF pre-registration record*: [https://osf.io/zmjy5/](https://osf.io/zmjy5/) (DOI 10.17605/OSF.IO/ZMJY5)
-- *Zenodo replication archive*: [https://doi.org/10.5281/zenodo.19569979](https://doi.org/10.5281/zenodo.19569979)
+- *Zenodo replication archive*: [https://doi.org/10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978)
 - *GitHub*: [https://github.com/andyhsi2023-cq](https://github.com/andyhsi2023-cq)
 
 ## Acknowledgments
 
-The authors thank the Open Science Framework for hosting the pre-registration archive (DOI 10.17605/OSF.IO/ZMJY5) and Zenodo (CERN) for hosting the replication archive (DOI 10.5281/zenodo.19569979). Earlier drafts benefitted from outreach feedback solicitations to Daniel Mattingly (Yale), Jennifer Pan (Stanford), and Yuhua Wang (Harvard); any errors remain the authors' own.
+The authors thank the Open Science Framework for hosting the pre-registration archive (DOI 10.17605/OSF.IO/ZMJY5) and Zenodo (CERN) for hosting the replication archive (DOI 10.5281/zenodo.19569978). Earlier drafts benefitted from outreach feedback solicitations to Daniel Mattingly (Yale), Jennifer Pan (Stanford), and Yuhua Wang (Harvard); any errors remain the authors' own.
 
 ## Funding
 
@@ -39,7 +39,7 @@ This research received no specific grant from any funding agency in the public, 
 - **References**: 20 *(reference [20] Wu & Zhou 2018 pending full citation)*
 - **Online resources**: 1 (Online Resource 1: Online Appendix; PDF)
 - **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5 (archived 2026-04-14)
-- **Replication archive**: Zenodo DOI 10.5281/zenodo.19569979
+- **Replication archive**: Zenodo DOI 10.5281/zenodo.19569978
 
 ---
 

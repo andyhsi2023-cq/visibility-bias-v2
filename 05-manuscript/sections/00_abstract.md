@@ -4,4 +4,4 @@ We study how to measure *visibility bias* — the rhetorical emphasis on observa
 
 **Keywords**: text-as-data, dictionary methods, LLM annotation, construct & criterion validity, polysemy, policy attention, China
 
-**Pre-registration**: OSF DOI [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5) (instrument + initial battery); passage-level human/LLM validation and behavioral-validity analyses are pre-specified extensions (Appendix D). **Replication archive**: Zenodo DOI [10.5281/zenodo.19569979](https://doi.org/10.5281/zenodo.19569979).
+**Pre-registration**: OSF DOI [10.17605/OSF.IO/ZMJY5](https://doi.org/10.17605/OSF.IO/ZMJY5) (instrument + initial battery); passage-level human/LLM validation and behavioral-validity analyses are pre-specified extensions (Appendix D). **Replication archive**: Zenodo DOI [10.5281/zenodo.19569978](https://doi.org/10.5281/zenodo.19569978).

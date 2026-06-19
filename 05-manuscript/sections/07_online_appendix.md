@@ -4,7 +4,7 @@
 
 **Authors**: Hongyang Xi (Chongqing Survey Institute)†, Liu Can (Guangzhou College of Applied Science and Technology)†, Zhihui Li (Chongqing Survey Institute) · †co-first authors
 **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5
-**Replication**: Zenodo DOI 10.5281/zenodo.19569979
+**Replication**: Zenodo DOI 10.5281/zenodo.19569978
 
 ---
 
@@ -185,7 +185,7 @@ Per class: visible P = 0.500, R = 0.789, F1 = 0.61; functional P = 0.600, R = 0.
 
 ## Appendix E: Replication Architecture
 
-Full directory layout (Zenodo record 19569979):
+Full directory layout (Zenodo record 19569978):
 
 ```
 visibility-bias-v2/
