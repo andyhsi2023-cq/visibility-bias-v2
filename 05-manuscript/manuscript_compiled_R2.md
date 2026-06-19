@@ -115,7 +115,7 @@ $$\text{VAI}_{it} = \frac{v_{it}}{v_{it}+f_{it}} \in [0,1],$$
 
 independent of report length; we require $v_{it}+f_{it}\ge 5$. We refer to this construction as the **naive** measure (the `vai_composite` series used in §4).
 
-Validated at the passage level (§3.3 design), the naive visible class **fails badly**: its precision against human coding is only **0.10** (recall 0.43), and against a three-model LLM ensemble 0.37 (recall 0.88). The diagnosis is decisive and single-cause: the abstract appearance/image words are **polysemous** and fire pervasively outside infrastructure. One term — **示范** — alone accounts for **61 of 84** visible-class false positives (示范区 "demonstration zone", 示范项目 "model project", 改革示范 "reform model"), roughly 70% of the total; 文明城市, 展示, 美丽, and 形象 supply most of the remainder (Online Appendix C.8, error taxonomy). Recall is healthy, so the problem is not missing content but over-firing on non-infrastructure rhetoric — exactly the false-positive pathology Reviewer #1 asked us to surface.
+Validated at the passage level (§3.3 design), the naive visible class **fails badly**: its precision against human coding is only **0.10** (recall 0.43), and against a three-model LLM ensemble 0.37 (recall 0.88). The diagnosis is decisive and single-cause: the abstract appearance/image words are **polysemous** and fire pervasively outside infrastructure. One term — **示范** — alone accounts for **60–61 of 84** visible-class false positives (示范区 "demonstration zone", 示范项目 "model project", 改革示范 "reform model"), roughly 70% of the total; 文明城市, 展示, 美丽, and 形象 supply most of the remainder (Online Appendix C.8, error taxonomy). Recall is healthy, so the problem is not missing content but over-firing on non-infrastructure rhetoric — exactly the false-positive pathology Reviewer #1 asked us to surface.
 
 ### 3.2.2 A concrete, salience-based lexicon
 
@@ -169,7 +169,7 @@ On the strength of the passage-level validation and — decisively — the behav
 
 ## 3.7 Data
 
-The text corpus (§3.1) is combined with: the **MOHURD Urban Construction Statistical Yearbook (2005–2015)**, source of the accounting-based CIR (cosmetic categories ÷ total urban-construction investment; coverage ends in 2015 at a MOHURD reclassification); a **city-year control panel** (282 cities × 2002–2024: ln GDP per capita, ln population, secondary-industry share, urbanization); a **municipal-leader panel** giving party-secretary turnover, tenure, and age (the basis for the retirement-driven turnover shock in §4); the **China Family Panel Studies** (CFPS, 2010–2022) for the individual-level bounded null (§4.4); and **Zhejiang public-procurement records (2019–2024)** for the supplementary frequency check (§4.3). Provenance, field definitions, and linkage rates are in the replication archive (Online Appendix E). The criterion-validity panel (`master_2002_2024.csv`, holding both the naive and concrete text series alongside CIR and the turnover variables) and all code are archived at Zenodo (DOI 10.5281/zenodo.19569978) and pre-registered at OSF (DOI 10.17605/OSF.IO/ZMJY5).
+The text corpus (§3.1) is combined with: the **MOHURD Urban Construction Statistical Yearbook (2005–2015)**, source of the accounting-based CIR (cosmetic categories ÷ total urban-construction investment; coverage ends in 2015 at a MOHURD reclassification); a **city-year control panel** (282 cities × 2002–2024: ln GDP per capita, ln population, secondary-industry share, urbanization); a **municipal-leader panel** giving party-secretary turnover, tenure, and age (the basis for the retirement-driven turnover shock in §4); the **China Family Panel Studies** (CFPS, 2010–2022) for the individual-level bounded null (§4.4); and **Zhejiang public-procurement records (predominantly 2019–2026)** for the supplementary frequency check (§4.3). Provenance, field definitions, and linkage rates are in the replication archive (Online Appendix E). The criterion-validity panel (`master_2002_2024.csv`, holding both the naive and concrete text series alongside CIR and the turnover variables) and all code are archived at Zenodo (DOI 10.5281/zenodo.19569978) and pre-registered at OSF (DOI 10.17605/OSF.IO/ZMJY5).
 
 
 # 4. Behavioral Criterion Validity
@@ -193,7 +193,7 @@ with city ($\mu_i$) and year ($\tau_t$) fixed effects and standard errors cluste
 | Outcome | Turnover (t−1) | Future turnover (lead) | Retirement-exogenous (t−1) |
 |---|---:|---:|---:|
 | Real cosmetic investment (CIR) | **+0.025** (p < 0.001) | −0.009 (p = 0.26) ✓ clean | +0.024 (p = 0.04) |
-| **Concrete / valid text** (`wr_visibility`) | **+0.0103** (p = 0.01) | +0.001 (p = 0.84) ✓ clean | +0.016 (p = 0.01) |
+| **Concrete / valid text** (`wr_visibility`) | **+0.010** (p = 0.01) | +0.001 (p = 0.84) ✓ clean | +0.016 (p = 0.01) |
 | **Naive text** (`vai_composite`) | +0.002 (p = 0.54) ✗ | +0.003 (p = 0.29) | +0.004 (p = 0.39) ✗ |
 
 *n ≈ 3,082 (CIR), 5,005 (concrete), 5,011 (naive) city-years.*
@@ -365,7 +365,7 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Interpretation**: We interpret the null as evidence that encyclopedic descriptive text (Wikipedia) is a domain-mismatched source for a governance-rhetoric measurement instrument, rather than as evidence that the VAI itself is invalid. The appropriate third-party source is *policy-rhetoric* text — Xinhua local-policy news or CNKI key-newspaper government reporting — whose construction is deferred to future work (see §5.3). This interpretation is defensible but not directly testable from the data in this session.
 
-**Honesty claim**: The failure is reported transparently in §3.2.5-3.2.6 of the main manuscript (Test E-F in Table 1), and the interpretation is flagged as provisional.
+**Honesty claim**: The failure is reported transparently in §3.5 of the main manuscript (the failed Wikipedia external validation, E-F), and the interpretation is flagged as provisional.
 
 ### D-F-1 (Phase F — Micro-foundation test)
 
@@ -536,7 +536,7 @@ Event-study around scheduled leadership transition (mayor + party-secretary tenu
 
 ### C.6 Heterogeneity by fiscal capacity
 
-Equation $(\star)$ from §2.4 predicts that the visibility-bias distortion increases in $B_i$. We split the sample by above/below-median per-capita fiscal revenue:
+The cadre-attention first-order condition (Online Appendix A.2) predicts that the visibility-bias distortion increases in $B_i$. We split the sample by above/below-median per-capita fiscal revenue:
 
 | Subsample | β(VAI) on CIR | p | N |
 |---|---:|---:|---:|
@@ -665,9 +665,9 @@ The criterion-validity panel `master_2002_2024.csv` (merged from the absorbed `o
 
 17. Simonsohn, U., Simmons, J. P., & Nelson, L. D. (2020). Specification curve analysis. *Nature Human Behaviour, 4*(11), 1208-1214. https://doi.org/10.1038/s41562-020-0912-z
 
-18. Grimmer, J., & Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. *Political Analysis, 21*(3), 267-297. https://doi.org/10.1093/pan/mps028  <!-- [verify pages/DOI before submission] -->
+18. Grimmer, J., & Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. *Political Analysis, 21*(3), 267-297. https://doi.org/10.1093/pan/mps028
 
-19. Osnabrügge, M., Ash, E., & Morelli, M. (2023). Cross-domain topic classification for political texts. *Political Analysis, 31*(1), 59-80. https://doi.org/10.1017/pan.2021.37  <!-- [verify vol/issue/pages/DOI before submission] -->
+19. Osnabrügge, M., Ash, E., & Morelli, M. (2023). Cross-domain topic classification for political texts. *Political Analysis, 31*(1), 59-80. https://doi.org/10.1017/pan.2021.37
 
 20. Gilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. *Proceedings of the National Academy of Sciences, 120*(30), e2305016120. https://doi.org/10.1073/pnas.2305016120
 

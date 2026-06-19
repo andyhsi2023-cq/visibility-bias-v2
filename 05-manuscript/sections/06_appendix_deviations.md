@@ -73,7 +73,7 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Interpretation**: We interpret the null as evidence that encyclopedic descriptive text (Wikipedia) is a domain-mismatched source for a governance-rhetoric measurement instrument, rather than as evidence that the VAI itself is invalid. The appropriate third-party source is *policy-rhetoric* text — Xinhua local-policy news or CNKI key-newspaper government reporting — whose construction is deferred to future work (see §5.3). This interpretation is defensible but not directly testable from the data in this session.
 
-**Honesty claim**: The failure is reported transparently in §3.2.5-3.2.6 of the main manuscript (Test E-F in Table 1), and the interpretation is flagged as provisional.
+**Honesty claim**: The failure is reported transparently in §3.5 of the main manuscript (the failed Wikipedia external validation, E-F), and the interpretation is flagged as provisional.
 
 ### D-F-1 (Phase F — Micro-foundation test)
 

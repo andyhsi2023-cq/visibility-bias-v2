@@ -34,8 +34,8 @@ This research received no specific grant from any funding agency in the public, 
 
 - **Article type**: Research Article
 - **Word count**: ~10,900 (full master incl. statements + appendices; ~5,000 main text §1–§6 excluding online appendix)
-- **Figures**: [recount for R2 — several exhibits demoted to appendix]
-- **Tables**: [recount for R2 — main text: Table 0, Table 1 precision ladder, Table 2 co-movement]
+- **Figures**: 2 main-text (Fig 1 precision ladder; Fig 2 co-movement) + online-appendix figures (incl. ESM-6 procurement)
+- **Tables**: 3 main-text (Table 0 positioning; Table 1 precision ladder; Table 2 co-movement)
 - **References**: 21
 - **Online resources**: 1 (Online Resource 1: Online Appendix; PDF)
 - **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5 (archived 2026-04-14)
@@ -49,4 +49,3 @@ JCSS submission guidelines request a Google Scholar profile URL. The correspondi
 
 ---
 
-*[Pending for Andy: confirm author order/equal-contribution footnote; regenerate title_page.docx/.pdf from this file. All three authors' ORCIDs/affiliations now complete.]*

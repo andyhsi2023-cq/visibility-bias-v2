@@ -19,7 +19,7 @@ with city ($\mu_i$) and year ($\tau_t$) fixed effects and standard errors cluste
 | Outcome | Turnover (t−1) | Future turnover (lead) | Retirement-exogenous (t−1) |
 |---|---:|---:|---:|
 | Real cosmetic investment (CIR) | **+0.025** (p < 0.001) | −0.009 (p = 0.26) ✓ clean | +0.024 (p = 0.04) |
-| **Concrete / valid text** (`wr_visibility`) | **+0.0103** (p = 0.01) | +0.001 (p = 0.84) ✓ clean | +0.016 (p = 0.01) |
+| **Concrete / valid text** (`wr_visibility`) | **+0.010** (p = 0.01) | +0.001 (p = 0.84) ✓ clean | +0.016 (p = 0.01) |
 | **Naive text** (`vai_composite`) | +0.002 (p = 0.54) ✗ | +0.003 (p = 0.29) | +0.004 (p = 0.39) ✗ |
 
 *n ≈ 3,082 (CIR), 5,005 (concrete), 5,011 (naive) city-years.*

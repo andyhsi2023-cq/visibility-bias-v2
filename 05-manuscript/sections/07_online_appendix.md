@@ -115,7 +115,7 @@ Event-study around scheduled leadership transition (mayor + party-secretary tenu
 
 ### C.6 Heterogeneity by fiscal capacity
 
-Equation $(\star)$ from §2.4 predicts that the visibility-bias distortion increases in $B_i$. We split the sample by above/below-median per-capita fiscal revenue:
+The cadre-attention first-order condition (Online Appendix A.2) predicts that the visibility-bias distortion increases in $B_i$. We split the sample by above/below-median per-capita fiscal revenue:
 
 | Subsample | β(VAI) on CIR | p | N |
 |---|---:|---:|---:|
