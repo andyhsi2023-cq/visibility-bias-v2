@@ -79,7 +79,7 @@ Full lists of V_ORIG (42 terms), F_ORIG (38 terms), V_EXT (+36 new terms, 78 tot
 | + leader-tenure control | Added party-secretary + mayor tenure | +0.110 | 0.003 |
 | All four jointly | All three above | +0.108 | 0.004 |
 
-### C.3 P2 placebo battery (main text §4.4.1)
+### C.3 P2 placebo battery (main text §4.5)
 
 **Table C.3.** Placebo tests for the inspection event study.
 
