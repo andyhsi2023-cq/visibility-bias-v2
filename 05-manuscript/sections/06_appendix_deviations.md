@@ -22,7 +22,7 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Executed**: Two-way-fixed-effects event study with city FE only (year FE dropped due to collinearity with event-time indicators when only two cohorts are present), event-time indicators k ∈ [−4, +4] with k = −1 reference. Controls: ln GDPpc, ln pop, ind2-share. SE clustered by city.
 
-**Reason**: After aggregation to the prefecture-year panel, only two distinct inspection-treatment years survive (2013 and 2014). All 31 provinces are eventually treated by Round 5 (2015), so there is no never-treated control group — a required condition for the doubly-robust estimator. The pre-registered specification is infeasible.
+**Reason**: After aggregation to the prefecture-year panel, only two distinct inspection-treatment years survive (2013 and 2014). All 31 provinces are eventually treated by Round 5 (2015), so there is no never-treated control group. Because the doubly-robust estimator requires such a group, the pre-registered specification is infeasible.
 
 **Result under executed substitute**: β(k=0) = −0.065, SE = 0.025, p = 0.011.
 
@@ -32,7 +32,7 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Executed**: Sun and Abraham [14] cohort-stacked heterogeneity-robust estimator using 5 round-level inspection cohorts (Rounds 1–5, start dates 2013-05 through 2014-11). Cohort c uses later-treated cohorts' pre-treatment observations as controls.
 
-**Result**: β(k=0) = −0.019, SE = 0.117, p = 0.87. Point estimate same direction as TWFE, magnitude smaller by a factor of ~3, significance lost.
+**Result**: β(k=0) = −0.019, SE = 0.117, p = 0.87. The point estimate runs in the same direction as TWFE, but the magnitude is smaller by a factor of ~3 and significance is lost.
 
 **Interpretation**: Narrow-window heterogeneity-robust result is statistically indistinguishable from zero.
 
@@ -44,34 +44,34 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Result**: β(k=0) = **+0.016**, SE = 0.012, p = 0.19. β(k=+3) = +0.047, p = 0.005 (significant POSITIVE). **Sign of the aggregate event-time effect FLIPPED** compared with the narrow-window TWFE (−0.065) and the narrow-window Sun-Abraham (−0.019).
 
-**Interpretation**: All nine cohort-specific CATT(k=0) values under the expanded sample are positive (+0.011 to +0.083). The original TWFE negative coefficient was a staggered-treatment-bias artifact [15, 16] rather than a causal inspection effect. We report H2 as **definitively null** in §4.4. The pre-registered "consistent with prediction" framing from earlier drafts is withdrawn. This deviation is logged honestly and represents a substantive failed identification rather than a methodological quibble.
+**Interpretation**: All nine cohort-specific CATT(k=0) values under the expanded sample are positive (+0.011 to +0.083). The original TWFE negative coefficient was a staggered-treatment-bias artifact [15, 16], not a causal inspection effect. We report H2 as **definitively null** in §4.4. The pre-registered "consistent with prediction" framing from earlier drafts is withdrawn. We log this deviation honestly; it represents a substantive failed identification, not a methodological quibble.
 
 ### D-E-1 (Phase E — Construct validity, internal tests)
 
 **Pre-registered**: VAI from independent third-party text corpus (Xinhua news, provincial-government descriptive texts); correlation with primary VAI in [0.3, 0.7] range; independent β(VAI_3rd → CIR) > 0.
 
 **Executed**: Three internal construct-validity tests as supplements (not substitutes) for the external test:
-- E-A: Expanded internal dictionary (78+70 terms, independently curated) — resulting r(VAI_orig, VAI_ext) = 0.93.
-- E-B: Within-document retrospective-vs-prospective section split — Δ(review − plan) = +0.025, paired t = 8.4, p < 10⁻¹⁶.
-- E-C: Dictionary-bootstrap half-halves — mean r = 0.18 (reported as limitation).
-- Additionally: E-A CIR replication with VAI_ext — β = +0.111, p = 0.011.
+- E-A: Expanded internal dictionary (78+70 terms, independently curated), giving r(VAI_orig, VAI_ext) = 0.93.
+- E-B: Within-document retrospective-vs-prospective section split, with Δ(review − plan) = +0.025, paired t = 8.4, p < 10⁻¹⁶.
+- E-C: Dictionary-bootstrap half-halves, mean r = 0.18 (reported as limitation).
+- E-A CIR replication with VAI_ext, a further check, gave β = +0.111, p = 0.011.
 
-**Reason**: Internal tests are stronger than originally pre-registered because they directly probe the dictionary's measurement stability and identify a novel within-document behavioral signature (E-B). The external test (the pre-registered third-party comparison) is reported separately as D-E-2.
+**Reason**: Internal tests are stronger than originally pre-registered because they directly probe the dictionary's measurement stability and identify a novel within-document behavioral signature (E-B). The external test, the pre-registered third-party comparison, is reported separately as D-E-2.
 
 ### D-E-2 (Phase E2 — Third-party text validation, EXECUTED and FAILED)
 
 **Pre-registered**: VAI from independent third-party text corpus (Xinhua news, Baidu Baike city descriptions); correlation with primary VAI in [0.3, 0.7]; independent β(VAI_3rd → CIR) > 0, p < 5%.
 
-**Executed**: Substituted Chinese Wikipedia (zh.wikipedia.org) as publicly-accessible third-party source, using MediaWiki API. 282 of 286 target cities fetched (4 misses: Ji'an, Songyuan, Meizhou, Baishan). Mean article length 8,447 chars. Same V_ORIG + F_ORIG lexicon applied.
+**Executed**: Substituted Chinese Wikipedia (zh.wikipedia.org) as a publicly-accessible third-party source, fetched via the MediaWiki API. 282 of 286 target cities fetched (4 misses: Ji'an, Songyuan, Meizhou, Baishan). Mean article length 8,447 chars. Same V_ORIG + F_ORIG lexicon applied.
 
 **Result**:
 - Correlation r(VAI_wikipedia, VAI_primary_mean) = **−0.15**, 95% CI [−0.31, +0.02]. **Pre-registered [0.3, 0.7] band FAILED.**
 - CIR cross-sectional β(VAI_wikipedia) = +0.020, p = 0.57. Pre-registered "β > 0 at 5%" FAILED.
 - Horse race: VAI_primary retains all predictive power (β = +0.51, p = 0.007); VAI_wikipedia residual adds nothing (β = +0.04, p = 0.27).
 
-**Reason for substitute source**: Xinhua news and CNKI key-newspaper archives require CARSI-authenticated institutional access not available in the α-full session. Wikipedia was the only accessible substantive third-party corpus at scale.
+**Reason for substitute source**: Xinhua news and CNKI key-newspaper archives require CARSI-authenticated institutional access that was not available in the α-full session. Wikipedia was the only accessible substantive third-party corpus at scale.
 
-**Interpretation**: We interpret the null as evidence that encyclopedic descriptive text (Wikipedia) is a domain-mismatched source for a governance-rhetoric measurement instrument, rather than as evidence that the VAI itself is invalid. The appropriate third-party source is *policy-rhetoric* text — Xinhua local-policy news or CNKI key-newspaper government reporting — whose construction is deferred to future work (see §5.3). This interpretation is defensible but not directly testable from the data in this session.
+**Interpretation**: We read the null as evidence that encyclopedic descriptive text (Wikipedia) is a domain-mismatched source for a governance-rhetoric measurement instrument, rather than as evidence that the VAI itself is invalid. The appropriate third-party source is *policy-rhetoric* text (Xinhua local-policy news or CNKI key-newspaper government reporting), whose construction is deferred to future work (see §5.3). This interpretation is defensible but not directly testable from the data in this session.
 
 **Honesty claim**: The failure is reported transparently in §3.2.5 of the main manuscript (the failed Wikipedia external validation, E-F), and the interpretation is flagged as provisional.
 
@@ -79,7 +79,7 @@ Specification curve, control sets, cluster level, and sample restrictions are al
 
 **Pre-registered**: CFPS amenity-category-specific satisfaction items (qm401–qm406 or equivalent): visible amenities (parks, roads, streetscape) versus functional amenities (water, heating, flood resilience). Target effect size: **positive differential** |Cohen's d| ≥ 0.10 at the city-year level.
 
-**Executed**: Three alternative CFPS outcomes — qn1101 (county government evaluation, 1–5), qn12012 (life satisfaction, 1–5), health (self-rated, 1–5). Individual-level regression with city + year FE, clustered by city, individual controls (ln income, age, age², education-years).
+**Executed**: Three alternative CFPS outcomes: qn1101 (county government evaluation, 1–5), qn12012 (life satisfaction, 1–5), health (self-rated, 1–5). Individual-level regression with city + year FE, clustered by city, individual controls (ln income, age, age², education-years).
 
 **Reason**: The public CFPS cleaned panel (2010–2022) does not contain amenity-category-specific satisfaction items. Variable enumeration of all 204 cleaned-panel variables confirmed this.
 
@@ -122,6 +122,6 @@ The following pre-registered commitments were executed exactly as specified:
 | D-F-1 | H5 CFPS amenity items | Amenity-category-specific | Three general outcomes | Test not executable as pre-registered; substitute returned null; reframed as exploratory |
 | D-J-1 | criterion validity (extension) | behavioral test specified as extension | retirement-turnover co-movement, merged panel | **Strengthens** — valid measure co-moves (+0.010, p=0.01); naive null (+0.002, p=0.54); now the central evidence |
 
-**Two deviations (D-B-2, D-E-2) weaken the original causal/external claims; one extension (D-J-1) supplies the paper's new central evidence.** We report all transparently. The revised paper's spine is the behavioral criterion-validity co-movement (D-J-1): under an exogenous retirement-turnover shock the valid concrete measure co-moves with real cosmetic investment (+0.010, p = 0.01) while the naive measure does not (+0.002, p = 0.54). The measurement contributions are the passage-level validation with its reported polysemy ceiling and the LLM-ensemble high-precision alternative (both §3.2.0). The cross-sectional β(VAI → CIR) association and the structural welfare calibration are demoted to supporting/illustrative; the failed P2 inspection design (D-B-3) and the failed H4/H5 tests (D-E-2/D-F-1) are reported honestly and narrow the scope but do not bear on the criterion-validity spine.
+**Two deviations (D-B-2, D-E-2) weaken the original causal/external claims; one extension (D-J-1) supplies the paper's new central evidence.** We report all transparently. The revised paper's spine is the behavioral criterion-validity co-movement (D-J-1): under an exogenous retirement-turnover shock the valid concrete measure co-moves with real cosmetic investment (+0.010, p = 0.01) while the naive measure does not (+0.002, p = 0.54). The measurement contributions are the passage-level validation with its reported polysemy ceiling and the LLM-ensemble high-precision alternative (both §3.2.0). The cross-sectional β(VAI → CIR) association and the structural welfare calibration are demoted to supporting/illustrative. The failed P2 inspection design (D-B-3) and the failed H4/H5 tests (D-E-2/D-F-1) are reported honestly. They narrow the scope but do not bear on the criterion-validity spine.
 
 The pre-registered archive (OSF ZMJY5) is unmodified. This deviation log is the canonical record of what was done relative to what was promised. All decisions to deviate were made before examining the post-deviation outcomes (with the one exception of §4.4's re-framing of the CFPS null from confirmatory to exploratory, which was a post-hoc interpretation-level revision disclosed explicitly in D-F-1 and in §4.4's opening paragraph).

@@ -10,7 +10,7 @@
 
 ## Appendix A: The Full Cadre-Attention Model
 
-The main text (§2) gives an intuitive summary of the cadre-attention model. This appendix provides the full derivation.
+The main text (§2) gives an intuitive summary of the cadre-attention model. The full derivation follows.
 
 ### A.1 Setup
 
@@ -42,11 +42,11 @@ The welfare loss expressed as a fraction of first-best utility is:
 
 $$W_i = \frac{1}{2} \cdot \frac{(a_i^* - a_i^{SO})^2}{a_i^{SO}(1-a_i^{SO})}.$$
 
-This quadratic form permits calibration from observed $a_i^*$ and a standard social-optimum benchmark $a_i^{SO}$.
+This quadratic form allows calibration from observed $a_i^*$ together with a standard social-optimum benchmark $a_i^{SO}$.
 
 ## Appendix B: Specification Curve (P1 Robustness — demoted)
 
-*This appendix supports the cross-sectional VAI→CIR association (§4.1), a modest external check (E-D, §3.2.4); it is not part of the main evidentiary spine (the behavioral criterion-validity co-movement of §3.2.7).*
+*This appendix supports the cross-sectional VAI→CIR association (§4.1), a modest external check (E-D, §3.2.4). It is not part of the main evidentiary spine, which rests on the behavioral criterion-validity co-movement of §3.2.7.*
 
 ### B.1 24-permutation specification curve
 
@@ -96,7 +96,7 @@ Three independent proxies for $\omega_V/\omega_F$:
 
 1. **Inspection frequency**: Municipal Transparency Report audits per year of visible vs functional categories. Ratio 3.2:1 in favor of visible.
 2. **Media reporting intensity**: Xinhua local news mentions per month. Ratio 2.8:1 in favor of visible.
-3. **Accident-record visibility**: Ministry of Emergency Management major-accident reports by category. Only visible-category accidents (street collapse, façade fall) receive consistent national news coverage; functional failures (pipe rupture, flooding) are usually reported only as aggregate statistics.
+3. **Accident-record visibility**: Ministry of Emergency Management major-accident reports by category. Only visible-category accidents (street collapse, façade fall) receive consistent national news coverage. Functional failures (pipe rupture, flooding) are usually reported only as aggregate statistics.
 
 All three support A1 at $p < 0.05$ (separately and jointly).
 
@@ -137,7 +137,7 @@ Full sensitivity across $a^{SO} \in [0.40, 0.50]$, utility forms, and shadow-pri
 | 0.45 | CRRA(γ=2) | 3.12% | ¥8.8B/yr |
 | 0.45 | BOE (replacement cost) | ~20% | ¥55B/yr |
 
-**Defensible range**: ¥1–15B/yr under log utility and $a^{SO} \in [0.40, 0.50]$. The ¥55B BOE is a ceiling. (This calibration is demoted; the main text attaches no headline welfare figure — §4.4.)
+**Defensible range**: ¥1–15B/yr under log utility and $a^{SO} \in [0.40, 0.50]$. The ¥55B BOE is a ceiling. (This calibration is demoted; the main text attaches no headline welfare figure. See §4.4.)
 
 ### C.8 Passage-validation confusion matrix and error taxonomy (main text §3.2.0)
 
@@ -164,9 +164,9 @@ Per class: visible P = 0.500, R = 0.789, F1 = 0.61; functional P = 0.600, R = 0.
 | 美丽 *měilì* (beautiful) | 5 | 美丽乡村 slogan |
 | 形象 *xíngxiàng* (image) | 4 | "government image" |
 
-`示范` alone accounts for ~70% of visible false positives — the single-cause failure motivating the move to a concrete, salience-based lexicon (§3.2.2). Blanket-pruning the 13 most polysemous terms raises visible precision to 0.59 but collapses recall to 0.47, so the fix is surgical.
+`示范` alone accounts for ~70% of visible false positives. This single-cause failure motivated the move to a concrete, salience-based lexicon (§3.2.2). Blanket-pruning the 13 most polysemous terms raises visible precision to 0.59 but collapses recall to 0.47, so the fix is surgical.
 
-**Human intercoder agreement.** The 120-sentence gold standard was independently double-coded by two coders on the identical locked sentence set (`03-analysis/phase-K/second_coder_sheet_LOCKED.csv`, with dictionary and ensemble labels hidden). The **human intercoder agreement is Cohen κ = 0.70** (substantial; n = 120). Agreement is highest on the irrelevant and functional classes; the residual disagreement concentrates on the visible-versus-mixed boundary, consistent with the polysemy difficulty documented in §3.2.0 (and itself part of why high passage precision favors the LLM ensemble). Human↔ensemble agreement is Cohen κ = 0.66.
+**Human intercoder agreement.** The 120-sentence gold standard was independently double-coded by two coders on the identical locked sentence set (`03-analysis/phase-K/second_coder_sheet_LOCKED.csv`, with dictionary and ensemble labels hidden). The **human intercoder agreement is Cohen κ = 0.70** (substantial; n = 120). Agreement is highest on the irrelevant and functional classes. The residual disagreement concentrates on the visible-versus-mixed boundary, consistent with the polysemy difficulty documented in §3.2.0, which is itself part of why high passage precision favors the LLM ensemble. Human↔ensemble agreement is Cohen κ = 0.66.
 
 **Figure ESM-6 (procurement, §4.3).** `04-figures/fig_bidding_by_city.{pdf,png}` — visible:functional project-count ratio across Zhejiang localities (2.96M procurement records, 2019–2026; v2 domain-verified lexicon). Panel A: distribution over 108 localities (median 1.8; 97 of 108 above 1:1 parity). Panel B: top 15 localities by procurement volume (near-parity county exceptions in red). Source: `03-analysis/phase-L-bidding/` (`classify_bidding.py`, `bidding_lexicon.py` v2, `by_city.csv`).
 
