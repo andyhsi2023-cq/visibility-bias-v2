@@ -3,7 +3,7 @@
 import os, re, glob, pandas as pd, numpy as np, warnings; warnings.filterwarnings('ignore')
 DIR='/Volumes/P1/城市研究/工作报告汇总/extracted/zf工作报告汇总/地级市工作报告2002-2024年/'
 def norm(s): return re.sub(r'(市|地区|自治州|盟)$','',str(s))
-# 面子(可视)词 vs 里子(非可视)词 — 对齐吴周2018投资分类
+# 面子(可视)词 vs 里子(非可视)词 — 对齐 MOHURD 城建投资"面子/里子"(可见 vs 隐蔽)分类
 FACADE=['绿化','园林','景观','亮化','公园','绿地','美化','广场','风貌','绿道','街景','花园','道路','路网','桥梁','立交','轨道','地铁','大道','景观带']
 LIZI  =['排水','排涝','管网','管道','防洪','地下管','污水','供水','管廊','内涝','下水道','排污','给排水','防汛','地下空间','雨水']
 def cnt(txt, words): return sum(txt.count(w) for w in words)

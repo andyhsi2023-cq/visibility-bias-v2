@@ -61,7 +61,7 @@ Two refinements follow the construct. First, the **metro/rail boundary case** (�
 | Lexicon | Visible precision | Visible recall | Note |
 |---|---:|---:|---|
 | Naive (42 appearance+concrete terms) | **0.10** | 0.43 | 示范/形象/展示 polysemy |
-| Concrete, salience-based (Wu–Zhou-aligned) | **0.50** | 0.79 | verified, `score_anchor.py` |
+| Concrete, salience-based (MOHURD-aligned) | **0.50** | 0.79 | verified, `score_anchor.py` |
 | Concrete, refined (−园林; +concealed-utility terms) | **0.60** | 0.79 | targeted disambiguation |
 | Concrete + above-ground landmarks | **0.64** | — | approaching the ceiling |
 
