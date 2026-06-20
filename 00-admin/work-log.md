@@ -274,3 +274,8 @@ Andy 通读定稿后发布。v4 DOI = 10.5281/zenodo.20768140;**concept DOI 10.5
 - 归档:Zenodo **v5** (10.5281/zenodo.20768441,concept 19569978 指向它,两作者);GitHub f62e444。
 - PDF 套件:06-submission/jcss-r1-submitted-pdf/(含官方 EM 生成版)。
 - deadline 原 2026-07-30,已提前提交。
+
+## 2026-06-20 — R&R 收尾确认(Andy 验收通过)
+Andy 检查投稿件,确认无误并批准提交。JCSO-D-26-00240R1 已在 JCSS Editorial Manager 完成 Approve,进入编辑处理(Revisions Being Processed)。本轮 Major Revisions R&R 工作结束,等待编辑决议。
+- 最终状态:两位作者(奚红洋 + 刘灿);稿件/标题页/ESM/cover/response/图 + EM 元数据 + GitHub(2908aaa)+ Zenodo v5(concept DOI 19569978)全部一致。
+- 投稿件存档:06-submission/jcss-r1-submitted-pdf/(含官方 EM 生成 PDF)。
