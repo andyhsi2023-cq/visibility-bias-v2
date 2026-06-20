@@ -1,15 +1,16 @@
+.DS_Store
+.playwright-mcp/
 __pycache__/
 *.pyc
-.DS_Store
-*.bak*
-venv*/
-.corpus-index/
-.playwright-mcp/
-06-submission/visibility-bias-v2-replication.zip
+*.bak
+*venv*/
+# large regenerable intermediates (Zenodo-only)
 03-analysis/phase-E/vai_orig_vs_ext.csv
 03-analysis/phase-L-bidding/structured_projects.csv
-05-manuscript/submission/em-pdf/
-# --- secrets: Zenodo reviewer token — must NOT be in public repo ---
-05-manuscript/submission/JCSS_compliance_audit.md
-05-manuscript/submission/cover_letter_jcss.html
+**/wikipedia_zh/_cache.json
+# build artifact (lives on Zenodo)
+06-submission/visibility-bias-v2-replication.zip
+# privacy: signatures / signed compiled PDFs must NOT be on the public mirror
+06-submission/Authorship-change-form-*.pdf
+06-submission/jcss-r1-submitted-pdf/OFFICIAL-EM-built-*.pdf
 07-prereg/zenodo-dois.md

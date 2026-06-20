@@ -279,3 +279,9 @@ Andy 通读定稿后发布。v4 DOI = 10.5281/zenodo.20768140;**concept DOI 10.5
 Andy 检查投稿件,确认无误并批准提交。JCSO-D-26-00240R1 已在 JCSS Editorial Manager 完成 Approve,进入编辑处理(Revisions Being Processed)。本轮 Major Revisions R&R 工作结束,等待编辑决议。
 - 最终状态:两位作者(奚红洋 + 刘灿);稿件/标题页/ESM/cover/response/图 + EM 元数据 + GitHub(2908aaa)+ Zenodo v5(concept DOI 19569978)全部一致。
 - 投稿件存档:06-submission/jcss-r1-submitted-pdf/(含官方 EM 生成 PDF)。
+
+## 2026-06-20 — 编辑部退回(作者变更)已处理并重新提交
+- 编辑部(JEO Ranjith Ayyapan)初审退回:作者 1→2 人,需 Springer "Change of Authorship" 表 + 全体作者签字(21 天限)。
+- 已填妥表 Sections 1–5(PyMuPDF 叠字、逐页渲染核对),奚红洋 + 刘灿手写签字扫描(SIGNED,2026.6.20);经 EM Edit Revision 作为 "Authorship change form" 上传,Comments 附 clarification 说明。
+- Build PDF → View → Approve 完成;EM 回执 "Thank you for approving the changes … by the Editorial Office"。修订重新交编辑部 → 编辑。
+- 隐私:签字表 / 含签字的 EM 合成 PDF / .playwright-mcp 均已 gitignore,不推送公共 GitHub。
