@@ -18,10 +18,9 @@ The paper a reviewer reads is the same paper. It now carries much stronger valid
 
 ## A note on the author team
 
-We strengthened the author team with two contributors whose work directly answers needs the review surfaced:
+We strengthened the author team with a coauthor whose work directly answers needs the review surfaced:
 
-- **Liu Can** (co-first author; urban & rural planning) constructed and verified the visible-versus-functional classification behind the new procurement evidence (§4.3); domain judgment a keyword scheme alone cannot supply.
-- **Zhihui Li** independently double-coded the passage-validation sample, furnishing the **human intercoder agreement** the reviewer requested (Comment 3).
+- **Liu Can** (co-first author; urban & rural planning) constructed and verified the visible-versus-functional classification behind the new procurement evidence (§4.3) — domain judgment a keyword scheme alone cannot supply — and independently double-coded the passage-validation sample, furnishing the **human intercoder agreement** the reviewer requested (Comment 3).
 
 Authorship follows ICMJE criteria; contributions are in the Statements and Declarations. The LLM ensemble was also used, transparently, to *assist* the procurement-lexicon adjudication, which the domain-expert coauthor then signed off, a workflow consistent with the paper's own thesis about combining dictionaries, LLMs, and human validation. Section numbers below refer to the revised manuscript.
 
@@ -52,7 +51,7 @@ A genre/template artifact would not co-move with money under an exogenous shock;
 - **The naive dictionary fails**: human-coded visible-class precision is only **0.10**, driven by polysemous appearance words (示范 *shìfàn* "model" alone accounts for **60–61 of 84** visible false positives; also 形象, 展示, 美丽).
 - **A concrete, salience-based lexicon reaches 0.50→0.60 at 0.79 recall**, but meets a **polysemy ceiling (~0.60–0.64)**: residual metaphorical uses (道路 *dàolù* in 新型工业化道路; 轨道交通 in 轨道交通产业) cannot be pruned without destroying recall.
 - **For high precision we recommend LLM-ensemble classification** (three independent families): **0.84 accuracy, inter-model Fleiss κ = 0.835**.
-- **Human intercoder agreement** (the second coder, Zhihui Li, on the identical 120-sentence locked set): **Cohen κ = 0.70** (substantial); residual disagreement concentrates on the visible-vs-mixed boundary, itself a manifestation of the polysemy we document.
+- **Human intercoder agreement** (the second coder, Liu Can, on the identical 120-sentence locked set): **Cohen κ = 0.70** (substantial); residual disagreement concentrates on the visible-vs-mixed boundary, itself a manifestation of the polysemy we document.
 
 ### Comment 4 — Inspection event study, CFPS, and welfare calibration overextend the paper
 
@@ -81,4 +80,4 @@ On **reproducibility**: we have re-deposited and verified that all links resolve
 The paper is now narrower and substantially better-evidenced: it honestly delimits the dictionary, offers a high-precision LLM alternative, establishes the construct's reality in behavior, and adds large-scale procurement corroboration, all on the structure you reviewed. We are grateful for guidance that materially improved the work.
 
 Sincerely,
-Hongyang Xi (corresponding author), on behalf of all authors — Hongyang Xi and Liu Can (co-first authors) and Zhihui Li
+Hongyang Xi (corresponding author), on behalf of both authors — Hongyang Xi and Liu Can (co-first authors)

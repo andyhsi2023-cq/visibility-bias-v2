@@ -2,7 +2,7 @@
 
 **Manuscript**: *Visibility Bias in Chinese Municipal Government Work Reports: Measurement and Behavioral Validation*
 
-**Authors**: Hongyang Xi (Chongqing Survey Institute)†, Liu Can (Guangzhou College of Applied Science and Technology)†, Zhihui Li (Chongqing Survey Institute) · †co-first authors
+**Authors**: Hongyang Xi (Chongqing Survey Institute)†, Liu Can (Guangzhou College of Applied Science and Technology)† · †co-first authors
 **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5
 **Replication**: Zenodo DOI 10.5281/zenodo.19569978
 

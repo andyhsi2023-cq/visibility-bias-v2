@@ -17,7 +17,7 @@ Please find enclosed our revised manuscript, **"Visibility Bias in Chinese Munic
 3. **Behavioral (criterion) validity as the decisive test.** Under quasi-exogenous, retirement-driven secretary turnover, the *valid* concrete text measure co-moves with *real* accounting-based cosmetic investment (both up the year after turnover, clean pre-trends), while the *naive* measure does not respond (p ≈ 0.5). We argue, and show, that behavioral co-movement — not passage precision or internal reliability — is the decisive validity test for measures of strategic attention.
 4. **Honest scope and reproducibility.** Failed and assumption-dependent analyses (an inspection event study, a CFPS micro-foundation, a structural welfare calibration) are demoted to appendices and reported transparently; a large-scale procurement check (Zhejiang public bidding, ~2.96M records) corroborates the compositional tilt on both project frequency (≈2:1) and investment amount.
 
-**Author team.** Since the original submission we have added two coauthors whose work answers needs the review surfaced: **Liu Can** (co-first; urban & rural planning) built and verified the procurement-classification scheme, and **Zhihui Li** provided the independent second coding behind the intercoder agreement. Contributions follow ICMJE and are listed in the Statements.
+**Author team.** Since the original submission we have added a coauthor whose work answers needs the review surfaced: **Liu Can** (co-first; urban & rural planning) built and verified the procurement-classification scheme (Section 4.3) and provided the independent second coding behind the intercoder agreement. Contributions follow ICMJE and are listed in the Statements.
 
 **Originality and concurrent submission.** The work is original and not under consideration elsewhere. A pre-registered predecessor (OSF ZMJY5) and an earlier urban-economics-framed draft (desk-rejected at *Habitat International*, 2026-04-13, on scope grounds) are disclosed in Appendix D; the present paper is a substantial methodological repositioning, not a resubmission of that draft.
 
@@ -29,6 +29,6 @@ We suggest, as before, Daniel Mattingly (Yale), Jennifer Pan (Stanford), and Yuh
 
 Sincerely,
 
-**Hongyang Xi** (corresponding author), on behalf of all authors — Hongyang Xi and Liu Can (co-first) and Zhihui Li
+**Hongyang Xi** (corresponding author), on behalf of both authors — Hongyang Xi and Liu Can (co-first authors)
 Chongqing Survey Institute Co., Ltd., Chongqing, China
 Email: 26708155@alu.cqu.edu.cn · ORCID: [0009-0007-6911-2309](https://orcid.org/0009-0007-6911-2309)

@@ -12,7 +12,7 @@ Python 3.11+; `pip install pandas statsmodels matplotlib openai`. LLM steps (ens
 | Naive dict visible precision **0.10** / ensemble 0.37; 示范 = 60–61/84 FPs (§3.2.0) | `03-analysis/phase-G/PILOT-FINDINGS.md`, `phase-K/score_anchor.py`, `annotate_ensemble.py` | anchor labels → confusion matrix |
 | Concrete precision **0.50→0.60**, ceiling 0.60–0.64 (§3.2.0, Fig 1) | `phase-K/score_anchor.py anchor_human_labels.csv` | `anchor_human_labels.csv` + `anchor_key.csv` → per-class P/R |
 | LLM ensemble **0.84**, Fleiss κ **0.835** (§3.2.0) | `phase-K/annotate_ensemble.py` | sentences → `passage_coding_sheet_ensemble.validation.json` |
-| Human intercoder **κ = 0.70** (§3.2.0, App C.8) | `phase-K/score_anchor.py coder2_labels.csv li_labels.csv` | two coders, same 120 → κ |
+| Human intercoder **κ = 0.70** (§3.2.0, App C.8) | `phase-K/score_anchor.py coder1_labels.csv coder2_labels.csv` | two coders, same 120 → κ |
 | **Behavioral co-movement** CIR +0.025 / concrete +0.010 / naive +0.002 (§3.2.7, Fig 2) | `phase-J-criterion-validity/verify_comovement_master.py` | `02-data/processed/master_2002_2024.csv` → `verify_results_master.csv` |
 | `wr_visibility` (concrete text series) construction | `phase-J-criterion-validity/build_workreport_text.py` | GWR corpus (P1) → text panel (already merged into master_2002_2024.csv) |
 | Procurement **frequency** 2.0–2.1:1, 97/108 localities (§4.3, ESM-6) | `phase-L-bidding/classify_bidding.py` + `bidding_lexicon.py` (v2) | `ggzy.db` (P1) → `by_city.csv`, `results_summary.json` |

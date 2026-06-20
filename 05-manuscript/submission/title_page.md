@@ -6,7 +6,7 @@
 
 ## Authors
 
-**Hongyang Xi**¹†\* · **Liu Can**²† · **Zhihui Li**¹
+**Hongyang Xi**¹†\* · **Liu Can**²†
 
 ¹ Chongqing Survey Institute Co., Ltd., Chongqing, China
 ² Urban and Rural Planning, Guangzhou College of Applied Science and Technology, Guangzhou, China
@@ -14,7 +14,7 @@
 † **These authors contributed equally (co-first authors).**
 \* **Corresponding author** (Hongyang Xi). Email: `26708155@alu.cqu.edu.cn`
 
-**ORCID** — Hongyang Xi: [0009-0007-6911-2309](https://orcid.org/0009-0007-6911-2309); Liu Can: [0009-0009-0794-7671](https://orcid.org/0009-0009-0794-7671); Zhihui Li: [0009-0009-5486-8490](https://orcid.org/0009-0009-5486-8490).
+**ORCID** — Hongyang Xi: [0009-0007-6911-2309](https://orcid.org/0009-0007-6911-2309); Liu Can: [0009-0009-0794-7671](https://orcid.org/0009-0009-0794-7671).
 
 **Google Scholar profile**: *In creation. The corresponding author's Google Scholar profile is being established and will be provided to the editorial office post-acceptance. In the interim, verifiable academic identity is documented through:*
 - *ORCID (corresponding author)*: [0009-0007-6911-2309](https://orcid.org/0009-0007-6911-2309)
