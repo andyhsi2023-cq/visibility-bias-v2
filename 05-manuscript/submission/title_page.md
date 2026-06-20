@@ -33,9 +33,9 @@ This research received no specific grant from any funding agency in the public, 
 ## Manuscript metadata
 
 - **Article type**: Research Article
-- **Word count**: ~10,900 (full master incl. statements + appendices; ~5,000 main text §1–§6 excluding online appendix)
-- **Figures**: 2 main-text (Fig 1 precision ladder; Fig 2 co-movement) + online-appendix figures (incl. ESM-6 procurement)
-- **Tables**: 3 main-text (Table 0 positioning; Table 1 precision ladder; Table 2 co-movement)
+- **Word count**: ~10,980 (full, incl. statements + appendices); ~6,350 main text (§1–§6, excluding online appendix)
+- **Figures**: 2 main-text (Fig 1 precision ladder; Fig 2 behavioral co-movement) + 1 online-appendix (ESM-6 procurement)
+- **Tables**: 5 main-text (Table 0 positioning; Table 1 validity battery; Table 2 co-movement; Table 3 P1; Table 4 within-document)
 - **References**: 21
 - **Online resources**: 1 (Online Resource 1: Online Appendix; PDF)
 - **Pre-registration**: OSF DOI 10.17605/OSF.IO/ZMJY5 (archived 2026-04-14)

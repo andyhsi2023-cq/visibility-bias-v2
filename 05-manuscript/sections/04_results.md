@@ -10,7 +10,7 @@ $$\text{CIR}_{it} = \beta\,\text{VAI}_{it} + \gamma' X_{it} + \mu_i + \tau_t + \
 
 with city ($\mu_i$) and year ($\tau_t$) fixed effects, controls $X_{it}=\{\ln\text{GDPpc}, \ln\text{pop}, \text{ind2-share}\}$, and city-clustered SE; sample 2,751 city-years across 261 cities, 2005–2015 (MOHURD CIR coverage).
 
-**Table 2. P1 — Compositional substitution (CIR ~ VAI)**
+**Table 3. P1 — Compositional substitution (CIR ~ VAI)**
 
 | Specification | β(VAI) | SE | p | N |
 |---|---:|---:|---:|---:|
@@ -27,7 +27,7 @@ All specifications give β > 0 at conventional significance. The null on total i
 
 Exploiting the temporal structure of GWRs (a retrospective past-year review and a prospective next-year plan), we partition each report at the first plan marker after character 2000 and compute VAI on each section (N = 4,330 successful splits).
 
-**Table 3. Within-document retrospective-vs-prospective VAI differential**
+**Table 4. Within-document retrospective-vs-prospective VAI differential**
 
 | Metric | Value |
 |---|---:|

@@ -52,7 +52,7 @@ The central question is whether a text measure captures the construct, the visib
 
 ### 3.2.0 Direct passage-level validation against human coding (primary)
 
-We draw a stratified random sample of sentences (by dictionary hit-type, city tier, era) and have them independently coded as visible, functional, mixed, or irrelevant. A human gold standard of 120 sentences, independently double-coded by two coders (dictionary and model labels hidden), anchors the analysis (intercoder Cohen κ = 0.70, substantial; Online Appendix C.8). Against the human labels we report a full confusion matrix, per-class precision/recall, verbatim error exemplars, and an error taxonomy. The findings define a precision ladder (Table 1, Panel A):
+We draw a stratified random sample of sentences (by dictionary hit-type, city tier, era) and have them independently coded as visible, functional, mixed, or irrelevant. A human gold standard of 120 sentences, independently double-coded by two coders (dictionary and model labels hidden), anchors the analysis (intercoder Cohen κ = 0.70, substantial; Online Appendix C.8). Against the human labels we report a full confusion matrix, per-class precision/recall, verbatim error exemplars, and an error taxonomy. The findings define a precision ladder (Figure 1):
 
 - **The naive dictionary fails.** Visible-class precision against human coding is only 0.10 (recall 0.43). The diagnosis is single-cause: one polysemous term, 示范 *shìfàn*, alone produces 60–61 of 84 visible-class false positives (示范区 "demonstration zone", 示范项目 "model project", 改革示范 "reform model"), with 文明城市, 展示, 美丽, and 形象 supplying most of the remainder.
 - **The concrete lexicon improves greatly but meets a ceiling.** Restricting to concrete, salience-based terms raises visible precision to 0.50, and to 0.60 after targeted refinement, at 0.79 recall. Curation cannot push past ~0.60–0.64. Residual uses are genuinely metaphorical or categorical (道路 *dàolù* "road" also appears in 新型工业化道路 "the *path* of industrialization"; 轨道交通 *guǐdào jiāotōng* also names the 轨道交通产业 "rail-transit *industry*"), and pruning them destroys recall. This is a polysemy ceiling, not a curation failure.
@@ -82,7 +82,7 @@ A parallel VAI from Chinese Wikipedia city descriptions does not correlate with 
 
 ### 3.2.6 Results of the indirect battery
 
-**Table 1, Panel B. Pre-registered construct-validity battery**
+**Table 1. Pre-registered construct-validity battery**
 
 | Test | Quantity | Value | Interpretation |
 |---|---|---:|---|
@@ -94,9 +94,9 @@ A parallel VAI from Chinese Wikipedia city descriptions does not correlate with 
 
 ### 3.2.7 Behavioral criterion validity (new) — *the decisive test*
 
-Passage precision is not the question a skeptical reader most wants answered. Even a precise text measure might capture only *rhetoric* rather than *strategic attention* that moves real resources. We therefore add the criterion-validity test the original draft lacked. Using plausibly exogenous, retirement-driven turnover of municipal party secretaries (departure at/above the mandatory-retirement age threshold) as an incentive shock, we ask whether the text measure co-moves with *real, accounting-based* cosmetic investment (CIR). Two-way (city + year) fixed-effects regressions with city-clustered standard errors on the merged 2002–2024 panel (`master_2002_2024.csv`) give (Table 1, Panel C):
+Passage precision is not the question a skeptical reader most wants answered. Even a precise text measure might capture only *rhetoric* rather than *strategic attention* that moves real resources. We therefore add the criterion-validity test the original draft lacked. Using plausibly exogenous, retirement-driven turnover of municipal party secretaries (departure at/above the mandatory-retirement age threshold) as an incentive shock, we ask whether the text measure co-moves with *real, accounting-based* cosmetic investment (CIR). Two-way (city + year) fixed-effects regressions with city-clustered standard errors on the merged 2002–2024 panel (`master_2002_2024.csv`) give (Table 2; the pattern is plotted in Figure 2):
 
-**Table 1, Panel C. Co-movement under secretary turnover (two-way FE; city-clustered)**
+**Table 2. Co-movement under secretary turnover (two-way FE; city-clustered)**
 
 | Outcome | turnover (t−1) | future turnover (lead, placebo) | retirement-exogenous (t−1) |
 |---|---:|---:|---:|
