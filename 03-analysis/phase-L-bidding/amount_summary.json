@@ -1,0 +1,17 @@
+{
+  "basis": "2023-2024 award records, v2 (DeepSeek+LiuCan) lexicon",
+  "n_visible": 12207,
+  "n_functional": 4587,
+  "median_visible_wan": 578,
+  "median_functional_wan": 471,
+  "mean_visible_wan": 4361,
+  "mean_functional_wan": 1571,
+  "P99_visible_yi": 8.99,
+  "P99_functional_yi": 2.02,
+  "max_visible_yi": 114.57,
+  "max_functional_yi": 10.68,
+  "count_ratio": 2.66,
+  "median_ratio": 1.23,
+  "P99_ratio": 4.45,
+  "trimmean99_ratio": 2.66
+}

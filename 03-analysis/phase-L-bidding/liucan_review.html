@@ -1,0 +1,69 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<title>招标词表审定 — 刘灿复核（7 项）</title>
+<style>
+body{font-family:-apple-system,system-ui,"PingFang SC",sans-serif;max-width:860px;margin:0 auto;padding:20px;line-height:1.6;color:#222}
+h1{font-size:20px} .intro{background:#f4f6f8;border:1px solid #dde;border-radius:8px;padding:12px 16px;font-size:14px}
+.bar{position:sticky;top:0;background:#fff;border-bottom:2px solid #1a5;padding:10px 0;z-index:9;display:flex;gap:12px;align-items:center}
+.bar button{padding:9px 16px;border:0;border-radius:6px;background:#1a5;color:#fff;font-size:14px;cursor:pointer}
+.bar button.sec{background:#888} .prog{font-weight:700}
+.card{border:1px solid #e3e3e3;border-radius:10px;padding:14px 16px;margin:14px 0;box-shadow:0 1px 2px #0001}
+.card.done{background:#f3fbf5;border-color:#bfe6c9}
+.term{font-size:20px;font-weight:700} .cls{font-size:12px;color:#888;margin-left:8px}
+.rec{background:#fff7e6;border:1px solid #ffe0a3;border-radius:6px;padding:7px 10px;margin:8px 0;font-size:13px}
+.rec b{color:#b8860b}
+.ex{font-size:12px;color:#777;margin:4px 0}
+.opts label{display:block;margin:4px 0;font-size:14px;cursor:pointer;padding:4px 8px;border-radius:6px}
+.opts label:hover{background:#eef}
+textarea{width:100%;box-sizing:border-box;font-size:13px;margin-top:6px;border:1px solid #ccc;border-radius:6px;padding:6px;min-height:42px}
+.note-lbl{font-size:12px;color:#666;margin-top:6px}
+</style></head><body>
+<h1>招投标词表审定 — 刘灿（共同第一作者）复核</h1>
+<div class="intro">下面 7 个关键词,DeepSeek-4.0 建议改动(其余 52 个判"保留"已默认通过)。请逐个确认:默认已选中 DeepSeek 的建议,
+你可改选,并在备注里细化 gate 规则或写理由。完成后点 <b>导出 CSV</b> 下载 <code>liucan_adjudication.csv</code> 发回即可。
+<br>判定含义:<b>keep</b>=归类正确保留 · <b>drop</b>=太杂删除 · <b>context_gate</b>=保留但加上下文限定 · <b>→visible/→functional</b>=改判类别。</div>
+<div class="bar"><span class="prog" id="prog">0 / 0</span>
+<button onclick="exportCSV()">导出 CSV</button>
+<button class="sec" onclick="if(confirm('清空已填?')){localStorage.removeItem(KEY);location.reload()}">清空</button>
+<span style="font-size:12px;color:#999">自动保存到本浏览器</span></div>
+<div id="list"></div>
+<p style="font-size:12px;color:#999">DeepSeek 判"保留"的 52 词(默认通过,可抽查):<span id="keeps"></span></p>
+<script>
+const DATA=[{"term": "道路", "cls": "visible", "n": "93970", "ex": "新昌县北山路二期新建道路工程[A3306240740000416001001]", "dec": "context_gate", "reason": "极易出现在地址（如××大道××路××号、租赁等），降低可靠性", "gate": "匹配时要求标题中出现「道路工程」「道路改造」「道路建设」「道路施工」「道路维修」等词，否则忽略"}, {"term": "大道", "cls": "visible", "n": "40600", "ex": "新昌县新昌大道中路86号羊毛衫兔毛市场西1-213商铺一年租赁权", "dec": "context_gate", "reason": "多数为地址路段名（如萧山大道交叉口、××大道中路租赁），不够单独作为工程类别线索", "gate": "匹配时要求标题中紧邻「大道」后出现「工程」「改建」「拓宽」「提升」等建设动词，否则视为地址忽略"}, {"term": "景观", "cls": "visible", "n": "25660", "ex": "杭州市市容景观发展中心关于车辆保险的框架协议采购项目", "dec": "context_gate", "reason": "可能出现在机构名（如杭州市市容景观发展中心）或非工程采购中，影响准确度", "gate": "匹配时要求标题包含「景观工程」「景观改造」「景观提升」「景观设计」等，排除景观作为机构名称出现的情况"}, {"term": "花园", "cls": "visible", "n": "10080", "ex": "玉兰花园二期-2F地下室行车道地面改造工程结果公告", "dec": "drop", "reason": "极易作为楼盘小区名称（如玉兰花园、华侨花园），极少指真实市政花园工程，噪音过高", "gate": ""}, {"term": "市容", "cls": "visible", "n": "2040", "ex": "杭州市市容景观发展中心关于车辆保险的框架协议采购项目", "dec": "context_gate", "reason": "市容常出现在机构名（如市容景观发展中心）或非工程采购中，可能错误触发", "gate": "匹配时要求标题中出现「市容整治」「市容提升」「市容美化」等工程性短语，排除「市容景观发展中心」等机构名场景"}, {"term": "步行街", "cls": "visible", "n": "680", "ex": "步行街6、7号售货亭二年期租赁权及西辅道停车场二年租赁权", "dec": "context_gate", "reason": "可能出现在商铺/售货亭租赁等非工程场景，导致误分类", "gate": "匹配时要求标题出现「步行街改造」「步行街提升」「步行街工程」等，排除纯租赁资产项目"}, {"term": "地标", "cls": "visible", "n": "390", "ex": "江山市莲华山工业园小微企业创业基地标准厂房5#厂房电梯设备采购及安装工程", "dec": "drop", "reason": "「基地标准」等词常误匹配「地标」字符串，且独立指地标建筑的情况极少，噪音极大", "gate": ""}], KEEPS=["污水", "管网", "供水", "排水", "雨污", "泵站", "排涝", "防洪", "管线", "自来水", "防汛", "管廊", "雨水", "排污", "燃气", "二次供水", "截污", "饮水", "海绵", "给排水", "内涝", "供热", "供排水", "中水", "下水道", "供气", "绿化", "公园", "广场", "桥梁", "轨道交通", "地铁", "立面", "园林", "风貌", "亮化", "绿道", "路网", "立交", "体育公园", "夜景", "美化", "景观带", "口袋公园", "雕塑", "街景", "绿廊", "喷泉", "靓化", "彩化", "轻轨", "有轨电车"], KEY="liucan_adjudic_v1";
+let saved=JSON.parse(localStorage.getItem(KEY)||"{}");
+const OPTS=[["agree","同意 DeepSeek"],["keep","保留 keep"],["drop","删除 drop"],
+            ["context_gate","上下文限定 gate"],["visible","改判→visible"],["functional","改判→functional"]];
+const list=document.getElementById("list");
+DATA.forEach((d,i)=>{
+  const s=saved[d.term]||{}; const div=document.createElement("div");
+  div.className="card"+(s.dec?" done":""); div.id="c_"+d.term;
+  let opts=OPTS.map(([v,zh])=>{
+    let lbl = v==="agree" ? zh+`（${d.dec}）` : zh;
+    return `<label><input type=radio name="d_${d.term}" value="${v}" ${ (s.dec||"agree")===v?"checked":""}> ${lbl}</label>`;
+  }).join("");
+  div.innerHTML=`<div><span class="term">${d.term}</span><span class="cls">现类 ${d.cls} · 估计命中 ${d.n}</span></div>
+    <div class="rec"><b>DeepSeek 建议:${d.dec}</b> — ${d.reason}${d.gate?"<br>建议 gate: "+d.gate:""}</div>
+    <div class="ex">例:${d.ex}</div>
+    <div class="opts">${opts}</div>
+    <div class="note-lbl">备注 / gate 规则细化(可改):</div>
+    <textarea id="n_${d.term}" placeholder="如需 context_gate,在此写明匹配条件">${s.note!==undefined?s.note:(d.gate||"")}</textarea>`;
+  list.appendChild(div);
+});
+document.getElementById("keeps").textContent=KEEPS.join("、");
+function rec(term){
+  const dec=(document.querySelector(`input[name=d_${term}]:checked`)||{}).value||"";
+  const note=document.getElementById("n_"+term).value;
+  saved[term]={dec,note}; localStorage.setItem(KEY,JSON.stringify(saved));
+  document.getElementById("c_"+term).classList.toggle("done",!!dec); prog();
+}
+list.addEventListener("change",e=>{if(e.target.name)rec(e.target.name.slice(2))});
+list.addEventListener("input",e=>{if(e.target.id&&e.target.id.startsWith("n_"))rec(e.target.id.slice(2))});
+function prog(){document.getElementById("prog").textContent=Object.keys(saved).filter(t=>saved[t].dec).length+" / "+DATA.length}
+function resolve(term,raw){const d=DATA.find(x=>x.term===term);return raw==="agree"?d.dec:raw}
+function exportCSV(){
+  let rows=[["term","current_class","deepseek_decision","liucan_decision","liucan_note"]];
+  DATA.forEach(d=>{const s=saved[d.term]||{};rows.push([d.term,d.cls,d.dec,resolve(d.term,s.dec||"agree"),(s.note||"").replace(/[\r\n,]/g," ")])});
+  let csv="﻿"+rows.map(r=>r.map(x=>`"${String(x).replace(/"/g,'""')}"`).join(",")).join("\n");
+  let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="liucan_adjudication.csv";a.click();
+}
+prog();
+</script></body></html>

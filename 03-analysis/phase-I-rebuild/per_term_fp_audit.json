@@ -1,0 +1,644 @@
+[
+  {
+    "term": "装饰",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 1.0,
+    "ensemble_breakdown": {
+      "visible": 0,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=1.00 over 1 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "展示",
+    "n_hits_ensemble": 7,
+    "fp_rate_ensemble": 0.857,
+    "ensemble_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 6
+    },
+    "n_hits_human": 1,
+    "fp_rate_human": 1.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "verdict": "DROP",
+    "note": "Ensemble FP=0.86 over 7 hits — over fires on non-infrastructure."
+  },
+  {
+    "term": "示范",
+    "n_hits_ensemble": 87,
+    "fp_rate_ensemble": 0.724,
+    "ensemble_breakdown": {
+      "visible": 8,
+      "mixed": 10,
+      "functional": 6,
+      "irrelevant": 63
+    },
+    "n_hits_human": 30,
+    "fp_rate_human": 0.433,
+    "human_breakdown": {
+      "visible": 1,
+      "mixed": 11,
+      "functional": 5,
+      "irrelevant": 13
+    },
+    "verdict": "DROP",
+    "note": "Ensemble FP=0.72 over 87 hits — over fires on non-infrastructure."
+  },
+  {
+    "term": "文明城市",
+    "n_hits_ensemble": 11,
+    "fp_rate_ensemble": 0.636,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 2,
+      "functional": 1,
+      "irrelevant": 7
+    },
+    "n_hits_human": 4,
+    "fp_rate_human": 0.75,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 0,
+      "functional": 1,
+      "irrelevant": 3
+    },
+    "verdict": "DROP",
+    "note": "Ensemble FP=0.64 over 11 hits — over fires on non-infrastructure."
+  },
+  {
+    "term": "样板",
+    "n_hits_ensemble": 4,
+    "fp_rate_ensemble": 0.5,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 2
+    },
+    "n_hits_human": 2,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 1,
+      "irrelevant": 0
+    },
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=0.50 over 4 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "整洁",
+    "n_hits_ensemble": 2,
+    "fp_rate_ensemble": 0.5,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 1,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=0.50 over 2 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "门户",
+    "n_hits_ensemble": 2,
+    "fp_rate_ensemble": 0.5,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=0.50 over 2 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "美丽",
+    "n_hits_ensemble": 11,
+    "fp_rate_ensemble": 0.364,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 6,
+      "functional": 0,
+      "irrelevant": 4
+    },
+    "n_hits_human": 7,
+    "fp_rate_human": 0.143,
+    "human_breakdown": {
+      "visible": 1,
+      "mixed": 5,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=0.36 over 11 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "形象",
+    "n_hits_ensemble": 10,
+    "fp_rate_ensemble": 0.3,
+    "ensemble_breakdown": {
+      "visible": 5,
+      "mixed": 2,
+      "functional": 0,
+      "irrelevant": 3
+    },
+    "n_hits_human": 3,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 1,
+      "mixed": 2,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "REVIEW",
+    "note": "Ensemble FP=0.30 over 10 hits; marginal — needs context constraint."
+  },
+  {
+    "term": "面貌",
+    "n_hits_ensemble": 7,
+    "fp_rate_ensemble": 0.143,
+    "ensemble_breakdown": {
+      "visible": 4,
+      "mixed": 2,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 2,
+    "fp_rate_human": 0.5,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.14 over 7 hits — clean."
+  },
+  {
+    "term": "风貌",
+    "n_hits_ensemble": 8,
+    "fp_rate_ensemble": 0.125,
+    "ensemble_breakdown": {
+      "visible": 6,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.12 over 8 hits — clean."
+  },
+  {
+    "term": "绿化",
+    "n_hits_ensemble": 26,
+    "fp_rate_ensemble": 0.038,
+    "ensemble_breakdown": {
+      "visible": 16,
+      "mixed": 9,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "n_hits_human": 5,
+    "fp_rate_human": 0.4,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 2,
+      "functional": 1,
+      "irrelevant": 2
+    },
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.04 over 26 hits — clean."
+  },
+  {
+    "term": "景观",
+    "n_hits_ensemble": 15,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 11,
+      "mixed": 4,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 5,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 1,
+      "mixed": 4,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.00 over 15 hits — clean."
+  },
+  {
+    "term": "亮化",
+    "n_hits_ensemble": 8,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 4,
+      "mixed": 4,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 3,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 3,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.00 over 8 hits — clean."
+  },
+  {
+    "term": "美化",
+    "n_hits_ensemble": 6,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 4,
+      "mixed": 2,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 1,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "KEEP",
+    "note": "Ensemble FP=0.00 over 6 hits — clean."
+  },
+  {
+    "term": "园林城市",
+    "n_hits_ensemble": 4,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 3,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 2,
+    "fp_rate_human": 0.5,
+    "human_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 1
+    },
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 4 ensemble hits, 2 human hits — too few to judge."
+  },
+  {
+    "term": "立面",
+    "n_hits_ensemble": 3,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 3,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 3 ensemble hits, 0 human hits — too few to judge."
+  },
+  {
+    "term": "夜景",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 1,
+    "fp_rate_human": 0.0,
+    "human_breakdown": {
+      "visible": 0,
+      "mixed": 1,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 1 ensemble hits, 1 human hits — too few to judge."
+  },
+  {
+    "term": "彩化",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 1 ensemble hits, 0 human hits — too few to judge."
+  },
+  {
+    "term": "雕塑",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 1 ensemble hits, 0 human hits — too few to judge."
+  },
+  {
+    "term": "形象工程",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 1 ensemble hits, 0 human hits — too few to judge."
+  },
+  {
+    "term": "天际线",
+    "n_hits_ensemble": 1,
+    "fp_rate_ensemble": 0.0,
+    "ensemble_breakdown": {
+      "visible": 1,
+      "mixed": 0,
+      "functional": 0,
+      "irrelevant": 0
+    },
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "REVIEW_LOW_N",
+    "note": "Only 1 ensemble hits, 0 human hits — too few to judge."
+  },
+  {
+    "term": "外观",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "外墙",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "立面改造",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "粉刷",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "刷新",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "街景",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "灯光",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "景观带",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "花坛",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "花园城市",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "门面",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "窗口",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "城市名片",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "靓丽",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "漂亮",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "焕然一新",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "穿衣戴帽",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "观感",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "视觉",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  },
+  {
+    "term": "面子",
+    "n_hits_ensemble": 0,
+    "fp_rate_ensemble": null,
+    "ensemble_breakdown": {},
+    "n_hits_human": 0,
+    "fp_rate_human": null,
+    "human_breakdown": {},
+    "verdict": "NO_HITS_KEEP",
+    "note": "No evidence in 500-row sample; keep until larger sample available."
+  }
+]

@@ -1,0 +1,7 @@
+spec,beta,se,p,n
+(1) wr_visibility (primary),0.0947,0.0422,0.0249,1834
+(2) vai_composite (naive),0.0626,0.0668,0.3489,1834
+(3) no city FE,0.0686,0.044,0.1191,1834
+(4) no year FE,0.108,0.0424,0.011,1834
+(5) IV = wr_visibility(t-1),0.3133,0.4241,0.4602,1826
+(6) null: total investment,0.2196,0.1857,0.2371,1834

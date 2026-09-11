@@ -1,0 +1,19 @@
+# VAI functional lexicon — CONCRETE-INFRASTRUCTURE ONLY (v3)
+# Concealed/utility infrastructure, aligned to Wu & Zhou (2018) non-cosmetic classification
+# (benchmarked to officials-turnover-cn `wr_visibility` LIZI set).
+排水
+排涝
+管网
+管道
+防洪
+地下管
+污水
+供水
+管廊
+内涝
+下水道
+排污
+给排水
+防汛
+地下空间
+雨水

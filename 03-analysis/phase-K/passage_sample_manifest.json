@@ -1,0 +1,27 @@
+{
+  "seed": 20260719,
+  "era_cut": 2013,
+  "quota": {
+    "visible": 150,
+    "functional": 150,
+    "mixed": 50,
+    "none": 150
+  },
+  "n_documents": 6294,
+  "n_sentences": 2107369,
+  "n_visible_terms": 20,
+  "n_functional_terms": 16,
+  "sampled": 500,
+  "strata_population": {
+    "visible:early": 27934,
+    "visible:late": 42895,
+    "functional:early": 9807,
+    "functional:late": 18112,
+    "mixed:early": 2432,
+    "mixed:late": 3188,
+    "none:early": 821010,
+    "none:late": 1181991
+  },
+  "coding_scheme": "visible | functional | mixed | irrelevant",
+  "note": "File this manifest with the OSF amendment BEFORE coding begins."
+}
