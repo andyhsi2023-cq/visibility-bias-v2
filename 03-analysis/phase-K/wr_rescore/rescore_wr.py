@@ -77,10 +77,11 @@ print(f"wr-dict vs ensemble (on the 120 anchors) kappa = {k_e120:.3f} (n={n_e120
 
 # ---- (b) 499-sentence ensemble sample ----
 sheet = list(csv.DictReader(open(K/"passage_coding_sheet_ensemble.csv", encoding="utf-8-sig")))
+LABELS_SET = set(LABELS)
 pairs_499 = []
 for r in sheet:
     ens = (r.get("ensemble_majority") or "").strip().lower()
-    if not ens: continue
+    if ens not in LABELS_SET: continue
     pairs_499.append((wr_label(r.get("sentence", "")), ens))
 print(f"\nensemble sample scored: {len(pairs_499)}")
 out499, acc499 = prf(pairs_499, "wr dictionary vs LLM-ensemble majority (n=499)")

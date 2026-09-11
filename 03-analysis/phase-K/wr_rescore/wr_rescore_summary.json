@@ -1,5 +1,5 @@
 {
- "n": 500,
+ "n": 499,
  "accuracy": 0.842,
  "per_class": {
   "visible": {
@@ -27,7 +27,7 @@
    "n_truth": 170
   }
  },
- "kappa_dict_vs_ensemble": 0.78,
+ "kappa_dict_vs_ensemble": 0.782,
  "n_120_human_gold": 120,
  "kappa_dict_vs_human_120": 0.6,
  "kappa_dict_vs_ensemble_120": 0.789
